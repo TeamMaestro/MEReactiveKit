@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
+		79E1FAFB18D56C1300A2414E /* MEReactiveKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FAFA18D56C1300A2414E /* MEReactiveKit.h */; };
+		79E1FAFD18D56C1300A2414E /* MEReactiveKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FAFC18D56C1300A2414E /* MEReactiveKit.m */; };
+		79E1FB0418D56C1300A2414E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB0318D56C1300A2414E /* XCTest.framework */; };
+		79E1FB0518D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
+		79E1FB0718D56C1300A2414E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB0618D56C1300A2414E /* UIKit.framework */; };
+		79E1FB0A18D56C1300A2414E /* libMEReactiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */; };
+		79E1FB1018D56C1300A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB0E18D56C1300A2414E /* InfoPlist.strings */; };
+		79E1FB1218D56C1300A2414E /* MEReactiveKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB1118D56C1300A2414E /* MEReactiveKitTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E1FB0818D56C1300A2414E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E1FAF118D56C1300A2414E;
+			remoteInfo = MEReactiveKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79E1FAF018D56C1300A2414E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				79E1FAFB18D56C1300A2414E /* MEReactiveKit.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
+		79E1FAFA18D56C1300A2414E /* MEReactiveKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEReactiveKit.h; sourceTree = "<group>"; };
+		79E1FAFC18D56C1300A2414E /* MEReactiveKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEReactiveKit.m; sourceTree = "<group>"; };
+		79E1FB0218D56C1300A2414E /* MEReactiveKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEReactiveKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FB0318D56C1300A2414E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		79E1FB0618D56C1300A2414E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		79E1FB0D18D56C1300A2414E /* MEReactiveKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEReactiveKitTests-Info.plist"; sourceTree = "<group>"; };
+		79E1FB0F18D56C1300A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79E1FB1118D56C1300A2414E /* MEReactiveKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEReactiveKitTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E1FAEF18D56C1300A2414E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FAFF18D56C1300A2414E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB0418D56C1300A2414E /* XCTest.framework in Frameworks */,
+				79E1FB0A18D56C1300A2414E /* libMEReactiveKit.a in Frameworks */,
+				79E1FB0718D56C1300A2414E /* UIKit.framework in Frameworks */,
+				79E1FB0518D56C1300A2414E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E1FAE918D56C1300A2414E = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF718D56C1300A2414E /* MEReactiveKit */,
+				79E1FB0B18D56C1300A2414E /* MEReactiveKitTests */,
+				79E1FAF418D56C1300A2414E /* Frameworks */,
+				79E1FAF318D56C1300A2414E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79E1FAF318D56C1300A2414E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */,
+				79E1FB0218D56C1300A2414E /* MEReactiveKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E1FAF418D56C1300A2414E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF518D56C1300A2414E /* Foundation.framework */,
+				79E1FB0318D56C1300A2414E /* XCTest.framework */,
+				79E1FB0618D56C1300A2414E /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79E1FAF718D56C1300A2414E /* MEReactiveKit */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FAFA18D56C1300A2414E /* MEReactiveKit.h */,
+				79E1FAFC18D56C1300A2414E /* MEReactiveKit.m */,
+				79E1FAF818D56C1300A2414E /* Supporting Files */,
+			);
+			path = MEReactiveKit;
+			sourceTree = "<group>";
+		};
+		79E1FAF818D56C1300A2414E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79E1FB0B18D56C1300A2414E /* MEReactiveKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB1118D56C1300A2414E /* MEReactiveKitTests.m */,
+				79E1FB0C18D56C1300A2414E /* Supporting Files */,
+			);
+			path = MEReactiveKitTests;
+			sourceTree = "<group>";
+		};
+		79E1FB0C18D56C1300A2414E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB0D18D56C1300A2414E /* MEReactiveKitTests-Info.plist */,
+				79E1FB0E18D56C1300A2414E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E1FAF118D56C1300A2414E /* MEReactiveKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1FB1518D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKit" */;
+			buildPhases = (
+				79E1FAEE18D56C1300A2414E /* Sources */,
+				79E1FAEF18D56C1300A2414E /* Frameworks */,
+				79E1FAF018D56C1300A2414E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEReactiveKit;
+			productName = MEReactiveKit;
+			productReference = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		79E1FB0118D56C1300A2414E /* MEReactiveKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1FB1818D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitTests" */;
+			buildPhases = (
+				79E1FAFE18D56C1300A2414E /* Sources */,
+				79E1FAFF18D56C1300A2414E /* Frameworks */,
+				79E1FB0018D56C1300A2414E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E1FB0918D56C1300A2414E /* PBXTargetDependency */,
+			);
+			name = MEReactiveKitTests;
+			productName = MEReactiveKitTests;
+			productReference = 79E1FB0218D56C1300A2414E /* MEReactiveKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E1FAEA18D56C1300A2414E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Maestro, LLC.";
+			};
+			buildConfigurationList = 79E1FAED18D56C1300A2414E /* Build configuration list for PBXProject "MEReactiveKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79E1FAE918D56C1300A2414E;
+			productRefGroup = 79E1FAF318D56C1300A2414E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E1FAF118D56C1300A2414E /* MEReactiveKit */,
+				79E1FB0118D56C1300A2414E /* MEReactiveKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E1FB0018D56C1300A2414E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB1018D56C1300A2414E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E1FAEE18D56C1300A2414E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FAFD18D56C1300A2414E /* MEReactiveKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FAFE18D56C1300A2414E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB1218D56C1300A2414E /* MEReactiveKitTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E1FB0918D56C1300A2414E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E1FAF118D56C1300A2414E /* MEReactiveKit */;
+			targetProxy = 79E1FB0818D56C1300A2414E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E1FB0E18D56C1300A2414E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E1FB0F18D56C1300A2414E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E1FB1318D56C1300A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		79E1FB1418D56C1300A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E1FB1618D56C1300A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MEReactiveKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		79E1FB1718D56C1300A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/MEReactiveKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		79E1FB1918D56C1300A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MEReactiveKitTests/MEReactiveKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		79E1FB1A18D56C1300A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
+				INFOPLIST_FILE = "MEReactiveKitTests/MEReactiveKitTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E1FAED18D56C1300A2414E /* Build configuration list for PBXProject "MEReactiveKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FB1318D56C1300A2414E /* Debug */,
+				79E1FB1418D56C1300A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1FB1518D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FB1618D56C1300A2414E /* Debug */,
+				79E1FB1718D56C1300A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		79E1FB1818D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FB1918D56C1300A2414E /* Debug */,
+				79E1FB1A18D56C1300A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E1FAEA18D56C1300A2414E /* Project object */;
+}
