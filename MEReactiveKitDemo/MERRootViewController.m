@@ -8,6 +8,7 @@
 
 #import "MERRootViewController.h"
 #import <MEReactiveKit/MEReactiveKit.h>
+#import <MEReactiveFoundation/MEReactiveFoundation.h>
 
 @interface MERRootViewController ()
 
@@ -19,7 +20,10 @@
     if (!(self = [super init]))
         return nil;
     
+    MERWebViewController *webViewController = [[MERWebViewController alloc] init];
     
+    [webViewController loadURLString:@"http://arstechnica.com"];
+    [webViewController setTabBarItem:<#(UITabBarItem *)#>
     
     return self;
 }
