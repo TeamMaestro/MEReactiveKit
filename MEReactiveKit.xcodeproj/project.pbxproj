@@ -1,2226 +1,890 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>784C428964CC411FBD3E586E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>79E1FAE918D56C1300A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FAF718D56C1300A2414E</string>
-				<string>79E1FB2218D56C5C00A2414E</string>
-				<string>79E1FB9018D574BE00A2414E</string>
-				<string>79E1FAF418D56C1300A2414E</string>
-				<string>79E1FAF318D56C1300A2414E</string>
-				<string>9C6F099096FE4AB88C51A4C0</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FAEA18D56C1300A2414E</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>MER</string>
-				<key>LastUpgradeCheck</key>
-				<string>0500</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Maestro, LLC.</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>79E1FAED18D56C1300A2414E</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>79E1FAE918D56C1300A2414E</string>
-			<key>productRefGroup</key>
-			<string>79E1FAF318D56C1300A2414E</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>79E1FAF118D56C1300A2414E</string>
-				<string>79E1FB1E18D56C5C00A2414E</string>
-				<string>79E1FB8A18D574BE00A2414E</string>
-			</array>
-		</dict>
-		<key>79E1FAED18D56C1300A2414E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>79E1FB1318D56C1300A2414E</string>
-				<string>79E1FB1418D56C1300A2414E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>79E1FAEE18D56C1300A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79E1FB5E18D56E3B00A2414E</string>
-				<string>79E1FB6218D56E3B00A2414E</string>
-				<string>79E1FB5518D56E3B00A2414E</string>
-				<string>79E1FB5C18D56E3B00A2414E</string>
-				<string>79E1FB5418D56E3B00A2414E</string>
-				<string>79E1FB6E18D56F4200A2414E</string>
-				<string>79E1FB6118D56E3B00A2414E</string>
-				<string>79E1FB5618D56E3B00A2414E</string>
-				<string>79E1FB3018D56CE700A2414E</string>
-				<string>79E1FB6F18D56F4200A2414E</string>
-				<string>79E1FB5D18D56E3B00A2414E</string>
-				<string>79E1FB6018D56E3B00A2414E</string>
-				<string>79E1FB5F18D56E3B00A2414E</string>
-				<string>79E1FB7018D56F4200A2414E</string>
-				<string>79E1FB5718D56E3B00A2414E</string>
-				<string>79E1FB6318D56E3B00A2414E</string>
-				<string>79E1FB6D18D56F4200A2414E</string>
-				<string>79E1FB5918D56E3B00A2414E</string>
-				<string>79E1FB5B18D56E3B00A2414E</string>
-				<string>79E1FB5818D56E3B00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FAEF18D56C1300A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79E1FAF618D56C1300A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FAF018D56C1300A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>dstPath</key>
-			<string>include/$(PRODUCT_NAME)</string>
-			<key>dstSubfolderSpec</key>
-			<string>16</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXCopyFilesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FAF118D56C1300A2414E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>79E1FB1518D56C1300A2414E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>79E1FAEE18D56C1300A2414E</string>
-				<string>79E1FAEF18D56C1300A2414E</string>
-				<string>79E1FAF018D56C1300A2414E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>79E1FB2D18D56C8A00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MEReactiveKit</string>
-			<key>productName</key>
-			<string>MEReactiveKit</string>
-			<key>productReference</key>
-			<string>79E1FAF218D56C1300A2414E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.library.static</string>
-		</dict>
-		<key>79E1FAF218D56C1300A2414E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libMEReactiveKit.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>79E1FAF318D56C1300A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FAF218D56C1300A2414E</string>
-				<string>79E1FB1F18D56C5C00A2414E</string>
-				<string>79E1FB8B18D574BE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FAF418D56C1300A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FAF518D56C1300A2414E</string>
-				<string>79E1FB0318D56C1300A2414E</string>
-				<string>79E1FB0618D56C1300A2414E</string>
-				<string>79E1FB2018D56C5C00A2414E</string>
-				<string>79E1FB8D18D574BE00A2414E</string>
-				<string>784C428964CC411FBD3E586E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FAF518D56C1300A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>79E1FAF618D56C1300A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FAF518D56C1300A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FAF718D56C1300A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB3B18D56E3B00A2414E</string>
-				<string>79E1FB3118D56CFA00A2414E</string>
-				<string>79E1FB6418D56F4200A2414E</string>
-				<string>79E1FAF818D56C1300A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MEReactiveKit</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FAF818D56C1300A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FAF918D56C1300A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FAF918D56C1300A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MEReactiveKit-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB0318D56C1300A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>XCTest.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/XCTest.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>79E1FB0618D56C1300A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>DEVELOPER_DIR</string>
-		</dict>
-		<key>79E1FB1318D56C1300A2414E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>79E1FB1418D56C1300A2414E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>7.0</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>79E1FB1518D56C1300A2414E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>79E1FB1618D56C1300A2414E</string>
-				<string>79E1FB1718D56C1300A2414E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>79E1FB1618D56C1300A2414E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/MEReactiveKit.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MEReactiveKit/MEReactiveKit-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>79E1FB1718D56C1300A2414E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/MEReactiveKit.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MEReactiveKit/MEReactiveKit-Prefix.pch</string>
-				<key>OTHER_LDFLAGS</key>
-				<string>-ObjC</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>79E1FB1B18D56C5C00A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FB1C18D56C5C00A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79E1FB2118D56C5C00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FB1D18D56C5C00A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79E1FB7818D56FFE00A2414E</string>
-				<string>79E1FB7D18D56FFE00A2414E</string>
-				<string>79E1FB7918D56FFE00A2414E</string>
-				<string>79E1FB7B18D56FFE00A2414E</string>
-				<string>79E1FB2718D56C5D00A2414E</string>
-				<string>79E1FB8018D5700800A2414E</string>
-				<string>79E1FB7A18D56FFE00A2414E</string>
-				<string>79E1FB7C18D56FFE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FB1E18D56C5C00A2414E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>79E1FB2918D56C5D00A2414E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>79E1FB1B18D56C5C00A2414E</string>
-				<string>79E1FB1C18D56C5C00A2414E</string>
-				<string>79E1FB1D18D56C5C00A2414E</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MEReactiveKitResources</string>
-			<key>productName</key>
-			<string>MEReactiveKitResources</string>
-			<key>productReference</key>
-			<string>79E1FB1F18D56C5C00A2414E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle</string>
-		</dict>
-		<key>79E1FB1F18D56C5C00A2414E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MEReactiveKitResources.bundle</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>79E1FB2018D56C5C00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreFoundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreFoundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>79E1FB2118D56C5C00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB2018D56C5C00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB2218D56C5C00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB7118D56FFE00A2414E</string>
-				<string>79E1FB2318D56C5D00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MEReactiveKitResources</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB2318D56C5D00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB2418D56C5D00A2414E</string>
-				<string>79E1FB2518D56C5D00A2414E</string>
-				<string>79E1FB7E18D5700800A2414E</string>
-				<string>79E1FB2818D56C5D00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB2418D56C5D00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>MEReactiveKitResources-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB2518D56C5D00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB2618D56C5D00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB2618D56C5D00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB2718D56C5D00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB2518D56C5D00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB2818D56C5D00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MEReactiveKitResources-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB2918D56C5D00A2414E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>79E1FB2A18D56C5D00A2414E</string>
-				<string>79E1FB2B18D56C5D00A2414E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>79E1FB2A18D56C5D00A2414E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>NO</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MEReactiveKitResources/MEReactiveKitResources-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MEReactiveKitResources/MEReactiveKitResources-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.9</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>79E1FB2B18D56C5D00A2414E</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>COMBINE_HIDPI_IMAGES</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>GCC_ENABLE_OBJC_EXCEPTIONS</key>
-				<string>YES</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MEReactiveKitResources/MEReactiveKitResources-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MEReactiveKitResources/MEReactiveKitResources-Info.plist</string>
-				<key>INSTALL_PATH</key>
-				<string>$(LOCAL_LIBRARY_DIR)/Bundles</string>
-				<key>MACOSX_DEPLOYMENT_TARGET</key>
-				<string>10.9</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>bundle</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>79E1FB2C18D56C8A00A2414E</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>79E1FAEA18D56C1300A2414E</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>79E1FB1E18D56C5C00A2414E</string>
-			<key>remoteInfo</key>
-			<string>MEReactiveKitResources</string>
-		</dict>
-		<key>79E1FB2D18D56C8A00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>79E1FB1E18D56C5C00A2414E</string>
-			<key>targetProxy</key>
-			<string>79E1FB2C18D56C8A00A2414E</string>
-		</dict>
-		<key>79E1FB2E18D56CE700A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERCommon.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB2F18D56CE700A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERCommon.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3018D56CE700A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB2F18D56CE700A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB3118D56CFA00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB3218D56DE500A2414E</string>
-				<string>79E1FB8418D570CF00A2414E</string>
-				<string>79E1FB8318D570C200A2414E</string>
-				<string>79E1FB8518D5710700A2414E</string>
-				<string>79E1FB8618D5710E00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Public</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3218D56DE500A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB2E18D56CE700A2414E</string>
-				<string>79E1FB2F18D56CE700A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Common</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3318D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERActivityOpenInChrome.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3418D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERActivityOpenInChrome.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3518D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERActivityOpenInSafari.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3618D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERActivityOpenInSafari.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3718D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3818D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3918D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERDatePickerViewButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3A18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERDatePickerViewButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3B18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MEReactiveKit.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3C18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERNextPreviousInputAccessoryView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3D18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERNextPreviousInputAccessoryView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3E18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERPageControl.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB3F18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERPageControl.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4218D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERPickerViewButton.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4318D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERPickerViewButton.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4418D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERSlider.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4518D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERSlider.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4618D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERSwitch.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4718D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERSwitch.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4818D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4918D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERTableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4A18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERTextField.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4B18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERTextField.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4C18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERTextView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4D18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERTextView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4E18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB4F18D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB5018D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB5118D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB5218D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERWebViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB5318D56E3B00A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERWebViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB5418D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB3418D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5518D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB3618D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5618D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB3818D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5718D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB3A18D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5818D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB3D18D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5918D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB3F18D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5B18D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB4318D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5C18D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB4518D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5D18D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB4718D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5E18D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB4918D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB5F18D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB4B18D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB6018D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB4D18D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB6118D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB4F18D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB6218D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB5118D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB6318D56E3B00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB5318D56E3B00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB6418D56F4200A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB8118D5702700A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Private</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6518D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSAttributedString+MERKExtensions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6618D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSAttributedString+MERKExtensions.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6718D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSMutableDictionary+MERKExtensions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6818D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSMutableDictionary+MERKExtensions.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6918D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>NSString+MERKExtensions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6A18D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>NSString+MERKExtensions.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6B18D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>UIImage+MERKExtensions.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6C18D56F4200A2414E</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>UIImage+MERKExtensions.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB6D18D56F4200A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB6618D56F4200A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB6E18D56F4200A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB6818D56F4200A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB6F18D56F4200A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB6A18D56F4200A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7018D56F4200A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB6C18D56F4200A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7118D56FFE00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB7218D56FFE00A2414E</string>
-				<string>79E1FB7318D56FFE00A2414E</string>
-				<string>79E1FB7418D56FFE00A2414E</string>
-				<string>79E1FB7518D56FFE00A2414E</string>
-				<string>79E1FB7618D56FFE00A2414E</string>
-				<string>79E1FB7718D56FFE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Assets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7218D56FFE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_back.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7318D56FFE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_back@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7418D56FFE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_forward.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7518D56FFE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_forward@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7618D56FFE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_refresh.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7718D56FFE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>image.png</string>
-			<key>path</key>
-			<string>nav_refresh@2x.png</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7818D56FFE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB7218D56FFE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7918D56FFE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB7318D56FFE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7A18D56FFE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB7418D56FFE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7B18D56FFE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB7518D56FFE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7C18D56FFE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB7618D56FFE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7D18D56FFE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB7718D56FFE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB7E18D5700800A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB7F18D5700800A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB7F18D5700800A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/Localizable.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB8018D5700800A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB7E18D5700800A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB8118D5702700A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB6518D56F4200A2414E</string>
-				<string>79E1FB6618D56F4200A2414E</string>
-				<string>79E1FB6718D56F4200A2414E</string>
-				<string>79E1FB6818D56F4200A2414E</string>
-				<string>79E1FB6918D56F4200A2414E</string>
-				<string>79E1FB6A18D56F4200A2414E</string>
-				<string>79E1FB6B18D56F4200A2414E</string>
-				<string>79E1FB6C18D56F4200A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Categories</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB8218D5703800A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB5218D56E3B00A2414E</string>
-				<string>79E1FB5318D56E3B00A2414E</string>
-				<string>79E1FB3318D56E3B00A2414E</string>
-				<string>79E1FB3418D56E3B00A2414E</string>
-				<string>79E1FB3518D56E3B00A2414E</string>
-				<string>79E1FB3618D56E3B00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Web View Controller</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB8318D570C200A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB3718D56E3B00A2414E</string>
-				<string>79E1FB3818D56E3B00A2414E</string>
-				<string>79E1FB3918D56E3B00A2414E</string>
-				<string>79E1FB3A18D56E3B00A2414E</string>
-				<string>79E1FB3E18D56E3B00A2414E</string>
-				<string>79E1FB3F18D56E3B00A2414E</string>
-				<string>79E1FB4218D56E3B00A2414E</string>
-				<string>79E1FB4318D56E3B00A2414E</string>
-				<string>79E1FB4418D56E3B00A2414E</string>
-				<string>79E1FB4518D56E3B00A2414E</string>
-				<string>79E1FB4618D56E3B00A2414E</string>
-				<string>79E1FB4718D56E3B00A2414E</string>
-				<string>79E1FB4A18D56E3B00A2414E</string>
-				<string>79E1FB4B18D56E3B00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Controls</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB8418D570CF00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB4818D56E3B00A2414E</string>
-				<string>79E1FB4918D56E3B00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Cells</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB8518D5710700A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB3C18D56E3B00A2414E</string>
-				<string>79E1FB3D18D56E3B00A2414E</string>
-				<string>79E1FB4C18D56E3B00A2414E</string>
-				<string>79E1FB4D18D56E3B00A2414E</string>
-				<string>79E1FB4E18D56E3B00A2414E</string>
-				<string>79E1FB4F18D56E3B00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Views</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB8618D5710E00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB5018D56E3B00A2414E</string>
-				<string>79E1FB5118D56E3B00A2414E</string>
-				<string>79E1FB8218D5703800A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>View Controllers</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB8718D574BE00A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79E1FB9718D574BE00A2414E</string>
-				<string>79E1FB9B18D574BE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FB8818D574BE00A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79E1FB8E18D574BE00A2414E</string>
-				<string>79E1FB8F18D574BE00A2414E</string>
-				<string>79E1FB8C18D574BE00A2414E</string>
-				<string>9F991E0419F2405B9D2EF300</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FB8918D574BE00A2414E</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>79E1FB9518D574BE00A2414E</string>
-				<string>79E1FB9D18D574BE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>79E1FB8A18D574BE00A2414E</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>79E1FBB018D574BE00A2414E</string>
-			<key>buildPhases</key>
-			<array>
-				<string>D64A6263840D4B818DDC59A9</string>
-				<string>79E1FB8718D574BE00A2414E</string>
-				<string>79E1FB8818D574BE00A2414E</string>
-				<string>79E1FB8918D574BE00A2414E</string>
-				<string>EE13F0FB00FB45ECB71D7A3C</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>MEReactiveKitDemo</string>
-			<key>productName</key>
-			<string>MEReactiveKitDemo</string>
-			<key>productReference</key>
-			<string>79E1FB8B18D574BE00A2414E</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>79E1FB8B18D574BE00A2414E</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>MEReactiveKitDemo.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>79E1FB8C18D574BE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FAF518D56C1300A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB8D18D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>79E1FB8E18D574BE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB8D18D574BE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB8F18D574BE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB0618D56C1300A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB9018D574BE00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB9918D574BE00A2414E</string>
-				<string>79E1FB9A18D574BE00A2414E</string>
-				<string>79E1FB9C18D574BE00A2414E</string>
-				<string>79E1FB9118D574BE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>MEReactiveKitDemo</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9118D574BE00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB9218D574BE00A2414E</string>
-				<string>79E1FB9318D574BE00A2414E</string>
-				<string>79E1FB9618D574BE00A2414E</string>
-				<string>79E1FB9818D574BE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9218D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>MEReactiveKitDemo-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9318D574BE00A2414E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>79E1FB9418D574BE00A2414E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9418D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9518D574BE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB9318D574BE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB9618D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9718D574BE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB9618D574BE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB9818D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MEReactiveKitDemo-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9918D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MERAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9A18D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MERAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9B18D574BE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB9A18D574BE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FB9C18D574BE00A2414E</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>79E1FB9D18D574BE00A2414E</key>
-		<dict>
-			<key>fileRef</key>
-			<string>79E1FB9C18D574BE00A2414E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>79E1FBB018D574BE00A2414E</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>79E1FBB118D574BE00A2414E</string>
-				<string>79E1FBB218D574BE00A2414E</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>79E1FBB118D574BE00A2414E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9C6F099096FE4AB88C51A4C0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>MEReactiveKitDemo/MEReactiveKitDemo-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>79E1FBB218D574BE00A2414E</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>9C6F099096FE4AB88C51A4C0</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_INCLUDING_64_BIT)</string>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
-				<string>LaunchImage</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(inherited)</string>
-					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
-				</array>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch</string>
-				<key>INFOPLIST_FILE</key>
-				<string>MEReactiveKitDemo/MEReactiveKitDemo-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>9C6F099096FE4AB88C51A4C0</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>9F991E0419F2405B9D2EF300</key>
-		<dict>
-			<key>fileRef</key>
-			<string>784C428964CC411FBD3E586E</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D64A6263840D4B818DDC59A9</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>EE13F0FB00FB45ECB71D7A3C</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>79E1FAEA18D56C1300A2414E</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
+		79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */; };
+		79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB2518D56C5D00A2414E /* InfoPlist.strings */; };
+		79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB2F18D56CE700A2414E /* MERCommon.m */; };
+		79E1FB5418D56E3B00A2414E /* MERActivityOpenInChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3418D56E3B00A2414E /* MERActivityOpenInChrome.m */; };
+		79E1FB5518D56E3B00A2414E /* MERActivityOpenInSafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */; };
+		79E1FB5618D56E3B00A2414E /* MERButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3818D56E3B00A2414E /* MERButton.m */; };
+		79E1FB5718D56E3B00A2414E /* MERDatePickerViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3A18D56E3B00A2414E /* MERDatePickerViewButton.m */; };
+		79E1FB5818D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */; };
+		79E1FB5918D56E3B00A2414E /* MERPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3F18D56E3B00A2414E /* MERPageControl.m */; };
+		79E1FB5B18D56E3B00A2414E /* MERPickerViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4318D56E3B00A2414E /* MERPickerViewButton.m */; };
+		79E1FB5C18D56E3B00A2414E /* MERSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4518D56E3B00A2414E /* MERSlider.m */; };
+		79E1FB5D18D56E3B00A2414E /* MERSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4718D56E3B00A2414E /* MERSwitch.m */; };
+		79E1FB5E18D56E3B00A2414E /* MERTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4918D56E3B00A2414E /* MERTableViewCell.m */; };
+		79E1FB5F18D56E3B00A2414E /* MERTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4B18D56E3B00A2414E /* MERTextField.m */; };
+		79E1FB6018D56E3B00A2414E /* MERTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4D18D56E3B00A2414E /* MERTextView.m */; };
+		79E1FB6118D56E3B00A2414E /* MERView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4F18D56E3B00A2414E /* MERView.m */; };
+		79E1FB6218D56E3B00A2414E /* MERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5118D56E3B00A2414E /* MERViewController.m */; };
+		79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5318D56E3B00A2414E /* MERWebViewController.m */; };
+		79E1FB6D18D56F4200A2414E /* NSAttributedString+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */; };
+		79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */; };
+		79E1FB6F18D56F4200A2414E /* NSString+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */; };
+		79E1FB7018D56F4200A2414E /* UIImage+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */; };
+		79E1FB7818D56FFE00A2414E /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7218D56FFE00A2414E /* nav_back.png */; };
+		79E1FB7918D56FFE00A2414E /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7318D56FFE00A2414E /* nav_back@2x.png */; };
+		79E1FB7A18D56FFE00A2414E /* nav_forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7418D56FFE00A2414E /* nav_forward.png */; };
+		79E1FB7B18D56FFE00A2414E /* nav_forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7518D56FFE00A2414E /* nav_forward@2x.png */; };
+		79E1FB7C18D56FFE00A2414E /* nav_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7618D56FFE00A2414E /* nav_refresh.png */; };
+		79E1FB7D18D56FFE00A2414E /* nav_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */; };
+		79E1FB8018D5700800A2414E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7E18D5700800A2414E /* Localizable.strings */; };
+		79E1FB8C18D574BE00A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
+		79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */; };
+		79E1FB8F18D574BE00A2414E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB0618D56C1300A2414E /* UIKit.framework */; };
+		79E1FB9518D574BE00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9318D574BE00A2414E /* InfoPlist.strings */; };
+		79E1FB9718D574BE00A2414E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9618D574BE00A2414E /* main.m */; };
+		79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */; };
+		79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9C18D574BE00A2414E /* Images.xcassets */; };
+		844E56CFCCC04B9CBE1E89DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C428964CC411FBD3E586E /* libPods.a */; };
+		9F991E0419F2405B9D2EF300 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C428964CC411FBD3E586E /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E1FB1E18D56C5C00A2414E;
+			remoteInfo = MEReactiveKitResources;
+		};
+		79E1FBB618D579BF00A2414E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E1FAF118D56C1300A2414E;
+			remoteInfo = MEReactiveKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		79E1FAF018D56C1300A2414E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		784C428964CC411FBD3E586E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
+		79E1FB0318D56C1300A2414E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		79E1FB0618D56C1300A2414E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEReactiveKitResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		79E1FB2418D56C5D00A2414E /* MEReactiveKitResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEReactiveKitResources-Info.plist"; sourceTree = "<group>"; };
+		79E1FB2618D56C5D00A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79E1FB2818D56C5D00A2414E /* MEReactiveKitResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKitResources-Prefix.pch"; sourceTree = "<group>"; };
+		79E1FB2E18D56CE700A2414E /* MERCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERCommon.h; sourceTree = "<group>"; };
+		79E1FB2F18D56CE700A2414E /* MERCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERCommon.m; sourceTree = "<group>"; };
+		79E1FB3318D56E3B00A2414E /* MERActivityOpenInChrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERActivityOpenInChrome.h; sourceTree = "<group>"; };
+		79E1FB3418D56E3B00A2414E /* MERActivityOpenInChrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERActivityOpenInChrome.m; sourceTree = "<group>"; };
+		79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERActivityOpenInSafari.h; sourceTree = "<group>"; };
+		79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERActivityOpenInSafari.m; sourceTree = "<group>"; };
+		79E1FB3718D56E3B00A2414E /* MERButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERButton.h; sourceTree = "<group>"; };
+		79E1FB3818D56E3B00A2414E /* MERButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERButton.m; sourceTree = "<group>"; };
+		79E1FB3918D56E3B00A2414E /* MERDatePickerViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERDatePickerViewButton.h; sourceTree = "<group>"; };
+		79E1FB3A18D56E3B00A2414E /* MERDatePickerViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDatePickerViewButton.m; sourceTree = "<group>"; };
+		79E1FB3B18D56E3B00A2414E /* MEReactiveKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEReactiveKit.h; sourceTree = "<group>"; };
+		79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERNextPreviousInputAccessoryView.h; sourceTree = "<group>"; };
+		79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERNextPreviousInputAccessoryView.m; sourceTree = "<group>"; };
+		79E1FB3E18D56E3B00A2414E /* MERPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERPageControl.h; sourceTree = "<group>"; };
+		79E1FB3F18D56E3B00A2414E /* MERPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERPageControl.m; sourceTree = "<group>"; };
+		79E1FB4218D56E3B00A2414E /* MERPickerViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERPickerViewButton.h; sourceTree = "<group>"; };
+		79E1FB4318D56E3B00A2414E /* MERPickerViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERPickerViewButton.m; sourceTree = "<group>"; };
+		79E1FB4418D56E3B00A2414E /* MERSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERSlider.h; sourceTree = "<group>"; };
+		79E1FB4518D56E3B00A2414E /* MERSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERSlider.m; sourceTree = "<group>"; };
+		79E1FB4618D56E3B00A2414E /* MERSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERSwitch.h; sourceTree = "<group>"; };
+		79E1FB4718D56E3B00A2414E /* MERSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERSwitch.m; sourceTree = "<group>"; };
+		79E1FB4818D56E3B00A2414E /* MERTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERTableViewCell.h; sourceTree = "<group>"; };
+		79E1FB4918D56E3B00A2414E /* MERTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERTableViewCell.m; sourceTree = "<group>"; };
+		79E1FB4A18D56E3B00A2414E /* MERTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERTextField.h; sourceTree = "<group>"; };
+		79E1FB4B18D56E3B00A2414E /* MERTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERTextField.m; sourceTree = "<group>"; };
+		79E1FB4C18D56E3B00A2414E /* MERTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERTextView.h; sourceTree = "<group>"; };
+		79E1FB4D18D56E3B00A2414E /* MERTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERTextView.m; sourceTree = "<group>"; };
+		79E1FB4E18D56E3B00A2414E /* MERView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERView.h; sourceTree = "<group>"; };
+		79E1FB4F18D56E3B00A2414E /* MERView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERView.m; sourceTree = "<group>"; };
+		79E1FB5018D56E3B00A2414E /* MERViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERViewController.h; sourceTree = "<group>"; };
+		79E1FB5118D56E3B00A2414E /* MERViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERViewController.m; sourceTree = "<group>"; };
+		79E1FB5218D56E3B00A2414E /* MERWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERWebViewController.h; sourceTree = "<group>"; };
+		79E1FB5318D56E3B00A2414E /* MERWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERWebViewController.m; sourceTree = "<group>"; };
+		79E1FB6518D56F4200A2414E /* NSAttributedString+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB6918D56F4200A2414E /* NSString+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB6B18D56F4200A2414E /* UIImage+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB7218D56FFE00A2414E /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
+		79E1FB7318D56FFE00A2414E /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		79E1FB7418D56FFE00A2414E /* nav_forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_forward.png; sourceTree = "<group>"; };
+		79E1FB7518D56FFE00A2414E /* nav_forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_forward@2x.png"; sourceTree = "<group>"; };
+		79E1FB7618D56FFE00A2414E /* nav_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_refresh.png; sourceTree = "<group>"; };
+		79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_refresh@2x.png"; sourceTree = "<group>"; };
+		79E1FB7F18D5700800A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79E1FB8B18D574BE00A2414E /* MEReactiveKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEReactiveKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79E1FB9218D574BE00A2414E /* MEReactiveKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEReactiveKitDemo-Info.plist"; sourceTree = "<group>"; };
+		79E1FB9418D574BE00A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79E1FB9618D574BE00A2414E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79E1FB9818D574BE00A2414E /* MEReactiveKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		79E1FB9918D574BE00A2414E /* MERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERAppDelegate.h; sourceTree = "<group>"; };
+		79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERAppDelegate.m; sourceTree = "<group>"; };
+		79E1FB9C18D574BE00A2414E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79E1FAEF18D56C1300A2414E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */,
+				844E56CFCCC04B9CBE1E89DD /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FB1C18D56C5C00A2414E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FB8818D574BE00A2414E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */,
+				79E1FB8F18D574BE00A2414E /* UIKit.framework in Frameworks */,
+				79E1FB8C18D574BE00A2414E /* Foundation.framework in Frameworks */,
+				9F991E0419F2405B9D2EF300 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79E1FAE918D56C1300A2414E = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF718D56C1300A2414E /* MEReactiveKit */,
+				79E1FB2218D56C5C00A2414E /* MEReactiveKitResources */,
+				79E1FB9018D574BE00A2414E /* MEReactiveKitDemo */,
+				79E1FAF418D56C1300A2414E /* Frameworks */,
+				79E1FAF318D56C1300A2414E /* Products */,
+				9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		79E1FAF318D56C1300A2414E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */,
+				79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */,
+				79E1FB8B18D574BE00A2414E /* MEReactiveKitDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79E1FAF418D56C1300A2414E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF518D56C1300A2414E /* Foundation.framework */,
+				79E1FB0318D56C1300A2414E /* XCTest.framework */,
+				79E1FB0618D56C1300A2414E /* UIKit.framework */,
+				79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */,
+				79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */,
+				784C428964CC411FBD3E586E /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		79E1FAF718D56C1300A2414E /* MEReactiveKit */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB3B18D56E3B00A2414E /* MEReactiveKit.h */,
+				79E1FB3118D56CFA00A2414E /* Public */,
+				79E1FB6418D56F4200A2414E /* Private */,
+				79E1FAF818D56C1300A2414E /* Supporting Files */,
+			);
+			path = MEReactiveKit;
+			sourceTree = "<group>";
+		};
+		79E1FAF818D56C1300A2414E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79E1FB2218D56C5C00A2414E /* MEReactiveKitResources */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB7118D56FFE00A2414E /* Assets */,
+				79E1FB2318D56C5D00A2414E /* Supporting Files */,
+			);
+			path = MEReactiveKitResources;
+			sourceTree = "<group>";
+		};
+		79E1FB2318D56C5D00A2414E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB2418D56C5D00A2414E /* MEReactiveKitResources-Info.plist */,
+				79E1FB2518D56C5D00A2414E /* InfoPlist.strings */,
+				79E1FB7E18D5700800A2414E /* Localizable.strings */,
+				79E1FB2818D56C5D00A2414E /* MEReactiveKitResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79E1FB3118D56CFA00A2414E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB3218D56DE500A2414E /* Common */,
+				79E1FB8418D570CF00A2414E /* Cells */,
+				79E1FB8318D570C200A2414E /* Controls */,
+				79E1FB8518D5710700A2414E /* Views */,
+				79E1FB8618D5710E00A2414E /* View Controllers */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		79E1FB3218D56DE500A2414E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB2E18D56CE700A2414E /* MERCommon.h */,
+				79E1FB2F18D56CE700A2414E /* MERCommon.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		79E1FB6418D56F4200A2414E /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB8118D5702700A2414E /* Categories */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		79E1FB7118D56FFE00A2414E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB7218D56FFE00A2414E /* nav_back.png */,
+				79E1FB7318D56FFE00A2414E /* nav_back@2x.png */,
+				79E1FB7418D56FFE00A2414E /* nav_forward.png */,
+				79E1FB7518D56FFE00A2414E /* nav_forward@2x.png */,
+				79E1FB7618D56FFE00A2414E /* nav_refresh.png */,
+				79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		79E1FB8118D5702700A2414E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB6518D56F4200A2414E /* NSAttributedString+MERKExtensions.h */,
+				79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */,
+				79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERKExtensions.h */,
+				79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */,
+				79E1FB6918D56F4200A2414E /* NSString+MERKExtensions.h */,
+				79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */,
+				79E1FB6B18D56F4200A2414E /* UIImage+MERKExtensions.h */,
+				79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		79E1FB8218D5703800A2414E /* Web View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB5218D56E3B00A2414E /* MERWebViewController.h */,
+				79E1FB5318D56E3B00A2414E /* MERWebViewController.m */,
+				79E1FB3318D56E3B00A2414E /* MERActivityOpenInChrome.h */,
+				79E1FB3418D56E3B00A2414E /* MERActivityOpenInChrome.m */,
+				79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */,
+				79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */,
+			);
+			name = "Web View Controller";
+			sourceTree = "<group>";
+		};
+		79E1FB8318D570C200A2414E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB3718D56E3B00A2414E /* MERButton.h */,
+				79E1FB3818D56E3B00A2414E /* MERButton.m */,
+				79E1FB3918D56E3B00A2414E /* MERDatePickerViewButton.h */,
+				79E1FB3A18D56E3B00A2414E /* MERDatePickerViewButton.m */,
+				79E1FB3E18D56E3B00A2414E /* MERPageControl.h */,
+				79E1FB3F18D56E3B00A2414E /* MERPageControl.m */,
+				79E1FB4218D56E3B00A2414E /* MERPickerViewButton.h */,
+				79E1FB4318D56E3B00A2414E /* MERPickerViewButton.m */,
+				79E1FB4418D56E3B00A2414E /* MERSlider.h */,
+				79E1FB4518D56E3B00A2414E /* MERSlider.m */,
+				79E1FB4618D56E3B00A2414E /* MERSwitch.h */,
+				79E1FB4718D56E3B00A2414E /* MERSwitch.m */,
+				79E1FB4A18D56E3B00A2414E /* MERTextField.h */,
+				79E1FB4B18D56E3B00A2414E /* MERTextField.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		79E1FB8418D570CF00A2414E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB4818D56E3B00A2414E /* MERTableViewCell.h */,
+				79E1FB4918D56E3B00A2414E /* MERTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		79E1FB8518D5710700A2414E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */,
+				79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */,
+				79E1FB4C18D56E3B00A2414E /* MERTextView.h */,
+				79E1FB4D18D56E3B00A2414E /* MERTextView.m */,
+				79E1FB4E18D56E3B00A2414E /* MERView.h */,
+				79E1FB4F18D56E3B00A2414E /* MERView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		79E1FB8618D5710E00A2414E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB5018D56E3B00A2414E /* MERViewController.h */,
+				79E1FB5118D56E3B00A2414E /* MERViewController.m */,
+				79E1FB8218D5703800A2414E /* Web View Controller */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		79E1FB9018D574BE00A2414E /* MEReactiveKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB9918D574BE00A2414E /* MERAppDelegate.h */,
+				79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */,
+				79E1FB9C18D574BE00A2414E /* Images.xcassets */,
+				79E1FB9118D574BE00A2414E /* Supporting Files */,
+			);
+			path = MEReactiveKitDemo;
+			sourceTree = "<group>";
+		};
+		79E1FB9118D574BE00A2414E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB9218D574BE00A2414E /* MEReactiveKitDemo-Info.plist */,
+				79E1FB9318D574BE00A2414E /* InfoPlist.strings */,
+				79E1FB9618D574BE00A2414E /* main.m */,
+				79E1FB9818D574BE00A2414E /* MEReactiveKitDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79E1FAF118D56C1300A2414E /* MEReactiveKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1FB1518D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKit" */;
+			buildPhases = (
+				05B42900DFED4725B4CE5697 /* Check Pods Manifest.lock */,
+				79E1FAEE18D56C1300A2414E /* Sources */,
+				79E1FAEF18D56C1300A2414E /* Frameworks */,
+				79E1FAF018D56C1300A2414E /* CopyFiles */,
+				F8A574585F25405B86C358BA /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E1FB2D18D56C8A00A2414E /* PBXTargetDependency */,
+			);
+			name = MEReactiveKit;
+			productName = MEReactiveKit;
+			productReference = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1FB2918D56C5D00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitResources" */;
+			buildPhases = (
+				79E1FB1B18D56C5C00A2414E /* Sources */,
+				79E1FB1C18D56C5C00A2414E /* Frameworks */,
+				79E1FB1D18D56C5C00A2414E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEReactiveKitResources;
+			productName = MEReactiveKitResources;
+			productReference = 79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+		79E1FB8A18D574BE00A2414E /* MEReactiveKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1FBB018D574BE00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitDemo" */;
+			buildPhases = (
+				D64A6263840D4B818DDC59A9 /* Check Pods Manifest.lock */,
+				79E1FB8718D574BE00A2414E /* Sources */,
+				79E1FB8818D574BE00A2414E /* Frameworks */,
+				79E1FB8918D574BE00A2414E /* Resources */,
+				EE13F0FB00FB45ECB71D7A3C /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E1FBB718D579BF00A2414E /* PBXTargetDependency */,
+			);
+			name = MEReactiveKitDemo;
+			productName = MEReactiveKitDemo;
+			productReference = 79E1FB8B18D574BE00A2414E /* MEReactiveKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79E1FAEA18D56C1300A2414E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MER;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Maestro, LLC.";
+			};
+			buildConfigurationList = 79E1FAED18D56C1300A2414E /* Build configuration list for PBXProject "MEReactiveKit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 79E1FAE918D56C1300A2414E;
+			productRefGroup = 79E1FAF318D56C1300A2414E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79E1FAF118D56C1300A2414E /* MEReactiveKit */,
+				79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */,
+				79E1FB8A18D574BE00A2414E /* MEReactiveKitDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79E1FB1D18D56C5C00A2414E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB7818D56FFE00A2414E /* nav_back.png in Resources */,
+				79E1FB7D18D56FFE00A2414E /* nav_refresh@2x.png in Resources */,
+				79E1FB7918D56FFE00A2414E /* nav_back@2x.png in Resources */,
+				79E1FB7B18D56FFE00A2414E /* nav_forward@2x.png in Resources */,
+				79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */,
+				79E1FB8018D5700800A2414E /* Localizable.strings in Resources */,
+				79E1FB7A18D56FFE00A2414E /* nav_forward.png in Resources */,
+				79E1FB7C18D56FFE00A2414E /* nav_refresh.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FB8918D574BE00A2414E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB9518D574BE00A2414E /* InfoPlist.strings in Resources */,
+				79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05B42900DFED4725B4CE5697 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D64A6263840D4B818DDC59A9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EE13F0FB00FB45ECB71D7A3C /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F8A574585F25405B86C358BA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79E1FAEE18D56C1300A2414E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB5E18D56E3B00A2414E /* MERTableViewCell.m in Sources */,
+				79E1FB6218D56E3B00A2414E /* MERViewController.m in Sources */,
+				79E1FB5518D56E3B00A2414E /* MERActivityOpenInSafari.m in Sources */,
+				79E1FB5C18D56E3B00A2414E /* MERSlider.m in Sources */,
+				79E1FB5418D56E3B00A2414E /* MERActivityOpenInChrome.m in Sources */,
+				79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m in Sources */,
+				79E1FB6118D56E3B00A2414E /* MERView.m in Sources */,
+				79E1FB5618D56E3B00A2414E /* MERButton.m in Sources */,
+				79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */,
+				79E1FB6F18D56F4200A2414E /* NSString+MERKExtensions.m in Sources */,
+				79E1FB5D18D56E3B00A2414E /* MERSwitch.m in Sources */,
+				79E1FB6018D56E3B00A2414E /* MERTextView.m in Sources */,
+				79E1FB5F18D56E3B00A2414E /* MERTextField.m in Sources */,
+				79E1FB7018D56F4200A2414E /* UIImage+MERKExtensions.m in Sources */,
+				79E1FB5718D56E3B00A2414E /* MERDatePickerViewButton.m in Sources */,
+				79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */,
+				79E1FB6D18D56F4200A2414E /* NSAttributedString+MERKExtensions.m in Sources */,
+				79E1FB5918D56E3B00A2414E /* MERPageControl.m in Sources */,
+				79E1FB5B18D56E3B00A2414E /* MERPickerViewButton.m in Sources */,
+				79E1FB5818D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FB1B18D56C5C00A2414E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FB8718D574BE00A2414E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB9718D574BE00A2414E /* main.m in Sources */,
+				79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79E1FB2D18D56C8A00A2414E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */;
+			targetProxy = 79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */;
+		};
+		79E1FBB718D579BF00A2414E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E1FAF118D56C1300A2414E /* MEReactiveKit */;
+			targetProxy = 79E1FBB618D579BF00A2414E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		79E1FB2518D56C5D00A2414E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E1FB2618D56C5D00A2414E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79E1FB7E18D5700800A2414E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E1FB7F18D5700800A2414E /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		79E1FB9318D574BE00A2414E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E1FB9418D574BE00A2414E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		79E1FB1318D56C1300A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		79E1FB1418D56C1300A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		79E1FB1618D56C1300A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/MEReactiveKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		79E1FB1718D56C1300A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/MEReactiveKit.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
+				OTHER_LDFLAGS = "$(inherited)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		79E1FB2A18D56C5D00A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKitResources/MEReactiveKitResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MEReactiveKitResources/MEReactiveKitResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		79E1FB2B18D56C5D00A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKitResources/MEReactiveKitResources-Prefix.pch";
+				INFOPLIST_FILE = "MEReactiveKitResources/MEReactiveKitResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		79E1FBB118D574BE00A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79E1FBB218D574BE00A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79E1FAED18D56C1300A2414E /* Build configuration list for PBXProject "MEReactiveKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FB1318D56C1300A2414E /* Debug */,
+				79E1FB1418D56C1300A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1FB1518D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FB1618D56C1300A2414E /* Debug */,
+				79E1FB1718D56C1300A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1FB2918D56C5D00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FB2A18D56C5D00A2414E /* Debug */,
+				79E1FB2B18D56C5D00A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E1FBB018D574BE00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FBB118D574BE00A2414E /* Debug */,
+				79E1FBB218D574BE00A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79E1FAEA18D56C1300A2414E /* Project object */;
+}

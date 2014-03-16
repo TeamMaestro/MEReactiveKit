@@ -14,7 +14,7 @@
 #import "MERNextPreviousInputAccessoryView.h"
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <libextobjc/EXTScope.h>
-#import "MERFunctions.h"
+#import "MERCommon.h"
 
 NSString *const MERNextPreviousInputAccessoryViewNotificationDidTapNextItem = @"MERNextPreviousInputAccessoryViewNotificationDidTapNextItem";
 NSString *const MERNextPreviousInputAccessoryViewNotificationDidTapPreviousItem = @"MERNextPreviousInputAccessoryViewNotificationDidTapPreviousItem";
