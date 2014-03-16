@@ -1,5 +1,5 @@
 //
-//  UIImage+MERExtensions.h
+//  NSMutableDictionary+MERExtensionsPrivate.h
 //  MEReactiveKit
 //
 //  Created by William Towe on 11/18/13.
@@ -13,14 +13,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImage (MERKExtensions)
+@interface NSMutableDictionary (MERExtensionsPrivate)
 
-- (CGSize)MER_size;
-
-+ (UIImage *)MER_imageByTintingImage:(UIImage *)image color:(UIColor *)color;
-- (UIImage *)MER_tintedImageWithColor:(UIColor *)color;
-
-+ (UIImage *)MER_imageWithImage:(UIImage *)image alpha:(CGFloat)alpha;
-- (UIImage *)MER_imageWithAlpha:(CGFloat)alpha;
+- (id)MER_objectForState:(UIControlState)state;
+- (void)MER_setObject:(id)object forState:(UIControlState)state;
 
 @end

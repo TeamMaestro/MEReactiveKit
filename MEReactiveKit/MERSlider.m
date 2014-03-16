@@ -16,7 +16,7 @@
 #import <libextobjc/EXTScope.h>
 #import <MEFoundation/MEGeometry.h>
 #import <MEFoundation/MEMacros.h>
-#import "NSMutableDictionary+MERKExtensions.h"
+#import "NSMutableDictionary+MERExtensionsPrivate.h"
 
 NSTimeInterval const MERSliderAnimationDuration = 0.33;
 

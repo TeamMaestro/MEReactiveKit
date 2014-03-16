@@ -1,5 +1,5 @@
 //
-//  NSMutableDictionary+MERExtensions.m
+//  NSString+MERExtensions.m
 //  MEReactiveKit
 //
 //  Created by William Towe on 11/18/13.
@@ -11,34 +11,14 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "NSMutableDictionary+MERKExtensions.h"
+#import "NSString+MERExtensionsPrivate.h"
 
-@implementation NSMutableDictionary (MERKExtensions)
+@implementation NSString (MERExtensionsPrivate)
 
-- (id)MER_objectForState:(UIControlState)state; {
-    id retval = self[@(state)];
+- (CGSize)MER_sizeWithAttributes:(NSDictionary *)attributes; {
+    CGSize size = [self sizeWithAttributes:attributes];
     
-    if (!retval) {
-        if (state & UIControlStateDisabled)
-            retval = self[@(UIControlStateDisabled)];
-        
-        if (!retval && (state & UIControlStateSelected))
-            retval = self[@(UIControlStateSelected)];
-        
-        if (!retval && (state & UIControlStateHighlighted))
-            retval = self[@(UIControlStateHighlighted)];
-        
-        if (!retval)
-            retval = self[@(UIControlStateNormal)];
-    }
-    
-    return retval;
-}
-- (void)MER_setObject:(id)object forState:(UIControlState)state; {
-    if (object)
-        [self setObject:object forKey:@(state)];
-    else
-        [self removeObjectForKey:@(state)];
+    return CGSizeMake(ceil(size.width), ceil(size.height));
 }
 
 @end

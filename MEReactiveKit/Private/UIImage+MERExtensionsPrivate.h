@@ -1,5 +1,5 @@
 //
-//  NSString+MERExtensions.h
+//  UIImage+MERExtensionsPrivate.h
 //  MEReactiveKit
 //
 //  Created by William Towe on 11/18/13.
@@ -13,8 +13,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NSString (MERKExtensions)
+@interface UIImage (MERExtensionsPrivate)
 
-- (CGSize)MER_sizeWithAttributes:(NSDictionary *)attributes;
+- (CGSize)MER_size;
+
++ (UIImage *)MER_imageByTintingImage:(UIImage *)image color:(UIColor *)color;
+- (UIImage *)MER_tintedImageWithColor:(UIColor *)color;
+
++ (UIImage *)MER_imageWithImage:(UIImage *)image alpha:(CGFloat)alpha;
+- (UIImage *)MER_imageWithAlpha:(CGFloat)alpha;
 
 @end

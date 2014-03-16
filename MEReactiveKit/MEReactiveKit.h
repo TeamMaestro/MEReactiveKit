@@ -28,7 +28,6 @@
 #import <MEReactiveKit/MERTextView.h>
 
 #import <MEReactiveKit/MERViewController.h>
-#import <MEReactiveKit/MERPageViewController.h>
 #import <MEReactiveKit/MERWebViewController.h>
 
 #endif

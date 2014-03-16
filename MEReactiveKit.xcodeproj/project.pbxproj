@@ -26,10 +26,10 @@
 		79E1FB6118D56E3B00A2414E /* MERView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4F18D56E3B00A2414E /* MERView.m */; };
 		79E1FB6218D56E3B00A2414E /* MERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5118D56E3B00A2414E /* MERViewController.m */; };
 		79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5318D56E3B00A2414E /* MERWebViewController.m */; };
-		79E1FB6D18D56F4200A2414E /* NSAttributedString+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */; };
-		79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */; };
-		79E1FB6F18D56F4200A2414E /* NSString+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */; };
-		79E1FB7018D56F4200A2414E /* UIImage+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */; };
+		79E1FB6D18D56F4200A2414E /* NSAttributedString+MERExtensionsPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6618D56F4200A2414E /* NSAttributedString+MERExtensionsPrivate.m */; };
+		79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.m */; };
+		79E1FB6F18D56F4200A2414E /* NSString+MERExtensionsPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6A18D56F4200A2414E /* NSString+MERExtensionsPrivate.m */; };
+		79E1FB7018D56F4200A2414E /* UIImage+MERExtensionsPrivate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6C18D56F4200A2414E /* UIImage+MERExtensionsPrivate.m */; };
 		79E1FB7818D56FFE00A2414E /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7218D56FFE00A2414E /* nav_back.png */; };
 		79E1FB7918D56FFE00A2414E /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7318D56FFE00A2414E /* nav_back@2x.png */; };
 		79E1FB7A18D56FFE00A2414E /* nav_forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7418D56FFE00A2414E /* nav_forward.png */; };
@@ -44,6 +44,7 @@
 		79E1FB9718D574BE00A2414E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9618D574BE00A2414E /* main.m */; };
 		79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */; };
 		79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9C18D574BE00A2414E /* Images.xcassets */; };
+		79E1FBBA18D57CD800A2414E /* MERRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FBB918D57CD800A2414E /* MERRootViewController.m */; };
 		844E56CFCCC04B9CBE1E89DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C428964CC411FBD3E586E /* libPods.a */; };
 		9F991E0419F2405B9D2EF300 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C428964CC411FBD3E586E /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -55,13 +56,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = 79E1FB1E18D56C5C00A2414E;
 			remoteInfo = MEReactiveKitResources;
-		};
-		79E1FBB618D579BF00A2414E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79E1FAF118D56C1300A2414E;
-			remoteInfo = MEReactiveKit;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -122,14 +116,14 @@
 		79E1FB5118D56E3B00A2414E /* MERViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERViewController.m; sourceTree = "<group>"; };
 		79E1FB5218D56E3B00A2414E /* MERWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERWebViewController.h; sourceTree = "<group>"; };
 		79E1FB5318D56E3B00A2414E /* MERWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERWebViewController.m; sourceTree = "<group>"; };
-		79E1FB6518D56F4200A2414E /* NSAttributedString+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MERKExtensions.h"; sourceTree = "<group>"; };
-		79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MERKExtensions.m"; sourceTree = "<group>"; };
-		79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MERKExtensions.h"; sourceTree = "<group>"; };
-		79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MERKExtensions.m"; sourceTree = "<group>"; };
-		79E1FB6918D56F4200A2414E /* NSString+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MERKExtensions.h"; sourceTree = "<group>"; };
-		79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MERKExtensions.m"; sourceTree = "<group>"; };
-		79E1FB6B18D56F4200A2414E /* UIImage+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MERKExtensions.h"; sourceTree = "<group>"; };
-		79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB6518D56F4200A2414E /* NSAttributedString+MERExtensionsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MERExtensionsPrivate.h"; sourceTree = "<group>"; };
+		79E1FB6618D56F4200A2414E /* NSAttributedString+MERExtensionsPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MERExtensionsPrivate.m"; sourceTree = "<group>"; };
+		79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MERExtensionsPrivate.h"; sourceTree = "<group>"; };
+		79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MERExtensionsPrivate.m"; sourceTree = "<group>"; };
+		79E1FB6918D56F4200A2414E /* NSString+MERExtensionsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MERExtensionsPrivate.h"; sourceTree = "<group>"; };
+		79E1FB6A18D56F4200A2414E /* NSString+MERExtensionsPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MERExtensionsPrivate.m"; sourceTree = "<group>"; };
+		79E1FB6B18D56F4200A2414E /* UIImage+MERExtensionsPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MERExtensionsPrivate.h"; sourceTree = "<group>"; };
+		79E1FB6C18D56F4200A2414E /* UIImage+MERExtensionsPrivate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MERExtensionsPrivate.m"; sourceTree = "<group>"; };
 		79E1FB7218D56FFE00A2414E /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
 		79E1FB7318D56FFE00A2414E /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
 		79E1FB7418D56FFE00A2414E /* nav_forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_forward.png; sourceTree = "<group>"; };
@@ -146,6 +140,8 @@
 		79E1FB9918D574BE00A2414E /* MERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERAppDelegate.h; sourceTree = "<group>"; };
 		79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERAppDelegate.m; sourceTree = "<group>"; };
 		79E1FB9C18D574BE00A2414E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		79E1FBB818D57CD800A2414E /* MERRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERRootViewController.h; sourceTree = "<group>"; };
+		79E1FBB918D57CD800A2414E /* MERRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERRootViewController.m; sourceTree = "<group>"; };
 		9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -300,14 +296,14 @@
 		79E1FB8118D5702700A2414E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
-				79E1FB6518D56F4200A2414E /* NSAttributedString+MERKExtensions.h */,
-				79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */,
-				79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERKExtensions.h */,
-				79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */,
-				79E1FB6918D56F4200A2414E /* NSString+MERKExtensions.h */,
-				79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */,
-				79E1FB6B18D56F4200A2414E /* UIImage+MERKExtensions.h */,
-				79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */,
+				79E1FB6518D56F4200A2414E /* NSAttributedString+MERExtensionsPrivate.h */,
+				79E1FB6618D56F4200A2414E /* NSAttributedString+MERExtensionsPrivate.m */,
+				79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.h */,
+				79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.m */,
+				79E1FB6918D56F4200A2414E /* NSString+MERExtensionsPrivate.h */,
+				79E1FB6A18D56F4200A2414E /* NSString+MERExtensionsPrivate.m */,
+				79E1FB6B18D56F4200A2414E /* UIImage+MERExtensionsPrivate.h */,
+				79E1FB6C18D56F4200A2414E /* UIImage+MERExtensionsPrivate.m */,
 			);
 			name = Categories;
 			sourceTree = "<group>";
@@ -383,6 +379,8 @@
 			children = (
 				79E1FB9918D574BE00A2414E /* MERAppDelegate.h */,
 				79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */,
+				79E1FBB818D57CD800A2414E /* MERRootViewController.h */,
+				79E1FBB918D57CD800A2414E /* MERRootViewController.m */,
 				79E1FB9C18D574BE00A2414E /* Images.xcassets */,
 				79E1FB9118D574BE00A2414E /* Supporting Files */,
 			);
@@ -453,7 +451,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				79E1FBB718D579BF00A2414E /* PBXTargetDependency */,
 			);
 			name = MEReactiveKitDemo;
 			productName = MEReactiveKitDemo;
@@ -589,18 +586,18 @@
 				79E1FB5518D56E3B00A2414E /* MERActivityOpenInSafari.m in Sources */,
 				79E1FB5C18D56E3B00A2414E /* MERSlider.m in Sources */,
 				79E1FB5418D56E3B00A2414E /* MERActivityOpenInChrome.m in Sources */,
-				79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m in Sources */,
+				79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.m in Sources */,
 				79E1FB6118D56E3B00A2414E /* MERView.m in Sources */,
 				79E1FB5618D56E3B00A2414E /* MERButton.m in Sources */,
 				79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */,
-				79E1FB6F18D56F4200A2414E /* NSString+MERKExtensions.m in Sources */,
+				79E1FB6F18D56F4200A2414E /* NSString+MERExtensionsPrivate.m in Sources */,
 				79E1FB5D18D56E3B00A2414E /* MERSwitch.m in Sources */,
 				79E1FB6018D56E3B00A2414E /* MERTextView.m in Sources */,
 				79E1FB5F18D56E3B00A2414E /* MERTextField.m in Sources */,
-				79E1FB7018D56F4200A2414E /* UIImage+MERKExtensions.m in Sources */,
+				79E1FB7018D56F4200A2414E /* UIImage+MERExtensionsPrivate.m in Sources */,
 				79E1FB5718D56E3B00A2414E /* MERDatePickerViewButton.m in Sources */,
 				79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */,
-				79E1FB6D18D56F4200A2414E /* NSAttributedString+MERKExtensions.m in Sources */,
+				79E1FB6D18D56F4200A2414E /* NSAttributedString+MERExtensionsPrivate.m in Sources */,
 				79E1FB5918D56E3B00A2414E /* MERPageControl.m in Sources */,
 				79E1FB5B18D56E3B00A2414E /* MERPickerViewButton.m in Sources */,
 				79E1FB5818D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m in Sources */,
@@ -620,6 +617,7 @@
 			files = (
 				79E1FB9718D574BE00A2414E /* main.m in Sources */,
 				79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */,
+				79E1FBBA18D57CD800A2414E /* MERRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -630,11 +628,6 @@
 			isa = PBXTargetDependency;
 			target = 79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */;
 			targetProxy = 79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */;
-		};
-		79E1FBB718D579BF00A2414E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79E1FAF118D56C1300A2414E /* MEReactiveKit */;
-			targetProxy = 79E1FBB618D579BF00A2414E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

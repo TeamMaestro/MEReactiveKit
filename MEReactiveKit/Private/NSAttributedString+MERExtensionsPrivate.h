@@ -1,5 +1,5 @@
 //
-//  NSAttributedString+MERExtensions.h
+//  NSAttributedString+MERExtensionsPrivate.h
 //  MEReactiveKit
 //
 //  Created by William Towe on 11/18/13.
@@ -13,7 +13,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NSAttributedString (MERKExtensions)
+@interface NSAttributedString (MERExtensionsPrivate)
 
 - (CGSize)MER_size;
 
