@@ -45,8 +45,8 @@
 		79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */; };
 		79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9C18D574BE00A2414E /* Images.xcassets */; };
 		79E1FBBA18D57CD800A2414E /* MERRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FBB918D57CD800A2414E /* MERRootViewController.m */; };
+		79E1FBBE18D5823700A2414E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FBBD18D5823700A2414E /* libPods.a */; };
 		844E56CFCCC04B9CBE1E89DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C428964CC411FBD3E586E /* libPods.a */; };
-		9F991E0419F2405B9D2EF300 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C428964CC411FBD3E586E /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +142,7 @@
 		79E1FB9C18D574BE00A2414E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		79E1FBB818D57CD800A2414E /* MERRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERRootViewController.h; sourceTree = "<group>"; };
 		79E1FBB918D57CD800A2414E /* MERRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERRootViewController.m; sourceTree = "<group>"; };
+		79E1FBBD18D5823700A2414E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,10 +168,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79E1FBBE18D5823700A2414E /* libPods.a in Frameworks */,
 				79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */,
 				79E1FB8F18D574BE00A2414E /* UIKit.framework in Frameworks */,
 				79E1FB8C18D574BE00A2414E /* Foundation.framework in Frameworks */,
-				9F991E0419F2405B9D2EF300 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +203,7 @@
 		79E1FAF418D56C1300A2414E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				79E1FBBD18D5823700A2414E /* libPods.a */,
 				79E1FAF518D56C1300A2414E /* Foundation.framework */,
 				79E1FB0318D56C1300A2414E /* XCTest.framework */,
 				79E1FB0618D56C1300A2414E /* UIKit.framework */,
@@ -810,6 +812,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -831,6 +834,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch";
+				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

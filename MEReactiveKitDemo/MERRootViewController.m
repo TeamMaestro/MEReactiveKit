@@ -8,7 +8,6 @@
 
 #import "MERRootViewController.h"
 #import <MEReactiveKit/MEReactiveKit.h>
-#import <MEReactiveFoundation/MEReactiveFoundation.h>
 
 @interface MERRootViewController ()
 
@@ -23,7 +22,12 @@
     MERWebViewController *webViewController = [[MERWebViewController alloc] init];
     
     [webViewController loadURLString:@"http://arstechnica.com"];
-    [webViewController setTabBarItem:<#(UITabBarItem *)#>
+    
+    UITabBarItem *webViewTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Web View" image:nil selectedImage:nil];
+    
+    [webViewController setTabBarItem:webViewTabBarItem];
+    
+    [self setViewControllers:@[[[UINavigationController alloc] initWithRootViewController:webViewController]]];
     
     return self;
 }
