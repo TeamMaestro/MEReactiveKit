@@ -37,6 +37,13 @@
 		79E1FB7C18D56FFE00A2414E /* nav_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7618D56FFE00A2414E /* nav_refresh.png */; };
 		79E1FB7D18D56FFE00A2414E /* nav_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */; };
 		79E1FB8018D5700800A2414E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7E18D5700800A2414E /* Localizable.strings */; };
+		79E1FB8C18D574BE00A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
+		79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */; };
+		79E1FB8F18D574BE00A2414E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB0618D56C1300A2414E /* UIKit.framework */; };
+		79E1FB9518D574BE00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9318D574BE00A2414E /* InfoPlist.strings */; };
+		79E1FB9718D574BE00A2414E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9618D574BE00A2414E /* main.m */; };
+		79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */; };
+		79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9C18D574BE00A2414E /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +127,15 @@
 		79E1FB7618D56FFE00A2414E /* nav_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_refresh.png; sourceTree = "<group>"; };
 		79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_refresh@2x.png"; sourceTree = "<group>"; };
 		79E1FB7F18D5700800A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		79E1FB8B18D574BE00A2414E /* MEReactiveKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MEReactiveKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		79E1FB9218D574BE00A2414E /* MEReactiveKitDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEReactiveKitDemo-Info.plist"; sourceTree = "<group>"; };
+		79E1FB9418D574BE00A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79E1FB9618D574BE00A2414E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		79E1FB9818D574BE00A2414E /* MEReactiveKitDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKitDemo-Prefix.pch"; sourceTree = "<group>"; };
+		79E1FB9918D574BE00A2414E /* MERAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MERAppDelegate.h; sourceTree = "<group>"; };
+		79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MERAppDelegate.m; sourceTree = "<group>"; };
+		79E1FB9C18D574BE00A2414E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +155,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79E1FB8818D574BE00A2414E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */,
+				79E1FB8F18D574BE00A2414E /* UIKit.framework in Frameworks */,
+				79E1FB8C18D574BE00A2414E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +173,7 @@
 			children = (
 				79E1FAF718D56C1300A2414E /* MEReactiveKit */,
 				79E1FB2218D56C5C00A2414E /* MEReactiveKitResources */,
+				79E1FB9018D574BE00A2414E /* MEReactiveKitDemo */,
 				79E1FAF418D56C1300A2414E /* Frameworks */,
 				79E1FAF318D56C1300A2414E /* Products */,
 			);
@@ -157,6 +184,7 @@
 			children = (
 				79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */,
 				79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */,
+				79E1FB8B18D574BE00A2414E /* MEReactiveKitDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -168,6 +196,7 @@
 				79E1FB0318D56C1300A2414E /* XCTest.framework */,
 				79E1FB0618D56C1300A2414E /* UIKit.framework */,
 				79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */,
+				79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -334,6 +363,28 @@
 			name = "View Controllers";
 			sourceTree = "<group>";
 		};
+		79E1FB9018D574BE00A2414E /* MEReactiveKitDemo */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB9918D574BE00A2414E /* MERAppDelegate.h */,
+				79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */,
+				79E1FB9C18D574BE00A2414E /* Images.xcassets */,
+				79E1FB9118D574BE00A2414E /* Supporting Files */,
+			);
+			path = MEReactiveKitDemo;
+			sourceTree = "<group>";
+		};
+		79E1FB9118D574BE00A2414E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB9218D574BE00A2414E /* MEReactiveKitDemo-Info.plist */,
+				79E1FB9318D574BE00A2414E /* InfoPlist.strings */,
+				79E1FB9618D574BE00A2414E /* main.m */,
+				79E1FB9818D574BE00A2414E /* MEReactiveKitDemo-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -372,12 +423,30 @@
 			productReference = 79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
+		79E1FB8A18D574BE00A2414E /* MEReactiveKitDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E1FBB018D574BE00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitDemo" */;
+			buildPhases = (
+				79E1FB8718D574BE00A2414E /* Sources */,
+				79E1FB8818D574BE00A2414E /* Frameworks */,
+				79E1FB8918D574BE00A2414E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MEReactiveKitDemo;
+			productName = MEReactiveKitDemo;
+			productReference = 79E1FB8B18D574BE00A2414E /* MEReactiveKitDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		79E1FAEA18D56C1300A2414E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MER;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Maestro, LLC.";
 			};
@@ -395,6 +464,7 @@
 			targets = (
 				79E1FAF118D56C1300A2414E /* MEReactiveKit */,
 				79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */,
+				79E1FB8A18D574BE00A2414E /* MEReactiveKitDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -412,6 +482,15 @@
 				79E1FB8018D5700800A2414E /* Localizable.strings in Resources */,
 				79E1FB7A18D56FFE00A2414E /* nav_forward.png in Resources */,
 				79E1FB7C18D56FFE00A2414E /* nav_refresh.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E1FB8918D574BE00A2414E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB9518D574BE00A2414E /* InfoPlist.strings in Resources */,
+				79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,6 +531,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		79E1FB8718D574BE00A2414E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E1FB9718D574BE00A2414E /* main.m in Sources */,
+				79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -477,6 +565,14 @@
 				79E1FB7F18D5700800A2414E /* en */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		79E1FB9318D574BE00A2414E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E1FB9418D574BE00A2414E /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -613,6 +709,50 @@
 			};
 			name = Release;
 		};
+		79E1FBB118D574BE00A2414E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		79E1FBB218D574BE00A2414E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch";
+				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -642,6 +782,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		79E1FBB018D574BE00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E1FBB118D574BE00A2414E /* Debug */,
+				79E1FBB218D574BE00A2414E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
