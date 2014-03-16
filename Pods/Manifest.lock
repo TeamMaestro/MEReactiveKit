@@ -8,13 +8,6 @@ PODS:
   - MEKit (1.0.2):
     - MEFoundation (~> 1.0.0)
   - MEReactiveFoundation (1.0.2)
-  - MEReactiveKit (1.0.0):
-    - libextobjc/EXTKeyPathCoding (~> 0.4.0)
-    - libextobjc/EXTScope (~> 0.4.0)
-    - MEFoundation (~> 1.0.0)
-    - MEKit (~> 1.0.0)
-    - MEReactiveFoundation (~> 1.0.0)
-    - ReactiveCocoa (~> 2.2.0)
   - ReactiveCocoa (2.2.4):
     - ReactiveCocoa/Core
     - ReactiveCocoa/no-arc
@@ -23,18 +16,18 @@ PODS:
   - ReactiveCocoa/no-arc (2.2.4)
 
 DEPENDENCIES:
-  - MEReactiveKit (from `MEReactiveKit.podspec`)
-
-EXTERNAL SOURCES:
-  MEReactiveKit:
-    :path: MEReactiveKit.podspec
+  - libextobjc/EXTKeyPathCoding (~> 0.4.0)
+  - libextobjc/EXTScope (~> 0.4.0)
+  - MEFoundation (~> 1.0.0)
+  - MEKit (~> 1.0.0)
+  - MEReactiveFoundation (~> 1.0.0)
+  - ReactiveCocoa (~> 2.2.0)
 
 SPEC CHECKSUMS:
   libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
   MEFoundation: 1d240296d9d72166744eed972707f98271f07dfe
   MEKit: 549ad4ffe92066047da229f27a09efd97d844dbb
   MEReactiveFoundation: 8fca6120232080a67f78954482c775220ef2a6a1
-  MEReactiveKit: 79b90486846258b28e240ab331fe3334b19370f4
   ReactiveCocoa: c3b0686ca2aa6589a6716000a7f6ff8e15d8de34
 
 COCOAPODS: 0.29.0

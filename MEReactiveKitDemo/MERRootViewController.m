@@ -8,6 +8,7 @@
 
 #import "MERRootViewController.h"
 #import <MEReactiveKit/MEReactiveKit.h>
+#import "MERScrollViewController.h"
 
 @interface MERRootViewController ()
 
@@ -27,7 +28,7 @@
     
     [webViewController setTabBarItem:webViewTabBarItem];
     
-    [self setViewControllers:@[[[UINavigationController alloc] initWithRootViewController:webViewController]]];
+    [self setViewControllers:@[[[UINavigationController alloc] initWithRootViewController:webViewController],[[UINavigationController alloc] initWithRootViewController:[[MERScrollViewController alloc] init]]]];
     
     return self;
 }

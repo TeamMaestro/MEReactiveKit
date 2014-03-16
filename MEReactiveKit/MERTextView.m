@@ -18,31 +18,7 @@
 #import <MEKit/CAGradientLayer+MEExtensions.h>
 #import <MEFoundation/MEMacros.h>
 
-@interface MERTextViewInternalDelegate : NSObject <UITextViewDelegate>
-@property (weak,nonatomic) id<UITextViewDelegate> delegate;
-@end
-
-@implementation MERTextViewInternalDelegate
-
-- (BOOL)respondsToSelector:(SEL)aSelector {
-    return ([self.delegate respondsToSelector:aSelector] || [super respondsToSelector:aSelector]);
-}
-- (void)forwardInvocation:(NSInvocation *)anInvocation {
-    [anInvocation invokeWithTarget:self.delegate];
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    [(id<UITextViewDelegate>)scrollView scrollViewDidScroll:scrollView];
-    
-    if ([self.delegate respondsToSelector:_cmd])
-        [self.delegate scrollViewDidScroll:scrollView];
-}
-
-@end
-
-@interface MERTextView () <UITextViewDelegate>
-@property (strong,nonatomic) MERTextViewInternalDelegate *internalDelegate;
-
+@interface MERTextView ()
 @property (strong,nonatomic) UILabel *placeholderLabel;
 
 @property (strong,nonatomic) CAGradientLayer *topGradientLayer;
@@ -50,7 +26,6 @@
 @property (strong,nonatomic) CAGradientLayer *bottomGradientLayer;
 
 - (void)_MERTextView_init;
-- (void)_createGradientLayers;
 
 + (UIFont *)_defaultPlaceholderFont;
 + (UIColor *)_defaultPlaceholderTextColor;
@@ -79,35 +54,9 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     
-    if (!self.layer.mask) {
-        [self _createGradientLayers];
-        
-        if (self.contentOffset.y <= 0)
-            [self.layer setMask:self.topGradientLayer];
-        else if (self.contentOffset.y >= self.contentSize.height - CGRectGetHeight(self.frame))
-            [self.layer setMask:self.bottomGradientLayer];
-        else
-            [self.layer setMask:self.middleGradientLayer];
-    }
-    
     CGFloat const kPlaceholderLabelMaxWidth = CGRectGetWidth(self.bounds) - self.placeholderEdgeInsets.left - self.placeholderEdgeInsets.right;
     
     [self.placeholderLabel setFrame:CGRectMake(self.placeholderEdgeInsets.left, self.placeholderEdgeInsets.top, kPlaceholderLabelMaxWidth, [self.placeholderLabel sizeThatFits:CGSizeMake(kPlaceholderLabelMaxWidth, CGFLOAT_MAX)].height)];
-}
-
-- (void)setFrame:(CGRect)frame {
-    [super setFrame:frame];
-    
-    [self _createGradientLayers];
-}
-
-- (id<UITextViewDelegate>)delegate {
-    return self.internalDelegate.delegate;
-}
-- (void)setDelegate:(id<UITextViewDelegate>)delegate {
-    [self.internalDelegate setDelegate:delegate];
-    
-    [super setDelegate:self.internalDelegate];
 }
 
 - (void)setFont:(UIFont *)font {
@@ -119,25 +68,6 @@
     [super setTextColor:textColor];
     
     [self setPlaceholderTextColor:self.textColor];
-}
-#pragma mark UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.y <= 0) {
-        if (scrollView.layer.mask != self.topGradientLayer)
-            [scrollView.layer setMask:self.topGradientLayer];
-    }
-    else if (scrollView.contentOffset.y >= scrollView.contentSize.height - CGRectGetHeight(scrollView.frame)) {
-        if (scrollView.layer.mask != self.bottomGradientLayer)
-            [scrollView.layer setMask:self.bottomGradientLayer];
-    }
-    else {
-        if (scrollView.layer.mask != self.middleGradientLayer)
-            [scrollView.layer setMask:self.middleGradientLayer];
-    }
-    
-    [CATransaction ME_beginForAnimations:^{
-        [scrollView.layer.mask setPosition:CGPointMake(0, scrollView.contentOffset.y)];
-    } disableActions:YES];
 }
 #pragma mark *** Public Methods ***
 #pragma mark Properties
@@ -160,34 +90,54 @@
     _placeholderFont = [self.class _defaultPlaceholderFont];
     _placeholderTextColor = [self.class _defaultPlaceholderTextColor];
     
-    [self setInternalDelegate:[[MERTextViewInternalDelegate alloc] init]];
-    [self setDelegate:nil];
-    
     [self setPlaceholderLabel:[[UILabel alloc] initWithFrame:CGRectZero]];
     [self.placeholderLabel setNumberOfLines:0];
     [self addSubview:self.placeholderLabel];
     
     @weakify(self);
     
-    [[RACObserve(self, topGradientPercentage)
-      deliverOn:[RACScheduler mainThreadScheduler]]
-     subscribeNext:^(id x) {
-         @strongify(self);
-         
-         [self _createGradientLayers];
-         
-         [self setNeedsLayout];
-     }];
+    void(^createGradientLayersIfNecessary)(void) = ^{
+        @strongify(self);
+        
+        if (self.topGradientPercentage > 0.0 ||
+            self.bottomGradientPercentage > 0.0) {
+            
+            [self setTopGradientLayer:[CAGradientLayer ME_gradientLayerWithBounds:self.bounds colors:@[[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:0]] locations:@[@0,@(1 - self.bottomGradientPercentage),@1]]];
+            [self setMiddleGradientLayer:[CAGradientLayer ME_gradientLayerWithBounds:self.bounds colors:@[[UIColor colorWithWhite:0 alpha:0],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:0]] locations:@[@0,@(self.topGradientPercentage),@(1 - self.bottomGradientPercentage),@1]]];
+            [self setBottomGradientLayer:[CAGradientLayer ME_gradientLayerWithBounds:self.bounds colors:@[[UIColor colorWithWhite:0 alpha:0],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:1]] locations:@[@0,@(self.topGradientPercentage),@1]]];
+        }
+    };
     
-    [[RACObserve(self, bottomGradientPercentage)
-      deliverOn:[RACScheduler mainThreadScheduler]]
-     subscribeNext:^(id x) {
-         @strongify(self);
-         
-         [self _createGradientLayers];
-         
-         [self setNeedsLayout];
-     }];
+    [[[[RACSignal merge:@[RACObserve(self, topGradientPercentage),
+                          RACObserve(self, bottomGradientPercentage),
+                          RACObserve(self, frame),
+                          RACObserve(self, contentSize)]]
+       deliverOn:[RACScheduler mainThreadScheduler]]
+      flattenMap:^RACStream *(id value) {
+          return [RACObserve(self, contentOffset)
+                  initially:createGradientLayersIfNecessary];
+      }] subscribeNext:^(NSValue *value) {
+          @strongify(self);
+          
+          if (value.CGPointValue.y <= 0) {
+              if (self.layer.mask != self.topGradientLayer)
+                  [self.layer setMask:self.topGradientLayer];
+          }
+          else if (value.CGPointValue.y >= self.contentSize.height - CGRectGetHeight(self.frame)) {
+              if (self.layer.mask != self.bottomGradientLayer)
+                  [self.layer setMask:self.bottomGradientLayer];
+          }
+          else {
+              if (self.layer.mask != self.middleGradientLayer)
+                  [self.layer setMask:self.middleGradientLayer];
+          }
+          
+          [CATransaction ME_beginForAnimations:^{
+              @strongify(self);
+              
+              [self.layer.mask setPosition:CGPointMake(0, self.contentOffset.y)];
+          } disableActions:YES];
+      }];
     
     RAC(self.placeholderLabel,hidden) = [RACSignal combineLatest:@[RACObserve(self, text),[self rac_textSignal]] reduce:^id(NSString *value1, NSString *value2) {
         return @(value1.length > 0 || value2.length > 0);
@@ -210,16 +160,6 @@
          
          [self setAttributedPlaceholder:[[NSAttributedString alloc] initWithString:placeholder attributes:@{NSFontAttributeName: font,NSForegroundColorAttributeName: foregroundColor,NSParagraphStyleAttributeName: style}]];
      }];
-}
-
-- (void)_createGradientLayers; {
-    if (self.topGradientPercentage > 0.0 ||
-        self.bottomGradientPercentage > 0.0) {
-        
-        [self setTopGradientLayer:[CAGradientLayer ME_gradientLayerWithBounds:self.bounds colors:@[[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:0]] locations:@[@0,@(1 - self.bottomGradientPercentage),@1]]];
-        [self setMiddleGradientLayer:[CAGradientLayer ME_gradientLayerWithBounds:self.bounds colors:@[[UIColor colorWithWhite:0 alpha:0],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:0]] locations:@[@0,@(self.topGradientPercentage),@(1 - self.bottomGradientPercentage),@1]]];
-        [self setBottomGradientLayer:[CAGradientLayer ME_gradientLayerWithBounds:self.bounds colors:@[[UIColor colorWithWhite:0 alpha:0],[UIColor colorWithWhite:0 alpha:1],[UIColor colorWithWhite:0 alpha:1]] locations:@[@0,@(self.topGradientPercentage),@1]]];
-    }
 }
 
 + (UIFont *)_defaultPlaceholderFont; {

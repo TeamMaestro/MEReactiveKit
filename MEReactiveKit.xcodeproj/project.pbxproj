@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7902E9BB18D58AAD005903E2 /* MEReactiveKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */; };
+		7902E9BC18D58ABA005903E2 /* libMEReactiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */; };
+		7902E9BD18D58CAC005903E2 /* MEReactiveKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3B18D56E3B00A2414E /* MEReactiveKit.h */; };
+		7902E9C018D58CFF005903E2 /* MERScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7902E9BF18D58CFF005903E2 /* MERScrollViewController.m */; };
 		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
 		79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */; };
 		79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB2518D56C5D00A2414E /* InfoPlist.strings */; };
@@ -46,10 +50,34 @@
 		79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9C18D574BE00A2414E /* Images.xcassets */; };
 		79E1FBBA18D57CD800A2414E /* MERRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FBB918D57CD800A2414E /* MERRootViewController.m */; };
 		79E1FBBE18D5823700A2414E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FBBD18D5823700A2414E /* libPods.a */; };
-		844E56CFCCC04B9CBE1E89DD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 784C428964CC411FBD3E586E /* libPods.a */; };
+		79E1FBC118D5830D00A2414E /* MERScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FBC018D5830D00A2414E /* MERScrollView.m */; };
+		79E1FBC318D5891500A2414E /* MERCommon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB2E18D56CE700A2414E /* MERCommon.h */; };
+		79E1FBC418D5891500A2414E /* MERTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4818D56E3B00A2414E /* MERTableViewCell.h */; };
+		79E1FBC518D5891500A2414E /* MERButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3718D56E3B00A2414E /* MERButton.h */; };
+		79E1FBC618D5891500A2414E /* MERDatePickerViewButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3918D56E3B00A2414E /* MERDatePickerViewButton.h */; };
+		79E1FBC718D5891500A2414E /* MERPageControl.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3E18D56E3B00A2414E /* MERPageControl.h */; };
+		79E1FBC818D5891500A2414E /* MERPickerViewButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4218D56E3B00A2414E /* MERPickerViewButton.h */; };
+		79E1FBC918D5891500A2414E /* MERSlider.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4418D56E3B00A2414E /* MERSlider.h */; };
+		79E1FBCA18D5891500A2414E /* MERSwitch.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4618D56E3B00A2414E /* MERSwitch.h */; };
+		79E1FBCB18D5891500A2414E /* MERTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4A18D56E3B00A2414E /* MERTextField.h */; };
+		79E1FBCC18D5891500A2414E /* MERView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4E18D56E3B00A2414E /* MERView.h */; };
+		79E1FBCD18D5891500A2414E /* MERNextPreviousInputAccessoryView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */; };
+		79E1FBCE18D5891500A2414E /* MERScrollView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FBBF18D5830D00A2414E /* MERScrollView.h */; };
+		79E1FBCF18D5891500A2414E /* MERTextView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4C18D56E3B00A2414E /* MERTextView.h */; };
+		79E1FBD018D5891500A2414E /* MERViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB5018D56E3B00A2414E /* MERViewController.h */; };
+		79E1FBD118D5891F00A2414E /* MERWebViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB5218D56E3B00A2414E /* MERWebViewController.h */; };
+		79E1FBD218D5891F00A2414E /* MERActivityOpenInChrome.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3318D56E3B00A2414E /* MERActivityOpenInChrome.h */; };
+		79E1FBD318D5891F00A2414E /* MERActivityOpenInSafari.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		7902E9B918D58AA3005903E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E1FAF118D56C1300A2414E;
+			remoteInfo = MEReactiveKit;
+		};
 		79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
@@ -66,6 +94,24 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				7902E9BD18D58CAC005903E2 /* MEReactiveKit.h in CopyFiles */,
+				79E1FBC318D5891500A2414E /* MERCommon.h in CopyFiles */,
+				79E1FBC418D5891500A2414E /* MERTableViewCell.h in CopyFiles */,
+				79E1FBC518D5891500A2414E /* MERButton.h in CopyFiles */,
+				79E1FBC618D5891500A2414E /* MERDatePickerViewButton.h in CopyFiles */,
+				79E1FBC718D5891500A2414E /* MERPageControl.h in CopyFiles */,
+				79E1FBC818D5891500A2414E /* MERPickerViewButton.h in CopyFiles */,
+				79E1FBC918D5891500A2414E /* MERSlider.h in CopyFiles */,
+				79E1FBCA18D5891500A2414E /* MERSwitch.h in CopyFiles */,
+				79E1FBCB18D5891500A2414E /* MERTextField.h in CopyFiles */,
+				79E1FBCC18D5891500A2414E /* MERView.h in CopyFiles */,
+				79E1FBCD18D5891500A2414E /* MERNextPreviousInputAccessoryView.h in CopyFiles */,
+				79E1FBCE18D5891500A2414E /* MERScrollView.h in CopyFiles */,
+				79E1FBCF18D5891500A2414E /* MERTextView.h in CopyFiles */,
+				79E1FBD018D5891500A2414E /* MERViewController.h in CopyFiles */,
+				79E1FBD118D5891F00A2414E /* MERWebViewController.h in CopyFiles */,
+				79E1FBD218D5891F00A2414E /* MERActivityOpenInChrome.h in CopyFiles */,
+				79E1FBD318D5891F00A2414E /* MERActivityOpenInSafari.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +119,8 @@
 
 /* Begin PBXFileReference section */
 		784C428964CC411FBD3E586E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7902E9BE18D58CFF005903E2 /* MERScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERScrollViewController.h; sourceTree = "<group>"; };
+		7902E9BF18D58CFF005903E2 /* MERScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERScrollViewController.m; sourceTree = "<group>"; };
 		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -142,7 +190,9 @@
 		79E1FB9C18D574BE00A2414E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		79E1FBB818D57CD800A2414E /* MERRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERRootViewController.h; sourceTree = "<group>"; };
 		79E1FBB918D57CD800A2414E /* MERRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERRootViewController.m; sourceTree = "<group>"; };
-		79E1FBBD18D5823700A2414E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = file; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		79E1FBBD18D5823700A2414E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		79E1FBBF18D5830D00A2414E /* MERScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERScrollView.h; sourceTree = "<group>"; };
+		79E1FBC018D5830D00A2414E /* MERScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERScrollView.m; sourceTree = "<group>"; };
 		9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,7 +202,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */,
-				844E56CFCCC04B9CBE1E89DD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +217,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7902E9BC18D58ABA005903E2 /* libMEReactiveKit.a in Frameworks */,
 				79E1FBBE18D5823700A2414E /* libPods.a in Frameworks */,
 				79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */,
 				79E1FB8F18D574BE00A2414E /* UIKit.framework in Frameworks */,
@@ -356,12 +406,14 @@
 		79E1FB8518D5710700A2414E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */,
-				79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */,
-				79E1FB4C18D56E3B00A2414E /* MERTextView.h */,
-				79E1FB4D18D56E3B00A2414E /* MERTextView.m */,
 				79E1FB4E18D56E3B00A2414E /* MERView.h */,
 				79E1FB4F18D56E3B00A2414E /* MERView.m */,
+				79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */,
+				79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */,
+				79E1FBBF18D5830D00A2414E /* MERScrollView.h */,
+				79E1FBC018D5830D00A2414E /* MERScrollView.m */,
+				79E1FB4C18D56E3B00A2414E /* MERTextView.h */,
+				79E1FB4D18D56E3B00A2414E /* MERTextView.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -383,6 +435,8 @@
 				79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */,
 				79E1FBB818D57CD800A2414E /* MERRootViewController.h */,
 				79E1FBB918D57CD800A2414E /* MERRootViewController.m */,
+				7902E9BE18D58CFF005903E2 /* MERScrollViewController.h */,
+				7902E9BF18D58CFF005903E2 /* MERScrollViewController.m */,
 				79E1FB9C18D574BE00A2414E /* Images.xcassets */,
 				79E1FB9118D574BE00A2414E /* Supporting Files */,
 			);
@@ -453,6 +507,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				7902E9BA18D58AA3005903E2 /* PBXTargetDependency */,
 			);
 			name = MEReactiveKitDemo;
 			productName = MEReactiveKitDemo;
@@ -508,6 +563,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7902E9BB18D58AAD005903E2 /* MEReactiveKitResources.bundle in Resources */,
 				79E1FB9518D574BE00A2414E /* InfoPlist.strings in Resources */,
 				79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */,
 			);
@@ -591,6 +647,7 @@
 				79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERExtensionsPrivate.m in Sources */,
 				79E1FB6118D56E3B00A2414E /* MERView.m in Sources */,
 				79E1FB5618D56E3B00A2414E /* MERButton.m in Sources */,
+				79E1FBC118D5830D00A2414E /* MERScrollView.m in Sources */,
 				79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */,
 				79E1FB6F18D56F4200A2414E /* NSString+MERExtensionsPrivate.m in Sources */,
 				79E1FB5D18D56E3B00A2414E /* MERSwitch.m in Sources */,
@@ -619,6 +676,7 @@
 			files = (
 				79E1FB9718D574BE00A2414E /* main.m in Sources */,
 				79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */,
+				7902E9C018D58CFF005903E2 /* MERScrollViewController.m in Sources */,
 				79E1FBBA18D57CD800A2414E /* MERRootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -626,6 +684,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		7902E9BA18D58AA3005903E2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E1FAF118D56C1300A2414E /* MEReactiveKit */;
+			targetProxy = 7902E9B918D58AA3005903E2 /* PBXContainerItemProxy */;
+		};
 		79E1FB2D18D56C8A00A2414E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */;
@@ -739,7 +802,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
 				OTHER_LDFLAGS = "$(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "${PUBLIC_HEADERS_FOLDER_PATH}/${PROJECT_NAME}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -752,7 +817,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
 				OTHER_LDFLAGS = "$(inherited)";
+				PRIVATE_HEADERS_FOLDER_PATH = "${PUBLIC_HEADERS_FOLDER_PATH}/${PROJECT_NAME}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = include;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
