@@ -199,7 +199,7 @@ NSString * const RACKeyValueChangeAffectedOnlyLastComponentKey = @"RACKeyValueCh
 			NSKeyValueChangeKindKey: @(NSKeyValueChangeSetting),
 			NSKeyValueChangeNewKey: initialValue ?: NSNull.null,
 			RACKeyValueChangeCausedByDeallocationKey: @NO,
-			RACKeyValueChangeAffectedOnlyLastComponentKey: @NO
+			RACKeyValueChangeAffectedOnlyLastComponentKey: @(keyPathHasOneComponent)
 		};
 		block(initialValue, initialChange);
 	}
@@ -211,7 +211,11 @@ NSString * const RACKeyValueChangeAffectedOnlyLastComponentKey = @"RACKeyValueCh
 	[observerDisposable addDisposable:disposable];
 	[selfDisposable addDisposable:disposable];
 
-	return disposable;
+	return [RACDisposable disposableWithBlock:^{
+		[disposable dispose];
+		[observerDisposable removeDisposable:disposable];
+		[selfDisposable removeDisposable:disposable];
+	}];
 }
 
 @end

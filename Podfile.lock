@@ -14,16 +14,13 @@ PODS:
     - MEFoundation (~> 1.0.0)
     - MEKit (~> 1.0.0)
     - MEReactiveFoundation (~> 1.0.0)
-    - ReactiveCocoa (~> 2.0.0)
-  - ReactiveCocoa (2.0):
+    - ReactiveCocoa (~> 2.2.0)
+  - ReactiveCocoa (2.2.4):
     - ReactiveCocoa/Core
     - ReactiveCocoa/no-arc
-    - ReactiveCocoa/RACExtensions
-  - ReactiveCocoa/Core (2.0):
+  - ReactiveCocoa/Core (2.2.4):
     - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.0)
-  - ReactiveCocoa/RACExtensions (2.0):
-    - ReactiveCocoa/Core
+  - ReactiveCocoa/no-arc (2.2.4)
 
 DEPENDENCIES:
   - MEReactiveKit (from `MEReactiveKit.podspec`)
@@ -37,7 +34,7 @@ SPEC CHECKSUMS:
   MEFoundation: 1d240296d9d72166744eed972707f98271f07dfe
   MEKit: 549ad4ffe92066047da229f27a09efd97d844dbb
   MEReactiveFoundation: 8fca6120232080a67f78954482c775220ef2a6a1
-  MEReactiveKit: bf6ab077097d599f7acef1e71db6a68536179e89
-  ReactiveCocoa: 04f49b91365cc946e7ca327bcfb5765fcea69e76
+  MEReactiveKit: 79b90486846258b28e240ab331fe3334b19370f4
+  ReactiveCocoa: c3b0686ca2aa6589a6716000a7f6ff8e15d8de34
 
 COCOAPODS: 0.29.0

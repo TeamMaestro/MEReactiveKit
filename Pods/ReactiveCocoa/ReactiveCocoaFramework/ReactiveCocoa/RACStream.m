@@ -48,7 +48,8 @@
 #pragma mark Naming
 
 - (instancetype)setNameWithFormat:(NSString *)format, ... {
-#ifdef DEBUG
+	if (getenv("RAC_DEBUG_SIGNAL_NAMES") == NULL) return self;
+
 	NSCParameterAssert(format != nil);
 
 	va_list args;
@@ -58,8 +59,6 @@
 	va_end(args);
 
 	self.name = str;
-#endif
-	
 	return self;
 }
 
@@ -68,9 +67,14 @@
 @implementation RACStream (Operations)
 
 - (instancetype)flattenMap:(RACStream * (^)(id value))block {
+	Class class = self.class;
+
 	return [[self bind:^{
 		return ^(id value, BOOL *stop) {
-			return block(value);
+			id stream = block(value) ?: [class empty];
+			NSCAssert([stream isKindOfClass:RACStream.class], @"Value returned from -flattenMap: is not a stream: %@", stream);
+
+			return stream;
 		};
 	}] setNameWithFormat:@"[%@] -flattenMap:", self.name];
 }
@@ -78,7 +82,6 @@
 - (instancetype)flatten {
 	__weak RACStream *stream __attribute__((unused)) = self;
 	return [[self flattenMap:^(id value) {
-		NSCAssert([value isKindOfClass:RACStream.class], @"Stream %@ being flattened contains an object that is not a stream: %@", stream, value);
 		return value;
 	}] setNameWithFormat:@"[%@] -flatten", self.name];
 }
@@ -312,6 +315,23 @@
 	return [[self skipUntilBlock:^ BOOL (id x) {
 		return !predicate(x);
 	}] setNameWithFormat:@"[%@] -skipUntilBlock:", self.name];
+}
+
+- (instancetype)distinctUntilChanged {
+	Class class = self.class;
+
+	return [[self bind:^{
+		__block id lastValue = nil;
+		__block BOOL initial = YES;
+
+		return ^(id x, BOOL *stop) {
+			if (!initial && (lastValue == x || [x isEqual:lastValue])) return [class empty];
+
+			initial = NO;
+			lastValue = x;
+			return [class return:x];
+		};
+	}] setNameWithFormat:@"[%@] -distinctUntilChanged", self.name];
 }
 
 @end
