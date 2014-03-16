@@ -1,5 +1,5 @@
 //
-//  MEReactiveKit.h
+//  MERPageControl.h
 //  MEReactiveKit
 //
 //  Created by William Towe on 11/16/13.
@@ -11,24 +11,20 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#ifndef _ME_REACTIVE_KIT_
-#define _ME_REACTIVE_KIT_
+#import <UIKit/UIKit.h>
 
-#import <MEReactiveKit/MERPageControl.h>
-#import <MEReactiveKit/MERSwitch.h>
-#import <MEReactiveKit/MERSlider.h>
-#import <MEReactiveKit/MERButton.h>
-#import <MEReactiveKit/MERPickerViewButton.h>
-#import <MEReactiveKit/MERDatePickerViewButton.h>
-#import <MEReactiveKit/MERTextField.h>
+@interface MERPageControl : UIControl
 
-#import <MEReactiveKit/MERView.h>
-#import <MEReactiveKit/MERNextPreviousInputAccessoryView.h>
-#import <MEReactiveKit/MERTableViewCell.h>
-#import <MEReactiveKit/MERTextView.h>
+@property (assign,nonatomic) NSInteger numberOfPages;
+@property (assign,nonatomic) NSInteger currentPage;
 
-#import <MEReactiveKit/MERViewController.h>
-#import <MEReactiveKit/MERPageViewController.h>
-#import <MEReactiveKit/MERWebViewController.h>
+@property (assign,nonatomic) BOOL hidesForSinglePage;
 
-#endif
+@property (strong,nonatomic) UIImage *backgroundImage UI_APPEARANCE_SELECTOR;
+@property (strong,nonatomic) UIImage *pageIndicatorImage UI_APPEARANCE_SELECTOR;
+@property (assign,nonatomic) CGFloat pageIndicatorSpacing UI_APPEARANCE_SELECTOR;
+@property (strong,nonatomic) UIImage *currentPageIndicatorImage UI_APPEARANCE_SELECTOR;
+
+- (CGSize)sizeForNumberOfPages:(NSInteger)numberOfPages;
+
+@end

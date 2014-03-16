@@ -1,9 +1,9 @@
 //
-//  MEReactiveKit.h
+//  MERDatePickerViewButton.h
 //  MEReactiveKit
 //
-//  Created by William Towe on 11/16/13.
-//  Copyright (c) 2013 Maestro, LLC. All rights reserved.
+//  Created by William Towe on 2/21/14.
+//  Copyright (c) 2014 Maestro, LLC. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 //
@@ -11,24 +11,18 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#ifndef _ME_REACTIVE_KIT_
-#define _ME_REACTIVE_KIT_
-
-#import <MEReactiveKit/MERPageControl.h>
-#import <MEReactiveKit/MERSwitch.h>
-#import <MEReactiveKit/MERSlider.h>
 #import <MEReactiveKit/MERButton.h>
-#import <MEReactiveKit/MERPickerViewButton.h>
-#import <MEReactiveKit/MERDatePickerViewButton.h>
-#import <MEReactiveKit/MERTextField.h>
 
-#import <MEReactiveKit/MERView.h>
-#import <MEReactiveKit/MERNextPreviousInputAccessoryView.h>
-#import <MEReactiveKit/MERTableViewCell.h>
-#import <MEReactiveKit/MERTextView.h>
+extern NSString *const MERDatePickerViewButtonNotificationDidBecomeFirstResponder;
+extern NSString *const MERDatePickerViewButtonNotificationDidResignFirstResponder;
 
-#import <MEReactiveKit/MERViewController.h>
-#import <MEReactiveKit/MERPageViewController.h>
-#import <MEReactiveKit/MERWebViewController.h>
+@interface MERDatePickerViewButton : MERButton
 
-#endif
+@property (strong,nonatomic) NSDate *datePickerDate;
+@property (assign,nonatomic) UIDatePickerMode datePickerMode;
+@property (strong,nonatomic) NSDate *datePickerMinimumDate;
+@property (strong,nonatomic) NSDate *datePickerMaximumDate;
+
+@property (strong,nonatomic) NSDateFormatter *dateFormatter UI_APPEARANCE_SELECTOR;
+
+@end

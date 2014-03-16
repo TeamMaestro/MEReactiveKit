@@ -8,23 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
-		79E1FAFB18D56C1300A2414E /* MEReactiveKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FAFA18D56C1300A2414E /* MEReactiveKit.h */; };
-		79E1FAFD18D56C1300A2414E /* MEReactiveKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FAFC18D56C1300A2414E /* MEReactiveKit.m */; };
-		79E1FB0418D56C1300A2414E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB0318D56C1300A2414E /* XCTest.framework */; };
-		79E1FB0518D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
-		79E1FB0718D56C1300A2414E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB0618D56C1300A2414E /* UIKit.framework */; };
-		79E1FB0A18D56C1300A2414E /* libMEReactiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */; };
-		79E1FB1018D56C1300A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB0E18D56C1300A2414E /* InfoPlist.strings */; };
-		79E1FB1218D56C1300A2414E /* MEReactiveKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB1118D56C1300A2414E /* MEReactiveKitTests.m */; };
+		79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */; };
+		79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB2518D56C5D00A2414E /* InfoPlist.strings */; };
+		79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB2F18D56CE700A2414E /* MERCommon.m */; };
+		79E1FB5418D56E3B00A2414E /* MERActivityOpenInChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3418D56E3B00A2414E /* MERActivityOpenInChrome.m */; };
+		79E1FB5518D56E3B00A2414E /* MERActivityOpenInSafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */; };
+		79E1FB5618D56E3B00A2414E /* MERButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3818D56E3B00A2414E /* MERButton.m */; };
+		79E1FB5718D56E3B00A2414E /* MERDatePickerViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3A18D56E3B00A2414E /* MERDatePickerViewButton.m */; };
+		79E1FB5818D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */; };
+		79E1FB5918D56E3B00A2414E /* MERPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3F18D56E3B00A2414E /* MERPageControl.m */; };
+		79E1FB5B18D56E3B00A2414E /* MERPickerViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4318D56E3B00A2414E /* MERPickerViewButton.m */; };
+		79E1FB5C18D56E3B00A2414E /* MERSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4518D56E3B00A2414E /* MERSlider.m */; };
+		79E1FB5D18D56E3B00A2414E /* MERSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4718D56E3B00A2414E /* MERSwitch.m */; };
+		79E1FB5E18D56E3B00A2414E /* MERTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4918D56E3B00A2414E /* MERTableViewCell.m */; };
+		79E1FB5F18D56E3B00A2414E /* MERTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4B18D56E3B00A2414E /* MERTextField.m */; };
+		79E1FB6018D56E3B00A2414E /* MERTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4D18D56E3B00A2414E /* MERTextView.m */; };
+		79E1FB6118D56E3B00A2414E /* MERView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4F18D56E3B00A2414E /* MERView.m */; };
+		79E1FB6218D56E3B00A2414E /* MERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5118D56E3B00A2414E /* MERViewController.m */; };
+		79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5318D56E3B00A2414E /* MERWebViewController.m */; };
+		79E1FB6D18D56F4200A2414E /* NSAttributedString+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */; };
+		79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */; };
+		79E1FB6F18D56F4200A2414E /* NSString+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */; };
+		79E1FB7018D56F4200A2414E /* UIImage+MERKExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */; };
+		79E1FB7818D56FFE00A2414E /* nav_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7218D56FFE00A2414E /* nav_back.png */; };
+		79E1FB7918D56FFE00A2414E /* nav_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7318D56FFE00A2414E /* nav_back@2x.png */; };
+		79E1FB7A18D56FFE00A2414E /* nav_forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7418D56FFE00A2414E /* nav_forward.png */; };
+		79E1FB7B18D56FFE00A2414E /* nav_forward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7518D56FFE00A2414E /* nav_forward@2x.png */; };
+		79E1FB7C18D56FFE00A2414E /* nav_refresh.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7618D56FFE00A2414E /* nav_refresh.png */; };
+		79E1FB7D18D56FFE00A2414E /* nav_refresh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */; };
+		79E1FB8018D5700800A2414E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7E18D5700800A2414E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79E1FB0818D56C1300A2414E /* PBXContainerItemProxy */ = {
+		79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 79E1FAF118D56C1300A2414E;
-			remoteInfo = MEReactiveKit;
+			remoteGlobalIDString = 79E1FB1E18D56C5C00A2414E;
+			remoteInfo = MEReactiveKitResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -35,7 +56,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				79E1FAFB18D56C1300A2414E /* MEReactiveKit.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -45,14 +65,61 @@
 		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
-		79E1FAFA18D56C1300A2414E /* MEReactiveKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MEReactiveKit.h; sourceTree = "<group>"; };
-		79E1FAFC18D56C1300A2414E /* MEReactiveKit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEReactiveKit.m; sourceTree = "<group>"; };
-		79E1FB0218D56C1300A2414E /* MEReactiveKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEReactiveKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1FB0318D56C1300A2414E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		79E1FB0618D56C1300A2414E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		79E1FB0D18D56C1300A2414E /* MEReactiveKitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEReactiveKitTests-Info.plist"; sourceTree = "<group>"; };
-		79E1FB0F18D56C1300A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		79E1FB1118D56C1300A2414E /* MEReactiveKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MEReactiveKitTests.m; sourceTree = "<group>"; };
+		79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEReactiveKitResources.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		79E1FB2418D56C5D00A2414E /* MEReactiveKitResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MEReactiveKitResources-Info.plist"; sourceTree = "<group>"; };
+		79E1FB2618D56C5D00A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		79E1FB2818D56C5D00A2414E /* MEReactiveKitResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKitResources-Prefix.pch"; sourceTree = "<group>"; };
+		79E1FB2E18D56CE700A2414E /* MERCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERCommon.h; sourceTree = "<group>"; };
+		79E1FB2F18D56CE700A2414E /* MERCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERCommon.m; sourceTree = "<group>"; };
+		79E1FB3318D56E3B00A2414E /* MERActivityOpenInChrome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERActivityOpenInChrome.h; sourceTree = "<group>"; };
+		79E1FB3418D56E3B00A2414E /* MERActivityOpenInChrome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERActivityOpenInChrome.m; sourceTree = "<group>"; };
+		79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERActivityOpenInSafari.h; sourceTree = "<group>"; };
+		79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERActivityOpenInSafari.m; sourceTree = "<group>"; };
+		79E1FB3718D56E3B00A2414E /* MERButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERButton.h; sourceTree = "<group>"; };
+		79E1FB3818D56E3B00A2414E /* MERButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERButton.m; sourceTree = "<group>"; };
+		79E1FB3918D56E3B00A2414E /* MERDatePickerViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERDatePickerViewButton.h; sourceTree = "<group>"; };
+		79E1FB3A18D56E3B00A2414E /* MERDatePickerViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDatePickerViewButton.m; sourceTree = "<group>"; };
+		79E1FB3B18D56E3B00A2414E /* MEReactiveKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MEReactiveKit.h; sourceTree = "<group>"; };
+		79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERNextPreviousInputAccessoryView.h; sourceTree = "<group>"; };
+		79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERNextPreviousInputAccessoryView.m; sourceTree = "<group>"; };
+		79E1FB3E18D56E3B00A2414E /* MERPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERPageControl.h; sourceTree = "<group>"; };
+		79E1FB3F18D56E3B00A2414E /* MERPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERPageControl.m; sourceTree = "<group>"; };
+		79E1FB4218D56E3B00A2414E /* MERPickerViewButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERPickerViewButton.h; sourceTree = "<group>"; };
+		79E1FB4318D56E3B00A2414E /* MERPickerViewButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERPickerViewButton.m; sourceTree = "<group>"; };
+		79E1FB4418D56E3B00A2414E /* MERSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERSlider.h; sourceTree = "<group>"; };
+		79E1FB4518D56E3B00A2414E /* MERSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERSlider.m; sourceTree = "<group>"; };
+		79E1FB4618D56E3B00A2414E /* MERSwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERSwitch.h; sourceTree = "<group>"; };
+		79E1FB4718D56E3B00A2414E /* MERSwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERSwitch.m; sourceTree = "<group>"; };
+		79E1FB4818D56E3B00A2414E /* MERTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERTableViewCell.h; sourceTree = "<group>"; };
+		79E1FB4918D56E3B00A2414E /* MERTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERTableViewCell.m; sourceTree = "<group>"; };
+		79E1FB4A18D56E3B00A2414E /* MERTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERTextField.h; sourceTree = "<group>"; };
+		79E1FB4B18D56E3B00A2414E /* MERTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERTextField.m; sourceTree = "<group>"; };
+		79E1FB4C18D56E3B00A2414E /* MERTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERTextView.h; sourceTree = "<group>"; };
+		79E1FB4D18D56E3B00A2414E /* MERTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERTextView.m; sourceTree = "<group>"; };
+		79E1FB4E18D56E3B00A2414E /* MERView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERView.h; sourceTree = "<group>"; };
+		79E1FB4F18D56E3B00A2414E /* MERView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERView.m; sourceTree = "<group>"; };
+		79E1FB5018D56E3B00A2414E /* MERViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERViewController.h; sourceTree = "<group>"; };
+		79E1FB5118D56E3B00A2414E /* MERViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERViewController.m; sourceTree = "<group>"; };
+		79E1FB5218D56E3B00A2414E /* MERWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERWebViewController.h; sourceTree = "<group>"; };
+		79E1FB5318D56E3B00A2414E /* MERWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERWebViewController.m; sourceTree = "<group>"; };
+		79E1FB6518D56F4200A2414E /* NSAttributedString+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB6918D56F4200A2414E /* NSString+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB6B18D56F4200A2414E /* UIImage+MERKExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MERKExtensions.h"; sourceTree = "<group>"; };
+		79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MERKExtensions.m"; sourceTree = "<group>"; };
+		79E1FB7218D56FFE00A2414E /* nav_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_back.png; sourceTree = "<group>"; };
+		79E1FB7318D56FFE00A2414E /* nav_back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_back@2x.png"; sourceTree = "<group>"; };
+		79E1FB7418D56FFE00A2414E /* nav_forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_forward.png; sourceTree = "<group>"; };
+		79E1FB7518D56FFE00A2414E /* nav_forward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_forward@2x.png"; sourceTree = "<group>"; };
+		79E1FB7618D56FFE00A2414E /* nav_refresh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nav_refresh.png; sourceTree = "<group>"; };
+		79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_refresh@2x.png"; sourceTree = "<group>"; };
+		79E1FB7F18D5700800A2414E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,14 +131,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79E1FAFF18D56C1300A2414E /* Frameworks */ = {
+		79E1FB1C18D56C5C00A2414E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E1FB0418D56C1300A2414E /* XCTest.framework in Frameworks */,
-				79E1FB0A18D56C1300A2414E /* libMEReactiveKit.a in Frameworks */,
-				79E1FB0718D56C1300A2414E /* UIKit.framework in Frameworks */,
-				79E1FB0518D56C1300A2414E /* Foundation.framework in Frameworks */,
+				79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				79E1FAF718D56C1300A2414E /* MEReactiveKit */,
-				79E1FB0B18D56C1300A2414E /* MEReactiveKitTests */,
+				79E1FB2218D56C5C00A2414E /* MEReactiveKitResources */,
 				79E1FAF418D56C1300A2414E /* Frameworks */,
 				79E1FAF318D56C1300A2414E /* Products */,
 			);
@@ -92,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */,
-				79E1FB0218D56C1300A2414E /* MEReactiveKitTests.xctest */,
+				79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,6 +167,7 @@
 				79E1FAF518D56C1300A2414E /* Foundation.framework */,
 				79E1FB0318D56C1300A2414E /* XCTest.framework */,
 				79E1FB0618D56C1300A2414E /* UIKit.framework */,
+				79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,8 +175,9 @@
 		79E1FAF718D56C1300A2414E /* MEReactiveKit */ = {
 			isa = PBXGroup;
 			children = (
-				79E1FAFA18D56C1300A2414E /* MEReactiveKit.h */,
-				79E1FAFC18D56C1300A2414E /* MEReactiveKit.m */,
+				79E1FB3B18D56E3B00A2414E /* MEReactiveKit.h */,
+				79E1FB3118D56CFA00A2414E /* Public */,
+				79E1FB6418D56F4200A2414E /* Private */,
 				79E1FAF818D56C1300A2414E /* Supporting Files */,
 			);
 			path = MEReactiveKit;
@@ -125,22 +191,147 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		79E1FB0B18D56C1300A2414E /* MEReactiveKitTests */ = {
+		79E1FB2218D56C5C00A2414E /* MEReactiveKitResources */ = {
 			isa = PBXGroup;
 			children = (
-				79E1FB1118D56C1300A2414E /* MEReactiveKitTests.m */,
-				79E1FB0C18D56C1300A2414E /* Supporting Files */,
+				79E1FB7118D56FFE00A2414E /* Assets */,
+				79E1FB2318D56C5D00A2414E /* Supporting Files */,
 			);
-			path = MEReactiveKitTests;
+			path = MEReactiveKitResources;
 			sourceTree = "<group>";
 		};
-		79E1FB0C18D56C1300A2414E /* Supporting Files */ = {
+		79E1FB2318D56C5D00A2414E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				79E1FB0D18D56C1300A2414E /* MEReactiveKitTests-Info.plist */,
-				79E1FB0E18D56C1300A2414E /* InfoPlist.strings */,
+				79E1FB2418D56C5D00A2414E /* MEReactiveKitResources-Info.plist */,
+				79E1FB2518D56C5D00A2414E /* InfoPlist.strings */,
+				79E1FB7E18D5700800A2414E /* Localizable.strings */,
+				79E1FB2818D56C5D00A2414E /* MEReactiveKitResources-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		79E1FB3118D56CFA00A2414E /* Public */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB3218D56DE500A2414E /* Common */,
+				79E1FB8418D570CF00A2414E /* Cells */,
+				79E1FB8318D570C200A2414E /* Controls */,
+				79E1FB8518D5710700A2414E /* Views */,
+				79E1FB8618D5710E00A2414E /* View Controllers */,
+			);
+			name = Public;
+			sourceTree = "<group>";
+		};
+		79E1FB3218D56DE500A2414E /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB2E18D56CE700A2414E /* MERCommon.h */,
+				79E1FB2F18D56CE700A2414E /* MERCommon.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		79E1FB6418D56F4200A2414E /* Private */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB8118D5702700A2414E /* Categories */,
+			);
+			path = Private;
+			sourceTree = "<group>";
+		};
+		79E1FB7118D56FFE00A2414E /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB7218D56FFE00A2414E /* nav_back.png */,
+				79E1FB7318D56FFE00A2414E /* nav_back@2x.png */,
+				79E1FB7418D56FFE00A2414E /* nav_forward.png */,
+				79E1FB7518D56FFE00A2414E /* nav_forward@2x.png */,
+				79E1FB7618D56FFE00A2414E /* nav_refresh.png */,
+				79E1FB7718D56FFE00A2414E /* nav_refresh@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		79E1FB8118D5702700A2414E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB6518D56F4200A2414E /* NSAttributedString+MERKExtensions.h */,
+				79E1FB6618D56F4200A2414E /* NSAttributedString+MERKExtensions.m */,
+				79E1FB6718D56F4200A2414E /* NSMutableDictionary+MERKExtensions.h */,
+				79E1FB6818D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m */,
+				79E1FB6918D56F4200A2414E /* NSString+MERKExtensions.h */,
+				79E1FB6A18D56F4200A2414E /* NSString+MERKExtensions.m */,
+				79E1FB6B18D56F4200A2414E /* UIImage+MERKExtensions.h */,
+				79E1FB6C18D56F4200A2414E /* UIImage+MERKExtensions.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		79E1FB8218D5703800A2414E /* Web View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB5218D56E3B00A2414E /* MERWebViewController.h */,
+				79E1FB5318D56E3B00A2414E /* MERWebViewController.m */,
+				79E1FB3318D56E3B00A2414E /* MERActivityOpenInChrome.h */,
+				79E1FB3418D56E3B00A2414E /* MERActivityOpenInChrome.m */,
+				79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */,
+				79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */,
+			);
+			name = "Web View Controller";
+			sourceTree = "<group>";
+		};
+		79E1FB8318D570C200A2414E /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB3718D56E3B00A2414E /* MERButton.h */,
+				79E1FB3818D56E3B00A2414E /* MERButton.m */,
+				79E1FB3918D56E3B00A2414E /* MERDatePickerViewButton.h */,
+				79E1FB3A18D56E3B00A2414E /* MERDatePickerViewButton.m */,
+				79E1FB3E18D56E3B00A2414E /* MERPageControl.h */,
+				79E1FB3F18D56E3B00A2414E /* MERPageControl.m */,
+				79E1FB4218D56E3B00A2414E /* MERPickerViewButton.h */,
+				79E1FB4318D56E3B00A2414E /* MERPickerViewButton.m */,
+				79E1FB4418D56E3B00A2414E /* MERSlider.h */,
+				79E1FB4518D56E3B00A2414E /* MERSlider.m */,
+				79E1FB4618D56E3B00A2414E /* MERSwitch.h */,
+				79E1FB4718D56E3B00A2414E /* MERSwitch.m */,
+				79E1FB4A18D56E3B00A2414E /* MERTextField.h */,
+				79E1FB4B18D56E3B00A2414E /* MERTextField.m */,
+			);
+			name = Controls;
+			sourceTree = "<group>";
+		};
+		79E1FB8418D570CF00A2414E /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB4818D56E3B00A2414E /* MERTableViewCell.h */,
+				79E1FB4918D56E3B00A2414E /* MERTableViewCell.m */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		79E1FB8518D5710700A2414E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */,
+				79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */,
+				79E1FB4C18D56E3B00A2414E /* MERTextView.h */,
+				79E1FB4D18D56E3B00A2414E /* MERTextView.m */,
+				79E1FB4E18D56E3B00A2414E /* MERView.h */,
+				79E1FB4F18D56E3B00A2414E /* MERView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		79E1FB8618D5710E00A2414E /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				79E1FB5018D56E3B00A2414E /* MERViewController.h */,
+				79E1FB5118D56E3B00A2414E /* MERViewController.m */,
+				79E1FB8218D5703800A2414E /* Web View Controller */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,29 +348,29 @@
 			buildRules = (
 			);
 			dependencies = (
+				79E1FB2D18D56C8A00A2414E /* PBXTargetDependency */,
 			);
 			name = MEReactiveKit;
 			productName = MEReactiveKit;
 			productReference = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		79E1FB0118D56C1300A2414E /* MEReactiveKitTests */ = {
+		79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 79E1FB1818D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitTests" */;
+			buildConfigurationList = 79E1FB2918D56C5D00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitResources" */;
 			buildPhases = (
-				79E1FAFE18D56C1300A2414E /* Sources */,
-				79E1FAFF18D56C1300A2414E /* Frameworks */,
-				79E1FB0018D56C1300A2414E /* Resources */,
+				79E1FB1B18D56C5C00A2414E /* Sources */,
+				79E1FB1C18D56C5C00A2414E /* Frameworks */,
+				79E1FB1D18D56C5C00A2414E /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				79E1FB0918D56C1300A2414E /* PBXTargetDependency */,
 			);
-			name = MEReactiveKitTests;
-			productName = MEReactiveKitTests;
-			productReference = 79E1FB0218D56C1300A2414E /* MEReactiveKitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			name = MEReactiveKitResources;
+			productName = MEReactiveKitResources;
+			productReference = 79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -203,17 +394,24 @@
 			projectRoot = "";
 			targets = (
 				79E1FAF118D56C1300A2414E /* MEReactiveKit */,
-				79E1FB0118D56C1300A2414E /* MEReactiveKitTests */,
+				79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		79E1FB0018D56C1300A2414E /* Resources */ = {
+		79E1FB1D18D56C5C00A2414E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E1FB1018D56C1300A2414E /* InfoPlist.strings in Resources */,
+				79E1FB7818D56FFE00A2414E /* nav_back.png in Resources */,
+				79E1FB7D18D56FFE00A2414E /* nav_refresh@2x.png in Resources */,
+				79E1FB7918D56FFE00A2414E /* nav_back@2x.png in Resources */,
+				79E1FB7B18D56FFE00A2414E /* nav_forward@2x.png in Resources */,
+				79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */,
+				79E1FB8018D5700800A2414E /* Localizable.strings in Resources */,
+				79E1FB7A18D56FFE00A2414E /* nav_forward.png in Resources */,
+				79E1FB7C18D56FFE00A2414E /* nav_refresh.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,35 +422,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E1FAFD18D56C1300A2414E /* MEReactiveKit.m in Sources */,
+				79E1FB5E18D56E3B00A2414E /* MERTableViewCell.m in Sources */,
+				79E1FB6218D56E3B00A2414E /* MERViewController.m in Sources */,
+				79E1FB5518D56E3B00A2414E /* MERActivityOpenInSafari.m in Sources */,
+				79E1FB5C18D56E3B00A2414E /* MERSlider.m in Sources */,
+				79E1FB5418D56E3B00A2414E /* MERActivityOpenInChrome.m in Sources */,
+				79E1FB6E18D56F4200A2414E /* NSMutableDictionary+MERKExtensions.m in Sources */,
+				79E1FB6118D56E3B00A2414E /* MERView.m in Sources */,
+				79E1FB5618D56E3B00A2414E /* MERButton.m in Sources */,
+				79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */,
+				79E1FB6F18D56F4200A2414E /* NSString+MERKExtensions.m in Sources */,
+				79E1FB5D18D56E3B00A2414E /* MERSwitch.m in Sources */,
+				79E1FB6018D56E3B00A2414E /* MERTextView.m in Sources */,
+				79E1FB5F18D56E3B00A2414E /* MERTextField.m in Sources */,
+				79E1FB7018D56F4200A2414E /* UIImage+MERKExtensions.m in Sources */,
+				79E1FB5718D56E3B00A2414E /* MERDatePickerViewButton.m in Sources */,
+				79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */,
+				79E1FB6D18D56F4200A2414E /* NSAttributedString+MERKExtensions.m in Sources */,
+				79E1FB5918D56E3B00A2414E /* MERPageControl.m in Sources */,
+				79E1FB5B18D56E3B00A2414E /* MERPickerViewButton.m in Sources */,
+				79E1FB5818D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79E1FAFE18D56C1300A2414E /* Sources */ = {
+		79E1FB1B18D56C5C00A2414E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79E1FB1218D56C1300A2414E /* MEReactiveKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		79E1FB0918D56C1300A2414E /* PBXTargetDependency */ = {
+		79E1FB2D18D56C8A00A2414E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 79E1FAF118D56C1300A2414E /* MEReactiveKit */;
-			targetProxy = 79E1FB0818D56C1300A2414E /* PBXContainerItemProxy */;
+			target = 79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */;
+			targetProxy = 79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		79E1FB0E18D56C1300A2414E /* InfoPlist.strings */ = {
+		79E1FB2518D56C5D00A2414E /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				79E1FB0F18D56C1300A2414E /* en */,
+				79E1FB2618D56C5D00A2414E /* en */,
 			);
 			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		79E1FB7E18D5700800A2414E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79E1FB7F18D5700800A2414E /* en */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -352,41 +576,40 @@
 			};
 			name = Release;
 		};
-		79E1FB1918D56C1300A2414E /* Debug */ = {
+		79E1FB2A18D56C5D00A2414E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				COMBINE_HIDPI_IMAGES = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
+				GCC_PREFIX_HEADER = "MEReactiveKitResources/MEReactiveKitResources-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "MEReactiveKitTests/MEReactiveKitTests-Info.plist";
+				INFOPLIST_FILE = "MEReactiveKitResources/MEReactiveKitResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Debug;
 		};
-		79E1FB1A18D56C1300A2414E /* Release */ = {
+		79E1FB2B18D56C5D00A2414E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
+				COMBINE_HIDPI_IMAGES = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
-				INFOPLIST_FILE = "MEReactiveKitTests/MEReactiveKitTests-Info.plist";
+				GCC_PREFIX_HEADER = "MEReactiveKitResources/MEReactiveKitResources-Prefix.pch";
+				INFOPLIST_FILE = "MEReactiveKitResources/MEReactiveKitResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = xctest;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
@@ -409,14 +632,16 @@
 				79E1FB1718D56C1300A2414E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
-		79E1FB1818D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitTests" */ = {
+		79E1FB2918D56C5D00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitResources" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				79E1FB1918D56C1300A2414E /* Debug */,
-				79E1FB1A18D56C1300A2414E /* Release */,
+				79E1FB2A18D56C5D00A2414E /* Debug */,
+				79E1FB2B18D56C5D00A2414E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
