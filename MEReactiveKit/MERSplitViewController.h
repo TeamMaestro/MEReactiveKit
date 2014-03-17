@@ -11,7 +11,7 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <MEReactiveKit/MERViewController.h>
+#import "MERViewController.h"
 
 typedef NS_ENUM(NSInteger, MERSplitViewControllerMasterViewControllerState) {
     MERSplitViewControllerMasterViewControllerStateDismissed,
@@ -38,5 +38,11 @@ extern NSString *const MERSplitViewControllerNotificationDidDismissMasterViewCon
 - (void)toggleMasterViewControllerAnimated:(BOOL)animated;
 - (void)toggleMasterViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion;
 - (void)toggleMasterViewControllerAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
+
+@end
+
+@interface UIViewController (MERSplitViewControllerExtensions)
+
+@property (readonly,nonatomic) MERSplitViewController *MER_splitViewController;
 
 @end

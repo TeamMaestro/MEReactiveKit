@@ -257,3 +257,17 @@ NSString *const MERSplitViewControllerNotificationDidDismissMasterViewController
 }
 
 @end
+
+@implementation UIViewController (MERSplitViewControllerExtensions)
+
+- (MERSplitViewController *)MER_splitViewController {
+    UIViewController *viewController = self.parentViewController ? self.parentViewController : self.presentingViewController;
+    
+    while (!(viewController == nil || [viewController isKindOfClass:[MERSplitViewController class]])) {
+        viewController = viewController.parentViewController ? viewController.parentViewController : viewController.presentingViewController;
+    }
+    
+    return (MERSplitViewController *)viewController;
+}
+
+@end

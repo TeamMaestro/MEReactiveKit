@@ -11,15 +11,15 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "MERScrollViewController.h"
+#import "MERDetailScrollViewController.h"
 #import <MEReactiveKit/MEReactiveKit.h>
 
-@interface MERScrollViewController ()
+@interface MERDetailScrollViewController ()
 @property (strong,nonatomic) MERScrollView *scrollView;
 @property (strong,nonatomic) UIView *contentView;
 @end
 
-@implementation MERScrollViewController
+@implementation MERDetailScrollViewController
 
 - (UIRectEdge)edgesForExtendedLayout {
     return UIRectEdgeNone;
@@ -31,6 +31,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    [self.view setBackgroundColor:[UIColor whiteColor]];
     
     [self setScrollView:[[MERScrollView alloc] initWithFrame:CGRectZero]];
     [self.scrollView setTopGradientPercentage:0.05];
@@ -47,6 +49,18 @@
     [self.contentView setFrame:CGRectMake(0, 0, CGRectGetWidth(self.scrollView.bounds), CGRectGetHeight(self.scrollView.bounds) * 2)];
     
     [self.scrollView setContentSize:CGSizeMake(CGRectGetWidth(self.scrollView.bounds), CGRectGetMaxY(self.contentView.frame))];
+}
+
+- (void)configureNavigationItem {
+    [super configureNavigationItem];
+    
+    UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(_menuItemAction:)];
+    
+    [self.navigationItem setLeftBarButtonItems:@[menuItem]];
+}
+
+- (IBAction)_menuItemAction:(id)sender {
+    [self.MER_slidingViewController toggleTopViewControllerToRightAnimated:YES];
 }
 
 @end

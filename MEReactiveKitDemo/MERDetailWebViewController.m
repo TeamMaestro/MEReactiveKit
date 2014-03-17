@@ -1,8 +1,8 @@
 //
-//  MERRootViewController.m
+//  MERDetailWebViewController.m
 //  MEReactiveKit
 //
-//  Created by William Towe on 3/16/14.
+//  Created by William Towe on 3/17/14.
 //  Copyright (c) 2014 Maestro, LLC. All rights reserved.
 //
 //  Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
@@ -11,31 +11,34 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "MERRootViewController.h"
-#import <MEReactiveKit/MEReactiveKit.h>
-#import "MERScrollViewController.h"
+#import "MERDetailWebViewController.h"
+#import <MEReactiveKit/MERSlidingViewController.h>
 
-@interface MERRootViewController ()
+@interface MERDetailWebViewController ()
 
 @end
 
-@implementation MERRootViewController
+@implementation MERDetailWebViewController
 
 - (id)init {
     if (!(self = [super init]))
         return nil;
     
-    MERWebViewController *webViewController = [[MERWebViewController alloc] init];
-    
-    [webViewController loadURLString:@"http://arstechnica.com"];
-    
-    UITabBarItem *webViewTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Web View" image:nil selectedImage:nil];
-    
-    [webViewController setTabBarItem:webViewTabBarItem];
-    
-    [self setViewControllers:@[[[UINavigationController alloc] initWithRootViewController:webViewController],[[UINavigationController alloc] initWithRootViewController:[[MERScrollViewController alloc] init]]]];
+    [self loadURLString:@"http://arstechnica.com"];
     
     return self;
+}
+
+- (void)configureNavigationItem {
+    [super configureNavigationItem];
+    
+    UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(_menuItemAction:)];
+    
+    [self.navigationItem setLeftBarButtonItems:@[menuItem]];
+}
+
+- (IBAction)_menuItemAction:(id)sender {
+    [self.MER_slidingViewController toggleTopViewControllerToRightAnimated:YES];
 }
 
 @end
