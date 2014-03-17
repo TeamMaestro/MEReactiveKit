@@ -29,6 +29,7 @@
 		7994EF1118D794C500CDE54E /* MERSlidingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EF0E18D791F400CDE54E /* MERSlidingViewController.h */; };
 		7994EF1418D795DB00CDE54E /* MERLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1318D795DB00CDE54E /* MERLeftViewController.m */; };
 		7994EF1718D798DA00CDE54E /* MERDetailWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1618D798DA00CDE54E /* MERDetailWebViewController.m */; };
+		7994EF1A18D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */; };
 		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
 		79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */; };
 		79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB2518D56C5D00A2414E /* InfoPlist.strings */; };
@@ -170,6 +171,8 @@
 		7994EF1318D795DB00CDE54E /* MERLeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERLeftViewController.m; sourceTree = "<group>"; };
 		7994EF1518D798DA00CDE54E /* MERDetailWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERDetailWebViewController.h; sourceTree = "<group>"; };
 		7994EF1618D798DA00CDE54E /* MERDetailWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDetailWebViewController.m; sourceTree = "<group>"; };
+		7994EF1818D7BAFF00CDE54E /* MERPaginatedScrollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERPaginatedScrollingViewController.h; sourceTree = "<group>"; };
+		7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERPaginatedScrollingViewController.m; sourceTree = "<group>"; };
 		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -549,6 +552,8 @@
 				7994EF1618D798DA00CDE54E /* MERDetailWebViewController.m */,
 				7902E9BE18D58CFF005903E2 /* MERDetailScrollViewController.h */,
 				7902E9BF18D58CFF005903E2 /* MERDetailScrollViewController.m */,
+				7994EF1818D7BAFF00CDE54E /* MERPaginatedScrollingViewController.h */,
+				7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */,
 				79E1FB9C18D574BE00A2414E /* Images.xcassets */,
 				79E1FB9118D574BE00A2414E /* Supporting Files */,
 			);
@@ -797,6 +802,7 @@
 				79E1FB9718D574BE00A2414E /* main.m in Sources */,
 				7994EF1718D798DA00CDE54E /* MERDetailWebViewController.m in Sources */,
 				79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */,
+				7994EF1A18D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m in Sources */,
 				7994EF1418D795DB00CDE54E /* MERLeftViewController.m in Sources */,
 				7902E9C018D58CFF005903E2 /* MERDetailScrollViewController.m in Sources */,
 				79E1FBBA18D57CD800A2414E /* MERRootSlidingViewController.m in Sources */,

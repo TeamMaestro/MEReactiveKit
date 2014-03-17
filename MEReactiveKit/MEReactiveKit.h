@@ -15,6 +15,7 @@
 #define _ME_REACTIVE_KIT_
 
 #import <MEReactiveKit/UIScrollView+MERPaginatedScrollingExtensions.h>
+#import <MEReactiveKit/MERPaginatedScrollingView.h>
 
 #import <MEReactiveKit/MERPageControl.h>
 #import <MEReactiveKit/MERSwitch.h>

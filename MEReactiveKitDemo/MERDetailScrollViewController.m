@@ -26,7 +26,7 @@
 }
 
 - (NSString *)title {
-    return @"Scroll View";
+    return @"Gradient Scroll View";
 }
 
 - (void)viewDidLoad {
@@ -40,7 +40,7 @@
     [self.view addSubview:self.scrollView];
     
     [self setContentView:[[UIView alloc] initWithFrame:CGRectZero]];
-    [self.contentView setBackgroundColor:[UIColor blackColor]];
+    [self.contentView setBackgroundColor:[UIColor darkGrayColor]];
     [self.scrollView addSubview:self.contentView];
 }
 - (void)viewDidLayoutSubviews {

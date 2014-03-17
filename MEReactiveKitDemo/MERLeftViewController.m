@@ -12,7 +12,6 @@
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 #import "MERLeftViewController.h"
-#import <MEReactiveKit/MEReactiveKit.h>
 
 NSString *const MERLeftViewControllerNotificationDidChangeTag = @"MERLeftViewControllerNotificationDidChangeTag";
 NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUserInfoKeyTag";
@@ -29,7 +28,7 @@ NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUse
     if (!(self = [super init]))
         return nil;
     
-    [self setTags:@[@(MERLeftViewControllerTagWebView),@(MERLeftViewControllerTagScrollView)]];
+    [self setTags:@[@(MERLeftViewControllerTagWebView),@(MERLeftViewControllerTagScrollView),@(MERLeftViewControllerTagPaginatedScrolling)]];
     
     return self;
 }
@@ -66,9 +65,11 @@ NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUse
 - (NSString *)_titleForTag:(MERLeftViewControllerTag)tag; {
     switch (tag) {
         case MERLeftViewControllerTagScrollView:
-            return @"Scroll View";
+            return @"Gradient Scroll View";
         case MERLeftViewControllerTagWebView:
             return @"Web View";
+        case MERLeftViewControllerTagPaginatedScrolling:
+            return @"Paginated Scrolling";
         default:
             break;
     }

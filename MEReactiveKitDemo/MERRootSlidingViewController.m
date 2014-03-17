@@ -15,6 +15,7 @@
 #import "MERDetailScrollViewController.h"
 #import "MERLeftViewController.h"
 #import "MERDetailWebViewController.h"
+#import "MERPaginatedScrollingViewController.h"
 
 @interface MERRootSlidingViewController ()
 
@@ -42,16 +43,24 @@
 
 - (void)_didChangeTag:(NSNotification *)note {
     MERLeftViewControllerTag tag = [note.userInfo[MERLeftViewControllerUserInfoKeyTag] integerValue];
+    UIViewController *viewController = nil;
     
     switch (tag) {
         case MERLeftViewControllerTagWebView:
-            [self setTopViewController:[[UINavigationController alloc] initWithRootViewController:[[MERDetailWebViewController alloc] init]]];
+            viewController = [[MERDetailWebViewController alloc] init];
             break;
         case MERLeftViewControllerTagScrollView:
-            [self setTopViewController:[[UINavigationController alloc] initWithRootViewController:[[MERDetailScrollViewController alloc] init]]];
+            viewController = [[MERDetailScrollViewController alloc] init];
+            break;
+        case MERLeftViewControllerTagPaginatedScrolling:
+            viewController = [[MERPaginatedScrollingViewController alloc] init];
             break;
         default:
             break;
+    }
+    
+    if (viewController) {
+        [self setTopViewController:[[UINavigationController alloc] initWithRootViewController:viewController]];
     }
     
     [self resetTopViewControllerAnimated:YES];

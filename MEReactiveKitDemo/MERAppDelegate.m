@@ -13,14 +13,17 @@
 
 #import "MERAppDelegate.h"
 #import "MERRootSlidingViewController.h"
+#import <MEReactiveKit/MEReactiveKit.h>
 
 @implementation MERAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
+    
+    [[UIActivityIndicatorView appearanceWhenContainedIn:[MERPaginatedScrollingView class], nil] setColor:self.window.tintColor];
+    
     self.window.rootViewController = [[MERRootSlidingViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
