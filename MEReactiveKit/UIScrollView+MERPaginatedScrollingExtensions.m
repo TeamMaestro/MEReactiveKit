@@ -132,6 +132,8 @@
         
         [self.MER_paginatedScrollingView removeFromSuperview];
         [self setMER_paginatedScrollingView:nil];
+        
+        [self setMER_paginatedScrollingEnabled:NO];
     }
 }
 

@@ -14,8 +14,18 @@
 #import <UIKit/UIKit.h>
 #import "MERPaginatedScrolling.h"
 
+/**
+ The default view that is used whenever `MER_addPaginatedScrollingViewWithBlock:` is called.
+ 
+ Displays a `UIActivityIndicator` centered within its bounds.
+ */
 @interface MERPaginatedScrollingView : UIView <MERPaginatedScrolling>
 
+/**
+ The edge insets for the receiver.
+ 
+ Only the top and bottom insets are respected.
+ */
 @property (assign,nonatomic) UIEdgeInsets edgeInsets;
 
 @end

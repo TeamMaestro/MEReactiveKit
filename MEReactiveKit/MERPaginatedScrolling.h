@@ -13,10 +13,22 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ The protocol that any view passed to `MER_addPaginatedScrollingView:block:` must conform to.
+ */
 @protocol MERPaginatedScrolling <NSObject>
 @required
+/**
+ Returns the preferred height for the receiver.
+ */
 @property (readonly,assign,nonatomic) CGFloat preferredHeight;
 
+/**
+ This method is called whenever paginated scrolling begins.
+ */
 - (void)startPaginating;
+/**
+ This method is called whenever paginated scrolling ends.
+ */
 - (void)stopPaginating;
 @end

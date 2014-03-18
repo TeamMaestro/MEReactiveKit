@@ -30,7 +30,7 @@
     if (!(self = [super initWithFrame:frame]))
         return nil;
     
-    _edgeInsets = UIEdgeInsetsMake(16, 0, 16, 0);
+    _edgeInsets = UIEdgeInsetsMake(20, 0, 20, 0);
     
     [self setActivityIndicatorView:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite]];
     [self.activityIndicatorView sizeToFit];
