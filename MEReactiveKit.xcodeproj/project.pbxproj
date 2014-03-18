@@ -588,11 +588,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E1FB1518D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKit" */;
 			buildPhases = (
-				05B42900DFED4725B4CE5697 /* Check Pods Manifest.lock */,
+				7994EF6218D7CD9F00CDE54E /* genstrings */,
 				79E1FAEE18D56C1300A2414E /* Sources */,
 				79E1FAEF18D56C1300A2414E /* Frameworks */,
 				79E1FAF018D56C1300A2414E /* CopyFiles */,
-				F8A574585F25405B86C358BA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -699,20 +698,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		05B42900DFED4725B4CE5697 /* Check Pods Manifest.lock */ = {
+		7994EF6218D7CD9F00CDE54E /* genstrings */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = genstrings;
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
+			shellScript = "genstrings -s NSLocalizedString -q -o $SRCROOT/MEReactiveKitResources/en.lproj $SRCROOT/$TARGET_NAME/*.m";
 		};
 		D64A6263840D4B818DDC59A9 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -730,21 +728,6 @@
 			showEnvVarsInLog = 0;
 		};
 		EE13F0FB00FB45ECB71D7A3C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F8A574585F25405B86C358BA /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
