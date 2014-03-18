@@ -15,6 +15,8 @@
 
 /**
  `MERTextField` is a `UITextField` subclass that adds additional useful properties.
+ 
+ Each instance assigns an instance of `MERNextPreviousInputAccessoryView` as its `inputAccessoryView`.
  */
 @interface MERTextField : UITextField
 

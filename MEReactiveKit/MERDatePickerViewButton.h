@@ -28,6 +28,8 @@ extern NSString *const MERDatePickerViewButtonNotificationDidResignFirstResponde
 
 /**
  A `MERButton` subclass that manages a `UIDatePickerView` as its `inputView`.
+ 
+ Each instance assigns an instance of `MERNextPreviousInputAccessoryView` as its `inputAccessoryView`.
  */
 @interface MERDatePickerViewButton : MERButton
 

@@ -20,6 +20,8 @@ extern NSString *const MERPickerViewButtonNotificationDidResignFirstResponder;
 
 /**
  A `MERButton` subclass that manages a `UIPickerView` as its `inputView`.
+ 
+ Each instance assigns an instance of `MERNextPreviousInputAccessoryView` as its `inputAccessoryView`.
  */
 @interface MERPickerViewButton : MERButton
 
