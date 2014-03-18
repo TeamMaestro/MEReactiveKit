@@ -134,7 +134,9 @@
         
         if (finished) {
             [self setTopViewControllerState:MERSlidingViewControllerTopViewControllerStateRight];
-            [self setTapGestureRecognizer:[[UITapGestureRecognizer alloc] init]];
+        
+            if ((self.anchorGestureOptions & MERSlidingViewControllerAnchorGestureOptionTap) != 0)
+                [self setTapGestureRecognizer:[[UITapGestureRecognizer alloc] init]];
             
             [self.view setUserInteractionEnabled:YES];
             
