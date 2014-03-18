@@ -13,7 +13,8 @@
 
 #import "MERAppDelegate.h"
 #import "MERRootSlidingViewController.h"
-#import <MEReactiveKit/MEReactiveKit.h>
+#import "MERRootSplitViewController.h"
+#import <MEReactiveKit/MERPaginatedScrollingView.h>
 
 @implementation MERAppDelegate
 
@@ -24,7 +25,7 @@
     
     [[UIActivityIndicatorView appearanceWhenContainedIn:[MERPaginatedScrollingView class], nil] setColor:self.window.tintColor];
     
-    self.window.rootViewController = [[MERRootSlidingViewController alloc] init];
+    self.window.rootViewController = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [[MERRootSplitViewController alloc] init] : [[MERRootSlidingViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }

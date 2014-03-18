@@ -76,6 +76,7 @@
 
 - (IBAction)_menuItemAction:(id)sender {
     [self.MER_slidingViewController toggleTopViewControllerToRightAnimated:YES];
+    [self.MER_splitViewController toggleMasterViewControllerAnimated:YES];
 }
 
 @end

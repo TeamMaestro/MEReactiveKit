@@ -30,6 +30,8 @@
 		7994EF1418D795DB00CDE54E /* MERLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1318D795DB00CDE54E /* MERLeftViewController.m */; };
 		7994EF1718D798DA00CDE54E /* MERDetailWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1618D798DA00CDE54E /* MERDetailWebViewController.m */; };
 		7994EF1A18D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */; };
+		7994EF1D18D7BFDC00CDE54E /* MERRootSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1C18D7BFDC00CDE54E /* MERRootSplitViewController.m */; };
+		7994EF2018D7C25900CDE54E /* MERDetailTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */; };
 		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
 		79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */; };
 		79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB2518D56C5D00A2414E /* InfoPlist.strings */; };
@@ -173,6 +175,10 @@
 		7994EF1618D798DA00CDE54E /* MERDetailWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDetailWebViewController.m; sourceTree = "<group>"; };
 		7994EF1818D7BAFF00CDE54E /* MERPaginatedScrollingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERPaginatedScrollingViewController.h; sourceTree = "<group>"; };
 		7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERPaginatedScrollingViewController.m; sourceTree = "<group>"; };
+		7994EF1B18D7BFDC00CDE54E /* MERRootSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERRootSplitViewController.h; sourceTree = "<group>"; };
+		7994EF1C18D7BFDC00CDE54E /* MERRootSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERRootSplitViewController.m; sourceTree = "<group>"; };
+		7994EF1E18D7C25900CDE54E /* MERDetailTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERDetailTextViewController.h; sourceTree = "<group>"; };
+		7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDetailTextViewController.m; sourceTree = "<group>"; };
 		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -544,6 +550,8 @@
 			children = (
 				79E1FB9918D574BE00A2414E /* MERAppDelegate.h */,
 				79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */,
+				7994EF1B18D7BFDC00CDE54E /* MERRootSplitViewController.h */,
+				7994EF1C18D7BFDC00CDE54E /* MERRootSplitViewController.m */,
 				79E1FBB818D57CD800A2414E /* MERRootSlidingViewController.h */,
 				79E1FBB918D57CD800A2414E /* MERRootSlidingViewController.m */,
 				7994EF1218D795DB00CDE54E /* MERLeftViewController.h */,
@@ -554,6 +562,8 @@
 				7902E9BF18D58CFF005903E2 /* MERDetailScrollViewController.m */,
 				7994EF1818D7BAFF00CDE54E /* MERPaginatedScrollingViewController.h */,
 				7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */,
+				7994EF1E18D7C25900CDE54E /* MERDetailTextViewController.h */,
+				7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */,
 				79E1FB9C18D574BE00A2414E /* Images.xcassets */,
 				79E1FB9118D574BE00A2414E /* Supporting Files */,
 			);
@@ -801,6 +811,8 @@
 			files = (
 				79E1FB9718D574BE00A2414E /* main.m in Sources */,
 				7994EF1718D798DA00CDE54E /* MERDetailWebViewController.m in Sources */,
+				7994EF2018D7C25900CDE54E /* MERDetailTextViewController.m in Sources */,
+				7994EF1D18D7BFDC00CDE54E /* MERRootSplitViewController.m in Sources */,
 				79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */,
 				7994EF1A18D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m in Sources */,
 				7994EF1418D795DB00CDE54E /* MERLeftViewController.m in Sources */,

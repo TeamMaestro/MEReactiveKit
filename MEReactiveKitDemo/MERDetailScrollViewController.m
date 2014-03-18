@@ -13,10 +13,11 @@
 
 #import "MERDetailScrollViewController.h"
 #import <MEReactiveKit/MEReactiveKit.h>
+#import <MEKit/MEKit.h>
 
 @interface MERDetailScrollViewController ()
 @property (strong,nonatomic) MERScrollView *scrollView;
-@property (strong,nonatomic) UIView *contentView;
+@property (strong,nonatomic) MEGradientView *contentView;
 @end
 
 @implementation MERDetailScrollViewController
@@ -39,8 +40,8 @@
     [self.scrollView setBottomGradientPercentage:0.05];
     [self.view addSubview:self.scrollView];
     
-    [self setContentView:[[UIView alloc] initWithFrame:CGRectZero]];
-    [self.contentView setBackgroundColor:[UIColor darkGrayColor]];
+    [self setContentView:[[MEGradientView alloc] initWithFrame:CGRectZero]];
+    [self.contentView setColors:@[[UIColor lightGrayColor],[UIColor darkGrayColor],[UIColor lightGrayColor]]];
     [self.scrollView addSubview:self.contentView];
 }
 - (void)viewDidLayoutSubviews {
@@ -61,6 +62,7 @@
 
 - (IBAction)_menuItemAction:(id)sender {
     [self.MER_slidingViewController toggleTopViewControllerToRightAnimated:YES];
+    [self.MER_splitViewController toggleMasterViewControllerAnimated:YES];
 }
 
 @end

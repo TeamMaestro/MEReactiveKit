@@ -188,7 +188,6 @@
         [self addChildViewController:self.topViewController];
         if (self.isViewLoaded) {
             [self.view addSubview:self.topViewController.view];
-            [self.view setNeedsLayout];
             [self.view layoutIfNeeded];
         }
         [self.topViewController didMoveToParentViewController:self];
@@ -205,7 +204,6 @@
         [self addChildViewController:self.leftViewController];
         if (self.isViewLoaded) {
             [self.view addSubview:self.leftViewController.view];
-            [self.view setNeedsLayout];
             [self.view layoutIfNeeded];
         }
         [self.leftViewController didMoveToParentViewController:self];

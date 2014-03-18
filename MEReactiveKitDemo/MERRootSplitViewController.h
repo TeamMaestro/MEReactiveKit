@@ -1,5 +1,5 @@
 //
-//  MERDetailWebViewController.m
+//  MERRootSplitViewController.h
 //  MEReactiveKit
 //
 //  Created by William Towe on 3/17/14.
@@ -11,35 +11,8 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "MERDetailWebViewController.h"
-#import <MEReactiveKit/MEReactiveKit.h>
+#import <MEReactiveKit/MERSplitViewController.h>
 
-@interface MERDetailWebViewController ()
-
-@end
-
-@implementation MERDetailWebViewController
-
-- (id)init {
-    if (!(self = [super init]))
-        return nil;
-    
-    [self loadURLString:@"http://arstechnica.com"];
-    
-    return self;
-}
-
-- (void)configureNavigationItem {
-    [super configureNavigationItem];
-    
-    UIBarButtonItem *menuItem = [[UIBarButtonItem alloc] initWithTitle:@"Menu" style:UIBarButtonItemStylePlain target:self action:@selector(_menuItemAction:)];
-    
-    [self.navigationItem setLeftBarButtonItems:@[menuItem]];
-}
-
-- (IBAction)_menuItemAction:(id)sender {
-    [self.MER_slidingViewController toggleTopViewControllerToRightAnimated:YES];
-    [self.MER_splitViewController toggleMasterViewControllerAnimated:YES];
-}
+@interface MERRootSplitViewController : MERSplitViewController
 
 @end

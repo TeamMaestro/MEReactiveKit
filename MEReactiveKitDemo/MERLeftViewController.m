@@ -28,7 +28,7 @@ NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUse
     if (!(self = [super init]))
         return nil;
     
-    [self setTags:@[@(MERLeftViewControllerTagWebView),@(MERLeftViewControllerTagScrollView),@(MERLeftViewControllerTagPaginatedScrolling)]];
+    [self setTags:@[@(MERLeftViewControllerTagWebView),@(MERLeftViewControllerTagScrollView),@(MERLeftViewControllerTagPaginatedScrolling),@(MERLeftViewControllerTagTextView)]];
     
     return self;
 }
@@ -38,7 +38,7 @@ NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUse
     
     [self.view setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:1]];
     
-    [self.tableView setContentInset:UIEdgeInsetsMake(60, 0, 0, 0)];
+    [self.tableView setContentInset:UIEdgeInsetsMake(64, 0, 0, 0)];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -70,6 +70,8 @@ NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUse
             return @"Web View";
         case MERLeftViewControllerTagPaginatedScrolling:
             return @"Paginated Scrolling";
+        case MERLeftViewControllerTagTextView:
+            return @"Gradient Text View";
         default:
             break;
     }
