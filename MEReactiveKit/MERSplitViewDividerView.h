@@ -1,6 +1,6 @@
 //
 //  MERSplitViewDividerView.h
-//  fp09-rally-v2
+//  MEReactiveKit
 //
 //  Created by William Towe on 3/3/14.
 //  Copyright (c) 2014 Maestro, LLC. All rights reserved.
