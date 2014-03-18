@@ -13,13 +13,39 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ `MERClockView` is a `UIView` subclass that displays a clock face.
+ 
+ It can optionally animate when a new time is set.
+ */
 @interface MERClockView : UIView
 
+/**
+ The time represented by the receiver.
+ 
+ Calls `setTime:animated:`, passing NO for the _animated_ parameter.
+ */
 @property (strong,nonatomic) NSDate *time;
+/**
+ Sets the time represented by the receiver, with optional animation.
+ 
+ @param time The new time
+ @param animated Whether the change should be animated
+ */
 - (void)setTime:(NSDate *)time animated:(BOOL)animated;
 
+/**
+ Returns the time the animation takes whenever `setTime:animated:` is called and passed YES or the _animated_ parameter.
+ 
+ The default is 1.0.
+ */
 @property (assign,nonatomic) NSTimeInterval timeAnimationDuration UI_APPEARANCE_SELECTOR;
 
+/**
+ The color the clock face and hands.
+ 
+ The default is `[UIColor blackColor]`.
+ */
 @property (strong,nonatomic) UIColor *color UI_APPEARANCE_SELECTOR;
 
 @end

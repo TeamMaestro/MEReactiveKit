@@ -67,6 +67,10 @@
     
     @weakify(self);
     
+    RACSignal *cellSeparatorColorSignal = [[[RACObserve(self, separatorColor) distinctUntilChanged] map:^id(UIColor *value) {
+        return (__bridge id)value.CGColor;
+    }] deliverOn:[RACScheduler mainThreadScheduler]];
+    
     void(^createSeparatorLayersIfNecessary)(void) = ^{
         @strongify(self);
         
@@ -79,10 +83,6 @@
             [self setBottomSeparatorLayer:[CALayer layer]];
             [self setLeftSeparatorLayer:[CALayer layer]];
             [self setRightSeparatorLayer:[CALayer layer]];
-            
-            RACSignal *cellSeparatorColorSignal = [[[RACObserve(self, separatorColor) distinctUntilChanged] map:^id(UIColor *value) {
-                return (__bridge id)value.CGColor;
-            }] deliverOn:[RACScheduler mainThreadScheduler]];
             
             RAC(self.topSeparatorLayer,backgroundColor) = cellSeparatorColorSignal;
             RAC(self.bottomSeparatorLayer,backgroundColor) = cellSeparatorColorSignal;
@@ -123,7 +123,7 @@
 }
 
 + (UIColor *)_defaultSeparatorColor; {
-    return [UIColor redColor];
+    return [UIColor lightGrayColor];
 }
 
 @end

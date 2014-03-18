@@ -11,14 +11,37 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import "MERView.h"
+#import <UIKit/UIKit.h>
 
+/**
+ This notification is posted whenever the next item is tapped.
+ 
+ The receiver is the object of the notification.
+ */
 extern NSString *const MERNextPreviousInputAccessoryViewNotificationDidTapNextItem;
+/**
+ This notification is posted whenever the previous item is tapped.
+ 
+ The receiver is the object of the notification.
+ */
 extern NSString *const MERNextPreviousInputAccessoryViewNotificationDidTapPreviousItem;
+/**
+ This notification is posted whenever the done item is tapped.
+ 
+ The receiver is the object of the notification.
+ */
 extern NSString *const MERNextPreviousInputAccessoryViewNotificationDidTapDoneItem;
 
-@interface MERNextPreviousInputAccessoryView : MERView
+/**
+ `MERNextPreviousInputAccessoryView` is a `UIView` subclass that manages next, previous, and done toolbar items.
+ 
+ It is intended to be used as the `inputAccessoryView` of a `UIResponder` subclass.
+ */
+@interface MERNextPreviousInputAccessoryView : UIView
 
+/**
+ Returns a new input accessory view, sized to the correct height.
+ */
 + (instancetype)inputAccessoryView;
 
 @end

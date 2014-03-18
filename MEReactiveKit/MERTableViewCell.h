@@ -14,7 +14,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- Mask that describes the separator options of the receiver.
+ Mask that describes the cell separator options of the receiver.
  
  - `MERTableViewCellSeparatorOptionNone`, no separators are displayed
  - `MERTableViewCellSeparatorOptionTop`, a top separator is displayed

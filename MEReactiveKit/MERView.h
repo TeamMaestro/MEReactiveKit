@@ -13,6 +13,18 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Mask that describes the separator options of the receiver.
+ 
+ - `MERViewSeparatorOptionNone`, no separators are displayed
+ - `MERViewSeparatorOptionTop`, a top separator is displayed
+ - `MERViewSeparatorOptionLeft`, a left separator is displayed
+ - `MERViewSeparatorOptionBottom`, a bottom separator is displayed
+ - `MERViewSeparatorOptionRight`, a right separator is displayed
+ - `MERViewSeparatorOptionTopBottom`, top and bottom separators are displayed
+ - `MERViewSeparatorOptionLeftRight`, left and right separators are displayed
+ - `MERViewSeparatorOptionAll`, top, left, bottom, and right separators are displayed
+ */
 typedef NS_OPTIONS(NSInteger, MERViewSeparatorOptions) {
     MERViewSeparatorOptionNone = 0,
     MERViewSeparatorOptionTop = 1 << 0,
@@ -24,9 +36,24 @@ typedef NS_OPTIONS(NSInteger, MERViewSeparatorOptions) {
     MERViewSeparatorOptionAll = MERViewSeparatorOptionTop | MERViewSeparatorOptionLeft | MERViewSeparatorOptionBottom | MERViewSeparatorOptionRight
 };
 
+/**
+ `MERView` is a `UIView` subclass that provides additional useful behavior.
+ */
 @interface MERView : UIView
 
+/**
+ The separator options applied to the receiver.
+ 
+ The default is `MERViewSeparatorOptionNone`.
+ 
+ @see MERViewSeparatorOptions
+ */
 @property (assign,nonatomic) MERViewSeparatorOptions separatorOptions;
+/**
+ The color applied to the separators of the receiver.
+ 
+ The default is `[UIColor lightGrayColor]`.
+ */
 @property (strong,nonatomic) UIColor *separatorColor;
 
 @end

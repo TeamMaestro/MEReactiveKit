@@ -13,6 +13,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ `MERScrollView` is a `UIScrollView` subclass that provides a gradient fade at the top and/or bottom of its frame.
+ */
 @interface MERScrollView : UIScrollView
 
 /**
