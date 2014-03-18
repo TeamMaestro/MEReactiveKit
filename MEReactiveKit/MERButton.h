@@ -13,6 +13,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ An API compatible replacement for `UIButton`.
+ */
 @interface MERButton : UIControl
 
 @property (assign,nonatomic) UIControlContentHorizontalAlignment imageHorizontalAlignment;

@@ -13,10 +13,22 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ `MERTextField` is a `UITextField` subclass that adds additional useful properties.
+ */
 @interface MERTextField : UITextField
 
+/**
+ The edge insets applied to the text of the receiver, both when editing and displaying, including the placeholder text.
+ */
 @property (assign,nonatomic) UIEdgeInsets textEdgeInsets UI_APPEARANCE_SELECTOR;
+/**
+ The edge insets applied to the left view.
+ */
 @property (assign,nonatomic) UIEdgeInsets leftViewEdgeInsets UI_APPEARANCE_SELECTOR;
+/**
+ The edge insets applied to the right view.
+ */
 @property (assign,nonatomic) UIEdgeInsets rightViewEdgeInsets UI_APPEARANCE_SELECTOR;
 
 @end

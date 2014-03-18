@@ -18,19 +18,40 @@ extern NSString *const MERPickerViewButtonNotificationDidResignFirstResponder;
 
 @protocol MERPickerViewButtonDataSource;
 
+/**
+ A `MERButton` subclass that manages a `UIPickerView` as its `inputView`.
+ */
 @interface MERPickerViewButton : MERButton
 
+/**
+ Returns the data source assigned to the receiver.
+ */
 @property (weak,nonatomic) id<MERPickerViewButtonDataSource> dataSource;
 
+/**
+ The index of the selected row of the picker view managed by the receiver.
+ */
 @property (assign,nonatomic) NSInteger pickerSelectedRow;
+/**
+ Whether the picker view managed by the receiver should show its selection indicator.
+ */
 @property (assign,nonatomic) BOOL pickerShowsSelectionIndicator;
 
 @end
 
 @protocol MERPickerViewButtonDataSource <NSObject>
 @required
+/**
+ The number of rows in the picker view managed by the receiver.
+ */
 - (NSInteger)numberOfRowsInPickerViewButton:(MERPickerViewButton *)button;
+/**
+ The title for the row at the given index.
+ */
 - (NSString *)pickerViewButton:(MERPickerViewButton *)button titleForRowAtIndex:(NSInteger)index;
 @optional
+/**
+ The attributed title for the row at the given index. If the data source responds to this method, its value is preferred over the return value from `pickerViewButton:titleForRowAtIndex:`.
+ */
 - (NSAttributedString *)pickerViewButton:(MERPickerViewButton *)button attributedTitleForRowAtIndex:(NSInteger)index;
 @end

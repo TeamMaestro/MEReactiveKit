@@ -13,16 +13,50 @@
 
 #import <MEReactiveKit/MERButton.h>
 
+/**
+ This notification is posted whenever the receiver becomes first responder.
+ 
+ The receiver is the object of the notification.
+ */
 extern NSString *const MERDatePickerViewButtonNotificationDidBecomeFirstResponder;
+/**
+ This notification is posted whenever the receiver resigns first responder.
+ 
+ The receiver is the object of the notification.
+ */
 extern NSString *const MERDatePickerViewButtonNotificationDidResignFirstResponder;
 
+/**
+ A `MERButton` subclass that manages a `UIDatePickerView` as its `inputView`.
+ */
 @interface MERDatePickerViewButton : MERButton
 
+/**
+ The date represented by the receiver.
+ 
+ The default is `[NSDate date]`.
+ */
 @property (strong,nonatomic) NSDate *datePickerDate;
+/**
+ The mode of the date picker managed by the receiver.
+ 
+ The default is `UIDatePickerModeDateAndTime`.
+ */
 @property (assign,nonatomic) UIDatePickerMode datePickerMode;
+/**
+ The minimum date of the date picker managed by the receiver.
+ */
 @property (strong,nonatomic) NSDate *datePickerMinimumDate;
+/**
+ The maximum date of the date picker managed by the receiver.
+ */
 @property (strong,nonatomic) NSDate *datePickerMaximumDate;
 
+/**
+ The `NSDateFormatter` instance used to format the `datePickerDate` as the receiver's title.
+ 
+ The default is a `NSDateFormatter` instance with `dateStyle` and `timeStyle` set to `NSDateFormatterShortStyle`.
+ */
 @property (strong,nonatomic) NSDateFormatter *dateFormatter UI_APPEARANCE_SELECTOR;
 
 @end

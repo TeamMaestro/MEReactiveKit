@@ -15,6 +15,9 @@
 
 extern NSTimeInterval const MERSliderAnimationDuration;
 
+/**
+ An API compatible replacement for `UISlider`.
+ */
 @interface MERSlider : UIControl
 
 @property (assign,nonatomic,getter = isContinuous) BOOL continuous;

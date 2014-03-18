@@ -13,6 +13,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ An API compatible replacement for `UIPageControl`.
+ */
 @interface MERPageControl : UIControl
 
 @property (assign,nonatomic) NSInteger numberOfPages;

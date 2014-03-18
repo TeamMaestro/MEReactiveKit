@@ -15,6 +15,9 @@
 
 extern NSTimeInterval const MERSwitchAnimationDuration;
 
+/**
+ An API compatible replacement for `UISwitch`.
+ */
 @interface MERSwitch : UIControl
 
 @property (assign,nonatomic,getter = isOn) BOOL on;
