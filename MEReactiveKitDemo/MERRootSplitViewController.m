@@ -17,6 +17,7 @@
 #import "MERDetailWebViewController.h"
 #import "MERPaginatedScrollingViewController.h"
 #import "MERDetailTextViewController.h"
+#import "MERControlsViewController.h"
 
 @interface MERRootSplitViewController ()
 
@@ -51,6 +52,9 @@
             break;
         case MERLeftViewControllerTagTextView:
             viewController = [[MERDetailTextViewController alloc] init];
+            break;
+        case MERLeftViewControllerTagControls:
+            viewController = [[MERControlsViewController alloc] init];
             break;
         default:
             break;

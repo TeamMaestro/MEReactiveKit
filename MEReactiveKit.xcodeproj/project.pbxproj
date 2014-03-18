@@ -32,6 +32,7 @@
 		7994EF1A18D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */; };
 		7994EF1D18D7BFDC00CDE54E /* MERRootSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1C18D7BFDC00CDE54E /* MERRootSplitViewController.m */; };
 		7994EF2018D7C25900CDE54E /* MERDetailTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */; };
+		7994EF6518D7CFEC00CDE54E /* MERControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF6418D7CFEC00CDE54E /* MERControlsViewController.m */; };
 		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
 		79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */; };
 		79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB2518D56C5D00A2414E /* InfoPlist.strings */; };
@@ -179,6 +180,8 @@
 		7994EF1C18D7BFDC00CDE54E /* MERRootSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERRootSplitViewController.m; sourceTree = "<group>"; };
 		7994EF1E18D7C25900CDE54E /* MERDetailTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERDetailTextViewController.h; sourceTree = "<group>"; };
 		7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDetailTextViewController.m; sourceTree = "<group>"; };
+		7994EF6318D7CFEC00CDE54E /* MERControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERControlsViewController.h; sourceTree = "<group>"; };
+		7994EF6418D7CFEC00CDE54E /* MERControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERControlsViewController.m; sourceTree = "<group>"; };
 		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
@@ -564,6 +567,8 @@
 				7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */,
 				7994EF1E18D7C25900CDE54E /* MERDetailTextViewController.h */,
 				7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */,
+				7994EF6318D7CFEC00CDE54E /* MERControlsViewController.h */,
+				7994EF6418D7CFEC00CDE54E /* MERControlsViewController.m */,
 				79E1FB9C18D574BE00A2414E /* Images.xcassets */,
 				79E1FB9118D574BE00A2414E /* Supporting Files */,
 			);
@@ -795,6 +800,7 @@
 				79E1FB9718D574BE00A2414E /* main.m in Sources */,
 				7994EF1718D798DA00CDE54E /* MERDetailWebViewController.m in Sources */,
 				7994EF2018D7C25900CDE54E /* MERDetailTextViewController.m in Sources */,
+				7994EF6518D7CFEC00CDE54E /* MERControlsViewController.m in Sources */,
 				7994EF1D18D7BFDC00CDE54E /* MERRootSplitViewController.m in Sources */,
 				79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */,
 				7994EF1A18D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m in Sources */,
@@ -1002,7 +1008,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -1024,7 +1030,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MEReactiveKitDemo/MEReactiveKitDemo-Prefix.pch";
-				HEADER_SEARCH_PATHS = "";
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "MEReactiveKitDemo/MEReactiveKitDemo-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";

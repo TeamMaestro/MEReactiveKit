@@ -28,7 +28,7 @@ NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUse
     if (!(self = [super init]))
         return nil;
     
-    [self setTags:@[@(MERLeftViewControllerTagWebView),@(MERLeftViewControllerTagScrollView),@(MERLeftViewControllerTagPaginatedScrolling),@(MERLeftViewControllerTagTextView)]];
+    [self setTags:@[@(MERLeftViewControllerTagWebView),@(MERLeftViewControllerTagScrollView),@(MERLeftViewControllerTagPaginatedScrolling),@(MERLeftViewControllerTagTextView),@(MERLeftViewControllerTagControls)]];
     
     return self;
 }
@@ -72,6 +72,8 @@ NSString *const MERLeftViewControllerUserInfoKeyTag = @"MERLeftViewControllerUse
             return @"Paginated Scrolling";
         case MERLeftViewControllerTagTextView:
             return @"Gradient Text View";
+        case MERLeftViewControllerTagControls:
+            return @"Controls";
         default:
             break;
     }

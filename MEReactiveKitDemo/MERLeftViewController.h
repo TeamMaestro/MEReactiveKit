@@ -17,7 +17,8 @@ typedef NS_ENUM(NSInteger, MERLeftViewControllerTag) {
     MERLeftViewControllerTagWebView,
     MERLeftViewControllerTagScrollView,
     MERLeftViewControllerTagPaginatedScrolling,
-    MERLeftViewControllerTagTextView
+    MERLeftViewControllerTagTextView,
+    MERLeftViewControllerTagControls
 };
 
 extern NSString *const MERLeftViewControllerNotificationDidChangeTag;
