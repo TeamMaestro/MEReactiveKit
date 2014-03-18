@@ -13,6 +13,14 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Mask that describes the separator options of the receiver.
+ 
+ - `MERTableViewCellSeparatorOptionNone`, no separators are displayed
+ - `MERTableViewCellSeparatorOptionTop`, a top separator is displayed
+ - `MERTableViewCellSeparatorOptionBottom`, a bottom separator is displayed
+ - `MERTableViewCellSeparatorOptionAll`, top and bottom separators are displayed
+ */
 typedef NS_OPTIONS(NSInteger, MERTableViewCellSeparatorOptions) {
     MERTableViewCellSeparatorOptionNone = 0,
     MERTableViewCellSeparatorOptionTop = 1 << 0,
@@ -22,16 +30,44 @@ typedef NS_OPTIONS(NSInteger, MERTableViewCellSeparatorOptions) {
 
 @class RACSignal;
 
+/**
+ `MERTableViewCell` is a `UITableViewCell` subclass that provides common functionality.
+ */
 @interface MERTableViewCell : UITableViewCell
 
+/**
+ Returns the content view edge insets applied to the receiver.
+ 
+ These are applied within `layoutSubviews`.
+ */
 @property (assign,nonatomic) UIEdgeInsets contentViewEdgeInsets;
 
+/**
+ The cell separator options applied to the receiver.
+ 
+ @see MERTableViewCellSeparatorOptions
+ */
 @property (assign,nonatomic) MERTableViewCellSeparatorOptions cellSeparatorOptions;
+/**
+ The cell separator color applied to the receiver.
+ */
 @property (strong,nonatomic) UIColor *cellSeparatorColor;
 
+/**
+ A signal that sends next with the highlighted state of the receiver.
+ */
 @property (readonly,nonatomic) RACSignal *highlightedSignal;
+/**
+ A signal that sends next with a tuple containing the highlighted state and whether the change was animated.
+ */
 @property (readonly,nonatomic) RACSignal *highlightedTupleSignal;
+/**
+ A signal that sends next with the selected state of the receiver.
+ */
 @property (readonly,nonatomic) RACSignal *selectedSignal;
+/**
+ A signal that sends next with a tupel containing the selected state and whether the change was animated.
+ */
 @property (readonly,nonatomic) RACSignal *selectedTupleSignal;
 
 @end
