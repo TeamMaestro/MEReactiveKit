@@ -38,6 +38,8 @@
     _topViewControllerAnchorAnimationDuration = [self.class _defaultTopViewControllerAnchorAnimationDuration];
     _topViewControllerResetAnimationDuration = [self.class _defaultTopViewControllerResetAnimationDuration];
     
+    [self setPeekAmount:44];
+    
     @weakify(self);
     
     [[[[RACObserve(self, tapGestureRecognizer)

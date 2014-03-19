@@ -22,9 +22,6 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-    [[UIActivityIndicatorView appearanceWhenContainedIn:[MERPaginatedScrollingView class], nil] setColor:self.window.tintColor];
-    
     self.window.rootViewController = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [[MERRootSplitViewController alloc] init] : [[MERRootSlidingViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;

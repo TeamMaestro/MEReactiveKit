@@ -103,15 +103,13 @@
             @strongify(self);
             
             CGRect endFrame = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-            NSTimeInterval animationDuration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-            UIViewAnimationCurve animationCurve = [note.userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
             
             endFrame = [self.view convertRect:[self.view.window convertRect:endFrame fromWindow:nil] fromView:nil];
             
             [self setKeyboardVisible:YES];
             [self setKeyboardFrame:endFrame];
             
-            [subscriber sendNext:RACTuplePack([NSValue valueWithCGRect:endFrame],@(animationDuration),@(animationCurve))];
+            [subscriber sendNext:RACTuplePack([NSValue valueWithCGRect:endFrame])];
             
             return nil;
         }];
@@ -154,15 +152,13 @@
             @strongify(self);
             
             CGRect endFrame = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-            NSTimeInterval animationDuration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-            UIViewAnimationCurve animationCurve = [note.userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
             
             endFrame = [self.view convertRect:[self.view.window convertRect:endFrame fromWindow:nil] fromView:nil];
             
             [self setKeyboardVisible:NO];
             [self setKeyboardFrame:endFrame];
             
-            [subscriber sendNext:RACTuplePack([NSValue valueWithCGRect:endFrame],@(animationDuration),@(animationCurve))];
+            [subscriber sendNext:RACTuplePack([NSValue valueWithCGRect:endFrame])];
             
             return nil;
         }];
@@ -203,15 +199,13 @@
             @strongify(self);
             
             CGRect endFrame = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
-            NSTimeInterval animationDuration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
-            UIViewAnimationCurve animationCurve = [note.userInfo[UIKeyboardAnimationCurveUserInfoKey] integerValue];
             
             endFrame = [self.view convertRect:[self.view.window convertRect:endFrame fromWindow:nil] fromView:nil];
             
             [self setKeyboardVisible:YES];
             [self setKeyboardFrame:endFrame];
             
-            [subscriber sendNext:RACTuplePack([NSValue valueWithCGRect:endFrame],@(animationDuration),@(animationCurve))];
+            [subscriber sendNext:RACTuplePack([NSValue valueWithCGRect:endFrame])];
             
             return nil;
         }];

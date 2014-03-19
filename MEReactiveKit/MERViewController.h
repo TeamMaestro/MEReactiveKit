@@ -13,6 +13,18 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ Mask that describes the navigation item options of the receiver.
+ 
+ This affects when `configureNavigationItem` is called.
+ 
+ - `MERViewControllerNavigationItemOptionNone`, `configureNavigationItem` is never called
+ - `MERViewControllerNavigationItemOptionInit`, `configureNavigationItem` is called within `init`
+ - `MERViewControllerNavigationItemOptionViewDidLoad`, `configureNavigationItem` is called within `viewDidLoad`
+ - `MERViewControllerNavigationItemOptionViewWillAppear`, `configureNavigationItem` is called within `viewWillAppear:`
+ - `MERViewControllerNavigationItemOptionWillAnimateRotationToInterfaceOrientation`, `configureNavigationItem` is called within `willAnimateRotationToInterfaceOrientation:duration:`
+ - `MERViewControllerNavigationItemOptionDidRotateFromInterfaceOrientation`, `configureNavigationItem` is called within `didRotateFromInterfaceOrientation:`
+ */
 typedef NS_OPTIONS(NSInteger, MERViewControllerNavigationItemOptions) {
     MERViewControllerNavigationItemOptionNone = 0,
     MERViewControllerNavigationItemOptionInit = 1 << 0,
@@ -24,19 +36,61 @@ typedef NS_OPTIONS(NSInteger, MERViewControllerNavigationItemOptions) {
 
 @class RACSignal;
 
+/**
+ `MERViewController` is a `UIViewController` subclass that provides additional useful properties related to keyboard management and navigation item management.
+ */
 @interface MERViewController : UIViewController
 
+/**
+ The navigation item options assigned to the receiver.
+ 
+ The default is `MERViewControllerNavigationItemOptionInit`.
+ 
+ @see MERViewControllerNavigationItemOptions
+ */
 @property (readonly,assign,nonatomic) MERViewControllerNavigationItemOptions navigationItemOptions;
 
+/**
+ The method gets called depending on the `navigationItemOptions` assigned to the receiver.
+ 
+ The receiver should perform navigation item related configuration within this method.
+ */
 - (void)configureNavigationItem;
 
+/**
+ Returns whether the keyboard is visible.
+ */
 @property (readonly,assign,nonatomic,getter = isKeyboardVisible) BOOL keyboardVisible;
+/**
+ Returns the current keyboard frame, in the receiver's view coordinate space.
+ 
+ If the keyboard is not visible, returns `CGRectZero`.
+ */
 @property (readonly,assign,nonatomic) CGRect keyboardFrame;
+
+/**
+ A signal that sends next whenever the `UIKeyboardWillChangeFrameNotification` is posted with a tuple containing the keyboard frame, animation duration, and animation curve.
+ */
 @property (readonly,nonatomic) RACSignal *keyboardWillChangeFrameSignal;
+/**
+ A signal that sends next whenever the `UIKeyboardDidChangeFrameNotification` is posted with a tuple containing the keyboard frame.
+ */
 @property (readonly,nonatomic) RACSignal *keyboardDidChangeFrameSignal;
+/**
+ A signal that sends next whenever the `UIKeyboardWillHideNotification` is posted with a tuple containing the keyboard frame, animation duration, and animation curve.
+ */
 @property (readonly,nonatomic) RACSignal *keyboardWillHideSignal;
+/**
+ A signal that sends next whenever the `UIKeyboardDidHideNotification` is posted with a tuple containing the keyboard frame.
+ */
 @property (readonly,nonatomic) RACSignal *keyboardDidHideSignal;
+/**
+ A signal that sends next whenever the `UIKeyboardWillShowNotification` is posted with a tuple containing the keyboard frame, animation duration, and animation curve.
+ */
 @property (readonly,nonatomic) RACSignal *keyboardWillShowSignal;
+/**
+ A signal that sends next whenever the `UIKeyboardDidShowNotification` is posted with a tuple containing the keyboard frame.
+ */
 @property (readonly,nonatomic) RACSignal *keyboardDidShowSignal;
 
 @end

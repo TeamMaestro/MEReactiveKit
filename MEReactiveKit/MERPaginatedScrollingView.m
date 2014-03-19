@@ -32,7 +32,7 @@
     
     _edgeInsets = UIEdgeInsetsMake(20, 0, 20, 0);
     
-    [self setActivityIndicatorView:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite]];
+    [self setActivityIndicatorView:[[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray]];
     [self.activityIndicatorView sizeToFit];
     [self addSubview:self.activityIndicatorView];
     

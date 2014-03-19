@@ -24,27 +24,82 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
     MERSlidingViewControllerAnchorGestureOptionTap = 1 << 0
 };
 
+/**
+ `MERSlidingViewController` is a `MERViewController` subclass that implements the sliding navigation paradigm.
+ */
 @interface MERSlidingViewController : MERViewController
 
+/**
+ Returns the top view controller assigned to the receiver.
+ */
 @property (strong,nonatomic) UIViewController *topViewController;
+/**
+ Returns the left view controller that is placed underneath the `topViewController`.
+ */
 @property (strong,nonatomic) UIViewController *leftViewController;
+/**
+ Returns the right view controller that is placed underneath the `topViewController`.
+ */
 @property (strong,nonatomic) UIViewController *rightViewController;
 
+/**
+ Returns the state of the `topViewController` assigned to the receiver.
+ 
+ @see MERSlidingViewControllerTopViewControllerState
+ */
 @property (readonly,assign,nonatomic) MERSlidingViewControllerTopViewControllerState topViewControllerState;
 
+/**
+ Returns the anchor gesture options assigned to the receiver.
+ 
+ @see MERSlidingViewControllerAnchorGestureOptions
+ */
 @property (assign,nonatomic) MERSlidingViewControllerAnchorGestureOptions anchorGestureOptions;
 
+/**
+ Returns the amount of the `topViewController` that is visible whenever the receiver is anchored to the left or right.
+ 
+ The default is 44.0.
+ */
 @property (assign,nonatomic) CGFloat peekAmount;
 
+/**
+ Returns the duration of the animation that is performed when the `topViewController` is anchored to the left or right.
+ 
+ The default is 0.5.
+ */
 @property (assign,nonatomic) NSTimeInterval topViewControllerAnchorAnimationDuration UI_APPEARANCE_SELECTOR;
+/**
+ Returns the duration of the animation that is performed when the `topViewController` is reset.
+ 
+ The default is 0.33.
+ */
 @property (assign,nonatomic) NSTimeInterval topViewControllerResetAnimationDuration UI_APPEARANCE_SELECTOR;
 
+/**
+ Calls `toggleTopViewControllerToRightAnimated:animations:completion:`, passing _animated_, nil, and nil.
+ 
+ @see toggleTopViewControllerToRightAnimated:animations:completion:
+ */
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated;
+/**
+ If `topViewControllerState` is `MERSlidingViewControllerTopViewControllerStateCenter`
+ */
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
 
+/**
+ Calls `anchorTopViewControllerToRightAnimated:animations:completion:`, passing _animated_, nil, and nil.
+ 
+ @see anchorTopViewControllerToRightAnimated:animations:completion:
+ */
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated;
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
 
+/**
+ Calls `resetTopViewControllerAnimated:animations:completion:`, passing _animated_, nil, and nil.
+ 
+ @see resetTopViewControllerAnimated:animations:completion:
+ */
 - (void)resetTopViewControllerAnimated:(BOOL)animated;
 - (void)resetTopViewControllerAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
 
@@ -52,6 +107,9 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
 
 @interface UIViewController (MERSlidingViewControllerExtensions)
 
+/**
+ Returns the root `MERSlidingViewController` instance related to the receiver, or nil if there is no `resetTopViewControllerAnimated` in the view hierarchy.
+ */
 @property (readonly,nonatomic) MERSlidingViewController *MER_slidingViewController;
 
 @end
