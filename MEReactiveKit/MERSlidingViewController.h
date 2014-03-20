@@ -83,7 +83,11 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
  */
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated;
 /**
- If `topViewControllerState` is `MERSlidingViewControllerTopViewControllerStateCenter`
+ If `topViewControllerState` is `MERSlidingViewControllerTopViewControllerStateCenter`, calls `anchorTopViewControllerToRightAnimated:animations:completion:`, passing _animated_, _animations_, and _completion_; otherwise calls `resetTopViewControllerAnimated:animations:completion:`, passing _animated_, _animations_, and _completion_.
+ 
+ @param animated Whether to animate the transition
+ @param animations The animations block to invoke along with the transition animation
+ @param completion The completion block that is invoked when the transition is complete
  */
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
 
@@ -93,6 +97,13 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
  @see anchorTopViewControllerToRightAnimated:animations:completion:
  */
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated;
+/**
+ Anchors the `topViewController` to the right edge of the receiver's view, optionally animating the transition.
+ 
+ @param animated Whether to animate the transition
+ @param animations The animations block to invoke along with the transition animation
+ @param completion The completion block that is invoked when the transition is complete
+ */
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
 
 /**
@@ -101,6 +112,13 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
  @see resetTopViewControllerAnimated:animations:completion:
  */
 - (void)resetTopViewControllerAnimated:(BOOL)animated;
+/**
+ Resets the `topViewController` in the receiver's view, optionally animating the transition.
+ 
+ @param animated Whether to animate the transition
+ @param animations The animations block to invoke along with the transition animation
+ @param completion The completion block that is invoked when the transition is complete
+ */
 - (void)resetTopViewControllerAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
 
 @end
