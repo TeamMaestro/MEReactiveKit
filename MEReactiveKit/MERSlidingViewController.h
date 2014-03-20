@@ -13,12 +13,25 @@
 
 #import "MERViewController.h"
 
+/**
+ Enum that describes the state of the `topViewController`.
+ 
+ - `MERSlidingViewControllerTopViewControllerStateCenter`, the `topViewController` is centered
+ - `MERSlidingViewControllerTopViewControllerStateLeft`, the `topViewController` is anchored to the left edge
+ - `MERSlidingViewControllerTopViewControllerStateRight`, the `topViewController` is anchored to the right edge
+ */
 typedef NS_ENUM(NSInteger, MERSlidingViewControllerTopViewControllerState) {
     MERSlidingViewControllerTopViewControllerStateCenter,
     MERSlidingViewControllerTopViewControllerStateLeft,
     MERSlidingViewControllerTopViewControllerStateRight
 };
 
+/**
+ Mask that indicates which gestures to apply to the `topViewController` when it is anchored to the left or right edge.
+ 
+ - `MERSlidingViewControllerAnchorGestureOptionNone`, do not apply any gestures
+ - `MERSlidingViewControllerAnchorGestureOptionTap`, apply a tap gesture
+ */
 typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
     MERSlidingViewControllerAnchorGestureOptionNone = 0,
     MERSlidingViewControllerAnchorGestureOptionTap = 1 << 0
