@@ -35,8 +35,8 @@
     
     UIBarButtonItem *reloadItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:nil action:NULL];
     UIBarButtonItem *stopItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:nil action:NULL];
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRewind target:nil action:NULL];
-    UIBarButtonItem *forwardItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFastForward target:nil action:NULL];
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage ME_imageNamed:@"web_view_back.png" inBundleNamed:MEReactiveKitResourcesBundleName] style:UIBarButtonItemStylePlain target:nil action:NULL];
+    UIBarButtonItem *forwardItem = [[UIBarButtonItem alloc] initWithImage:[UIImage ME_imageNamed:@"web_view_forward.png" inBundleNamed:MEReactiveKitResourcesBundleName] style:UIBarButtonItemStylePlain target:nil action:NULL];
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:NULL];
     UIBarButtonItem *flexibleSpaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     
@@ -110,7 +110,7 @@
     }]];
     
     RAC(self,toolbarItems) = [[RACSignal combineLatest:@[[RACObserve(self, loading) distinctUntilChanged]] reduce:^id(NSNumber *loading){
-        return (loading.boolValue) ? @[flexibleSpaceItem,stopItem,flexibleSpaceItem,backItem,flexibleSpaceItem,forwardItem,flexibleSpaceItem,shareItem,flexibleSpaceItem] : @[flexibleSpaceItem,reloadItem,flexibleSpaceItem,backItem,flexibleSpaceItem,forwardItem,flexibleSpaceItem,shareItem,flexibleSpaceItem];
+        return (loading.boolValue) ? @[flexibleSpaceItem,backItem,flexibleSpaceItem,forwardItem,flexibleSpaceItem,stopItem,flexibleSpaceItem,shareItem,flexibleSpaceItem] : @[flexibleSpaceItem,backItem,flexibleSpaceItem,forwardItem,flexibleSpaceItem,reloadItem,flexibleSpaceItem,shareItem,flexibleSpaceItem];
     }] deliverOn:[RACScheduler mainThreadScheduler]];
     
     return self;
