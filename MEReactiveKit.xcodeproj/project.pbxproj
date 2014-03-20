@@ -301,6 +301,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		792A478218DB7CB200CE7538 /* Web View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				792A476A18DB790E00CE7538 /* web_view_back.png */,
+				792A476B18DB790E00CE7538 /* web_view_back@2x.png */,
+				792A476C18DB790E00CE7538 /* web_view_forward.png */,
+				792A476D18DB790E00CE7538 /* web_view_forward@2x.png */,
+				792A477418DB7B8400CE7538 /* web_view_open_in_safari~ipad.png */,
+				792A477218DB7B8400CE7538 /* web_view_open_in_safari@2x~ipad.png */,
+				792A477518DB7B8400CE7538 /* web_view_open_in_safari~iphone.png */,
+				792A477318DB7B8400CE7538 /* web_view_open_in_safari@2x~iphone.png */,
+				792A477C18DB7C4A00CE7538 /* web_view_open_in_chrome~ipad.png */,
+				792A477A18DB7C4A00CE7538 /* web_view_open_in_chrome@2x~ipad.png */,
+				792A477D18DB7C4A00CE7538 /* web_view_open_in_chrome~iphone.png */,
+				792A477B18DB7C4A00CE7538 /* web_view_open_in_chrome@2x~iphone.png */,
+			);
+			name = "Web View Controller";
+			sourceTree = "<group>";
+		};
 		7994EEE618D78B5700CDE54E /* Categories */ = {
 			isa = PBXGroup;
 			children = (
@@ -462,18 +481,7 @@
 		79E1FB7118D56FFE00A2414E /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				792A476A18DB790E00CE7538 /* web_view_back.png */,
-				792A476B18DB790E00CE7538 /* web_view_back@2x.png */,
-				792A476C18DB790E00CE7538 /* web_view_forward.png */,
-				792A476D18DB790E00CE7538 /* web_view_forward@2x.png */,
-				792A477418DB7B8400CE7538 /* web_view_open_in_safari~ipad.png */,
-				792A477218DB7B8400CE7538 /* web_view_open_in_safari@2x~ipad.png */,
-				792A477518DB7B8400CE7538 /* web_view_open_in_safari~iphone.png */,
-				792A477318DB7B8400CE7538 /* web_view_open_in_safari@2x~iphone.png */,
-				792A477C18DB7C4A00CE7538 /* web_view_open_in_chrome~ipad.png */,
-				792A477A18DB7C4A00CE7538 /* web_view_open_in_chrome@2x~ipad.png */,
-				792A477D18DB7C4A00CE7538 /* web_view_open_in_chrome~iphone.png */,
-				792A477B18DB7C4A00CE7538 /* web_view_open_in_chrome@2x~iphone.png */,
+				792A478218DB7CB200CE7538 /* Web View Controller */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
