@@ -13,7 +13,7 @@
 
 #import "MERActivityOpenInSafari.h"
 #import "MERCommon.h"
-#import <MEKit/MEKitMacros.h>
+#import <MEKit/UIImage+MEExtensions.h>
 
 @interface MERActivityOpenInSafari ()
 @property (copy,nonatomic) NSURL *url;
@@ -28,19 +28,7 @@
     return NSLocalizedStringFromTableInBundle(@"Open in Safari", nil, MEReactiveKitResourcesBundle(), @"activity open in safari title");
 }
 - (UIImage *)activityImage {
-    // TODO: need an actual image for this activity
-    CGSize const kSize = (MEKitIsiPad()) ? CGSizeMake(76, 76) : CGSizeMake(60, 60);
-    
-    UIGraphicsBeginImageContext(kSize);
-    
-    [[UIColor blueColor] setFill];
-    UIRectFill(CGRectMake(0, 0, kSize.width, kSize.height));
-    
-    UIImage *retval = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    return retval;
+    return [UIImage ME_imageNamed:@"web_view_open_in_safari.png" inBundleNamed:MEReactiveKitResourcesBundleName];
 }
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     for (id activityItem in activityItems) {

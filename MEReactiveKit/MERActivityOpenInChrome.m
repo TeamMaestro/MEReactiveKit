@@ -13,7 +13,7 @@
 
 #import "MERActivityOpenInChrome.h"
 #import "MERCommon.h"
-#import <MEKit/MEKitMacros.h>
+#import <MEKit/UIImage+MEExtensions.h>
 
 static NSString *const kMERActivityOpenInChromePrefix = @"googlechrome://";
 
@@ -30,19 +30,7 @@ static NSString *const kMERActivityOpenInChromePrefix = @"googlechrome://";
     return NSLocalizedStringFromTableInBundle(@"Open in Chrome", nil, MEReactiveKitResourcesBundle(), @"activity open in chrome title");
 }
 - (UIImage *)activityImage {
-    // TODO: need an actual image for this activity
-    CGSize const kSize = (MEKitIsiPad()) ? CGSizeMake(76, 76) : CGSizeMake(60, 60);
-    
-    UIGraphicsBeginImageContext(kSize);
-    
-    [[UIColor blueColor] setFill];
-    UIRectFill(CGRectMake(0, 0, kSize.width, kSize.height));
-    
-    UIImage *retval = UIGraphicsGetImageFromCurrentImageContext();
-    
-    UIGraphicsEndImageContext();
-    
-    return retval;
+    return [UIImage ME_imageNamed:@"web_view_open_in_chrome.png" inBundleNamed:MEReactiveKitResourcesBundleName];
 }
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     for (id activityItem in activityItems) {
