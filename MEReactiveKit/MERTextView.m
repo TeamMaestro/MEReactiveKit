@@ -91,6 +91,7 @@
     _placeholderTextColor = [self.class _defaultPlaceholderTextColor];
     
     [self setPlaceholderLabel:[[UILabel alloc] initWithFrame:CGRectZero]];
+    [self.placeholderLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.placeholderLabel setNumberOfLines:0];
     [self addSubview:self.placeholderLabel];
     
