@@ -81,13 +81,13 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
  
  The default is 0.5.
  */
-@property (assign,nonatomic) NSTimeInterval topViewControllerAnchorAnimationDuration UI_APPEARANCE_SELECTOR;
+@property (assign,nonatomic) NSTimeInterval topViewControllerAnchorAnimationDuration;
 /**
  Returns the duration of the animation that is performed when the `topViewController` is reset.
  
  The default is 0.33.
  */
-@property (assign,nonatomic) NSTimeInterval topViewControllerResetAnimationDuration UI_APPEARANCE_SELECTOR;
+@property (assign,nonatomic) NSTimeInterval topViewControllerResetAnimationDuration;
 
 /**
  Calls `toggleTopViewControllerToRightAnimated:animations:completion:`, passing _animated_, nil, and nil.
