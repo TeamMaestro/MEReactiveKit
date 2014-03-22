@@ -14,7 +14,7 @@
 #import <UIKit/UIKit.h>
 
 /**
- `MERTextView` is a `UITextView` subclass that provides a gradient fade at the top and/or bottom of its frame. As well as a placeholder and related customization.
+ `MERTextView` is a `UITextView` subclass that provides a gradient fade at the top and/or bottom of its frame, as well as a placeholder and related customization.
  */
 @interface MERTextView : UITextView
 
