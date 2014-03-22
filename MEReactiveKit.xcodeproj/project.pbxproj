@@ -572,6 +572,7 @@
 				79E1FB8218D5703800A2414E /* MERWebViewController */,
 			);
 			name = "View Controllers";
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		79E1FB9018D574BE00A2414E /* MEReactiveKitDemo */ = {
