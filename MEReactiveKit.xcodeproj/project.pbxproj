@@ -352,7 +352,7 @@
 			name = "Pull to Refresh";
 			sourceTree = "<group>";
 		};
-		7994EEFA18D78CC900CDE54E /* Split View Controller */ = {
+		7994EEFA18D78CC900CDE54E /* MERSplitViewController */ = {
 			isa = PBXGroup;
 			children = (
 				7994EEFB18D78CDC00CDE54E /* MERSplitViewController.h */,
@@ -361,18 +361,16 @@
 				7994EEFD18D78CDC00CDE54E /* MERSplitViewDividerView.h */,
 				7994EEFE18D78CDC00CDE54E /* MERSplitViewDividerView.m */,
 			);
-			name = "Split View Controller";
-			path = SplitViewController;
+			path = MERSplitViewController;
 			sourceTree = "<group>";
 		};
-		7994EF0D18D7918C00CDE54E /* Sliding View Controller */ = {
+		7994EF0D18D7918C00CDE54E /* MERSlidingViewController */ = {
 			isa = PBXGroup;
 			children = (
 				7994EF0E18D791F400CDE54E /* MERSlidingViewController.h */,
 				7994EF0F18D791F400CDE54E /* MERSlidingViewController.m */,
 			);
-			name = "Sliding View Controller";
-			path = SlidingViewController;
+			path = MERSlidingViewController;
 			sourceTree = "<group>";
 		};
 		79E1FAE918D56C1300A2414E = {
@@ -469,7 +467,7 @@
 				79E1FB2E18D56CE700A2414E /* MERCommon.h */,
 				79E1FB2F18D56CE700A2414E /* MERCommon.m */,
 			);
-			name = Common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		79E1FB6418D56F4200A2414E /* Private */ = {
@@ -504,7 +502,7 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		79E1FB8218D5703800A2414E /* Web View Controller */ = {
+		79E1FB8218D5703800A2414E /* MERWebViewController */ = {
 			isa = PBXGroup;
 			children = (
 				79E1FB5218D56E3B00A2414E /* MERWebViewController.h */,
@@ -514,8 +512,7 @@
 				79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */,
 				79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */,
 			);
-			name = "Web View Controller";
-			path = WebViewController;
+			path = MERWebViewController;
 			sourceTree = "<group>";
 		};
 		79E1FB8318D570C200A2414E /* Controls */ = {
@@ -570,9 +567,9 @@
 			children = (
 				79E1FB5018D56E3B00A2414E /* MERViewController.h */,
 				79E1FB5118D56E3B00A2414E /* MERViewController.m */,
-				7994EF0D18D7918C00CDE54E /* Sliding View Controller */,
-				7994EEFA18D78CC900CDE54E /* Split View Controller */,
-				79E1FB8218D5703800A2414E /* Web View Controller */,
+				7994EF0D18D7918C00CDE54E /* MERSlidingViewController */,
+				7994EEFA18D78CC900CDE54E /* MERSplitViewController */,
+				79E1FB8218D5703800A2414E /* MERWebViewController */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
