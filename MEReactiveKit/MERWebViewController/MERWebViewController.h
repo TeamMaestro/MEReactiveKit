@@ -13,12 +13,33 @@
 
 #import "MERViewController.h"
 
+/**
+ `MERWebViewController` is a `MERViewController` subclass that manages a `UIWebView` instance.
+ */
 @interface MERWebViewController : MERViewController
 
+/**
+ Returns whether the receiver's `UIWebView` is loading.
+ */
 @property (readonly,assign,nonatomic,getter = isLoading) BOOL loading;
 
+/**
+ Calls `loadURLRequest:`, passing `[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]`.
+ 
+ @see loadURLRequest:
+ */
 - (void)loadURLString:(NSString *)urlString;
+/**
+ Calls `loadURLRequest:`, passing `[NSURLRequest requestWithURL:url]`.
+ 
+ @see loadURLRequest:
+ */
 - (void)loadURL:(NSURL *)url;
+/**
+ Calls `loadRequest:` on the receiver's `UIWebView`, passing _request_.
+ 
+ @param request The request to load, passing nil will stop any existing load
+ */
 - (void)loadURLRequest:(NSURLRequest *)request;
 
 @end

@@ -13,6 +13,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ `UIActivity` subclass to allow opening of `NSURL` instances within Chrome.
+ */
 @interface MERActivityOpenInChrome : UIActivity
 
 @end

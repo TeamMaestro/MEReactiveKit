@@ -13,6 +13,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ `UIActivity` subclass to allow opening of `NSURL` instances within Safari.
+ */
 @interface MERActivityOpenInSafari : UIActivity
 
 @end
