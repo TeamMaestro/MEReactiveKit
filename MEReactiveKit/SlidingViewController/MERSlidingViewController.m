@@ -105,6 +105,9 @@
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated; {
     [self toggleTopViewControllerToRightAnimated:animated animations:nil completion:nil];
 }
+- (void)toggleTopViewControllerToRightAnimated:(BOOL)animated completion:(void (^)(void))completion; {
+    [self toggleTopViewControllerToRightAnimated:animated animations:nil completion:completion];
+}
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
     if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateCenter)
         [self anchorTopViewControllerToRightAnimated:animated animations:animations completion:completion];

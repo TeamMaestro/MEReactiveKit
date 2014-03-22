@@ -96,6 +96,12 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
  */
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated;
 /**
+ Calls `toggleTopViewControllerToRightAnimated:animations:completion:`, passing _animated_, nil, and _completion_.
+ 
+ @see toggleTopViewControllerToRightAnimated:animations:completion:
+ */
+- (void)toggleTopViewControllerToRightAnimated:(BOOL)animated completion:(void (^)(void))completion;
+/**
  If `topViewControllerState` is `MERSlidingViewControllerTopViewControllerStateCenter`, calls `anchorTopViewControllerToRightAnimated:animations:completion:`, passing _animated_, _animations_, and _completion_; otherwise calls `resetTopViewControllerAnimated:animations:completion:`, passing _animated_, _animations_, and _completion_.
  
  @param animated Whether to animate the transition
