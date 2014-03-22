@@ -31,9 +31,9 @@ extern NSString *const MERSplitViewControllerNotificationDidDismissMasterViewCon
 
 @property (readonly,assign,nonatomic) MERSplitViewControllerMasterViewControllerState masterViewControllerState;
 
-@property (strong,nonatomic) Class dividerViewClass UI_APPEARANCE_SELECTOR;
+@property (strong,nonatomic) Class dividerViewClass;
 
-@property (assign,nonatomic) NSTimeInterval masterViewControllerAnimationDuration UI_APPEARANCE_SELECTOR;
+@property (assign,nonatomic) NSTimeInterval masterViewControllerAnimationDuration;
 
 - (void)toggleMasterViewControllerAnimated:(BOOL)animated;
 - (void)toggleMasterViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion;
