@@ -117,6 +117,12 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
  */
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated;
 /**
+ Calls `anchorTopViewControllerToRightAnimated:animations:completion:`, passing _animated_, nil, and _completion_.
+ 
+ @see anchorTopViewControllerToRightAnimated:animations:completion:
+ */
+- (void)anchorTopViewControllerToRightAnimated:(BOOL)animated completion:(void (^)(void))completion;
+/**
  Anchors the `topViewController` to the right edge of the receiver's view, optionally animating the transition.
  
  @param animated Whether to animate the transition
@@ -131,6 +137,12 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
  @see resetTopViewControllerAnimated:animations:completion:
  */
 - (void)resetTopViewControllerAnimated:(BOOL)animated;
+/**
+ Calls `resetTopViewControllerAnimated:animations:completion:`, passing _animated_, nil, and _completion_.
+ 
+ @see resetTopViewControllerAnimated:animations:completion:
+ */
+- (void)resetTopViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion;
 /**
  Resets the `topViewController` in the receiver's view, optionally animating the transition.
  

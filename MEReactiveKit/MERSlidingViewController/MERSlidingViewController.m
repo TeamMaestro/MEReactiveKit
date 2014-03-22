@@ -118,6 +118,9 @@
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated; {
     [self anchorTopViewControllerToRightAnimated:animated animations:nil completion:nil];
 }
+- (void)anchorTopViewControllerToRightAnimated:(BOOL)animated completion:(void (^)(void))completion; {
+    [self anchorTopViewControllerToRightAnimated:animated animations:nil completion:completion];
+}
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
     if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateRight)
         return;
@@ -153,6 +156,9 @@
 
 - (void)resetTopViewControllerAnimated:(BOOL)animated; {
     [self resetTopViewControllerAnimated:animated animations:nil completion:nil];
+}
+- (void)resetTopViewControllerAnimated:(BOOL)animated completion:(void (^)(void))completion; {
+    [self resetTopViewControllerAnimated:animated animations:nil completion:completion];
 }
 - (void)resetTopViewControllerAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
     if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateCenter)
