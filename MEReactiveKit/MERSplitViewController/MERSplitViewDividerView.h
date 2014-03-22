@@ -14,8 +14,16 @@
 #import <UIKit/UIKit.h>
 #import "MERSplitViewDividerViewClass.h"
 
+/**
+ `MERSplitViewDividerView` is the default divider view class used by `MERSplitViewController`.
+ */
 @interface MERSplitViewDividerView : UIView <MERSplitViewDividerViewClass>
 
+/**
+ Returns the divider color assigned to the receiver.
+ 
+ The default is `[UIColor blackColor]`.
+ */
 @property (strong,nonatomic) UIColor *dividerColor UI_APPEARANCE_SELECTOR;
 
 @end

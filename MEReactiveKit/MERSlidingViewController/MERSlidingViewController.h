@@ -201,7 +201,7 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
 @interface UIViewController (MERSlidingViewControllerExtensions)
 
 /**
- Returns the root `MERSlidingViewController` instance related to the receiver, or nil if there is no `resetTopViewControllerAnimated` in the view hierarchy.
+ Returns the root `MERSlidingViewController` instance related to the receiver, or nil if there is no `MERSlidingViewController` in the view hierarchy.
  */
 @property (readonly,nonatomic) MERSlidingViewController *MER_slidingViewController;
 

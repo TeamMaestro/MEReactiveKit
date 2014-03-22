@@ -15,5 +15,8 @@
 
 @protocol MERSplitViewDividerViewClass <NSObject>
 @required
+/**
+ Returns the width of the divider view.
+ */
 - (CGFloat)dividerWidth;
 @end

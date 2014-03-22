@@ -82,8 +82,8 @@ NSString *const MERSplitViewControllerNotificationDidDismissMasterViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MEAssert(self.masterViewController,@"%@ cannot be nil!",NSStringFromSelector(@selector(masterViewController)));
-    MEAssert(self.detailViewController,@"%@ cannot be nil!",NSStringFromSelector(@selector(detailViewController)));
+    NSAssert(self.masterViewController,@"masterViewController cannot be nil!");
+    NSAssert(self.detailViewController,@"detailViewController cannot be nil!");
     
     [self.view addSubview:self.masterViewController.view];
     [self.view addSubview:self.detailViewController.view];
