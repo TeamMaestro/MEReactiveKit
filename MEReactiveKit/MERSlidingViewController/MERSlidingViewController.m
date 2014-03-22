@@ -102,6 +102,7 @@
     return CGRectContainsPoint(self.topViewController.view.bounds, [touch locationInView:self.topViewController.view]);
 }
 #pragma mark *** Public Methods ***
+#pragma mark Toggle Top Right
 - (void)toggleTopViewControllerToRightAnimated:(BOOL)animated; {
     [self toggleTopViewControllerToRightAnimated:animated animations:nil completion:nil];
 }
@@ -114,7 +115,7 @@
     else
         [self resetTopViewControllerAnimated:animated animations:animations completion:completion];
 }
-
+#pragma mark Anchor Top Right
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated; {
     [self anchorTopViewControllerToRightAnimated:animated animations:nil completion:nil];
 }
@@ -153,7 +154,59 @@
         }
     }];
 }
-
+#pragma mark Toggle Top Left
+- (void)toggleTopViewControllerToLeftAnimated:(BOOL)animated; {
+    [self toggleTopViewControllerToLeftAnimated:animated animations:nil completion:nil];
+}
+- (void)toggleTopViewControllerToLeftAnimated:(BOOL)animated completion:(void (^)(void))completion; {
+    [self toggleTopViewControllerToLeftAnimated:animated animations:nil completion:completion];
+}
+- (void)toggleTopViewControllerToLeftAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
+    if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateCenter)
+        [self anchorTopViewControllerToLeftAnimated:animated animations:animations completion:completion];
+    else
+        [self resetTopViewControllerAnimated:animated animations:animations completion:completion];
+}
+#pragma mark Anchor Top Left
+- (void)anchorTopViewControllerToLeftAnimated:(BOOL)animated; {
+    [self anchorTopViewControllerToLeftAnimated:animated animations:nil completion:nil];
+}
+- (void)anchorTopViewControllerToLeftAnimated:(BOOL)animated completion:(void (^)(void))completion; {
+    [self anchorTopViewControllerToLeftAnimated:animated animations:nil completion:completion];
+}
+- (void)anchorTopViewControllerToLeftAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
+    if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateLeft)
+        return;
+    
+    @weakify(self);
+    
+    [self.view setUserInteractionEnabled:NO];
+    
+    [UIView animateWithDuration:(animated) ? self.topViewControllerAnchorAnimationDuration : 0 delay:0 usingSpringWithDamping:0.5 initialSpringVelocity:0 options:UIViewAnimationOptionBeginFromCurrentState|UIViewAnimationOptionCurveEaseInOut animations:^{
+        @strongify(self);
+        
+        [self.topViewController.view setFrame:[self _topViewControllerFrameForTopViewControllerState:MERSlidingViewControllerTopViewControllerStateLeft]];
+        
+        if (animations)
+            animations();
+        
+    } completion:^(BOOL finished) {
+        @strongify(self);
+        
+        if (finished) {
+            [self setTopViewControllerState:MERSlidingViewControllerTopViewControllerStateLeft];
+            
+            if ((self.anchorGestureOptions & MERSlidingViewControllerAnchorGestureOptionTap) != 0)
+                [self setTapGestureRecognizer:[[UITapGestureRecognizer alloc] init]];
+            
+            [self.view setUserInteractionEnabled:YES];
+            
+            if (completion)
+                completion();
+        }
+    }];
+}
+#pragma mark Reset Top
 - (void)resetTopViewControllerAnimated:(BOOL)animated; {
     [self resetTopViewControllerAnimated:animated animations:nil completion:nil];
 }

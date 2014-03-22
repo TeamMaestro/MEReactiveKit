@@ -132,6 +132,48 @@ typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
 
 /**
+ Calls `toggleTopViewControllerToLeftAnimated:animations:completion:`, passing _animated_, nil, and nil.
+ 
+ @see toggleTopViewControllerToLeftAnimated:animations:completion:
+ */
+- (void)toggleTopViewControllerToLeftAnimated:(BOOL)animated;
+/**
+ Calls `toggleTopViewControllerToLeftAnimated:animations:completion:`, passing _animated_, nil, and _completion_.
+ 
+ @see toggleTopViewControllerToLeftAnimated:animations:completion:
+ */
+- (void)toggleTopViewControllerToLeftAnimated:(BOOL)animated completion:(void (^)(void))completion;
+/**
+ If `topViewControllerState` is `MERSlidingViewControllerTopViewControllerStateCenter`, calls `anchorTopViewControllerToLeftAnimated:animations:completion:`, passing _animated_, _animations_, and _completion_; otherwise calls `resetTopViewControllerAnimated:animations:completion:`, passing _animated_, _animations_, and _completion_.
+ 
+ @param animated Whether to animate the transition
+ @param animations The animations block to invoke along with the transition animation
+ @param completion The completion block that is invoked when the transition is complete
+ */
+- (void)toggleTopViewControllerToLeftAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
+
+/**
+ Calls `anchorTopViewControllerToLeftAnimated:animations:completion:`, passing _animated_, nil, and nil.
+ 
+ @see anchorTopViewControllerToLeftAnimated:animations:completion:
+ */
+- (void)anchorTopViewControllerToLeftAnimated:(BOOL)animated;
+/**
+ Calls `anchorTopViewControllerToLeftAnimated:animations:completion:`, passing _animated_, nil, and _completion_.
+ 
+ @see anchorTopViewControllerToLeftAnimated:animations:completion:
+ */
+- (void)anchorTopViewControllerToLeftAnimated:(BOOL)animated completion:(void (^)(void))completion;
+/**
+ Anchors the `topViewController` to the left edge of the receiver's view, optionally animating the transition.
+ 
+ @param animated Whether to animate the transition
+ @param animations The animation block to invoke along with the transition animation
+ @param completion The completion block that is invoked when the transition is complete
+ */
+- (void)anchorTopViewControllerToLeftAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion;
+
+/**
  Calls `resetTopViewControllerAnimated:animations:completion:`, passing _animated_, nil, and nil.
  
  @see resetTopViewControllerAnimated:animations:completion:
