@@ -34,7 +34,9 @@ typedef NS_ENUM(NSInteger, MERSlidingViewControllerTopViewControllerState) {
  */
 typedef NS_OPTIONS(NSInteger, MERSlidingViewControllerAnchorGestureOptions) {
     MERSlidingViewControllerAnchorGestureOptionNone = 0,
-    MERSlidingViewControllerAnchorGestureOptionTap = 1 << 0
+    MERSlidingViewControllerAnchorGestureOptionTap = 1 << 0,
+    MERSlidingViewControllerAnchorGestureOptionPan = 1 << 1,
+    MERSlidingViewControllerAnchorGestureOptionAll = MERSlidingViewControllerAnchorGestureOptionTap | MERSlidingViewControllerAnchorGestureOptionPan
 };
 
 /**

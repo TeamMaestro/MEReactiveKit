@@ -19,6 +19,7 @@
 #import <MEKit/UIColor+MEExtensions.h>
 #import <MEKit/UIImage+MEExtensions.h>
 #import <MEKit/UIView+MEExtensions.h>
+#import <MEKit/UIViewController+MEExtensions.h>
 #import <MEKit/UITableViewCell+MEExtensions.h>
 #import <MEKit/UIFont+MEExtensions.h>
 

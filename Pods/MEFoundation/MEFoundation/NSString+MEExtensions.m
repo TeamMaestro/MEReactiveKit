@@ -226,7 +226,7 @@ static inline uint8_t MEBinaryValueForCharacter(unichar character) {
 	NSUInteger total = 0, exponent = 0, base = 2;
 	
 	while (index > 0) {
-		uint8_t value = MEHexValueForCharacter([string characterAtIndex:--index]);
+		uint8_t value = MEBinaryValueForCharacter([string characterAtIndex:--index]);
 		total += value * (NSUInteger)powf(base, exponent++);
 	}
 	return total;

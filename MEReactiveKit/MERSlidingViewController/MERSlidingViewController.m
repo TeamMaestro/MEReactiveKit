@@ -20,10 +20,13 @@
 @property (readwrite,assign,nonatomic) MERSlidingViewControllerTopViewControllerState topViewControllerState;
 
 @property (strong,nonatomic) UITapGestureRecognizer *tapGestureRecognizer;
+@property (strong,nonatomic) UIPanGestureRecognizer *panGestureRecognizer;
 
 - (CGRect)_topViewControllerFrameForTopViewControllerState:(MERSlidingViewControllerTopViewControllerState)state;
 - (CGRect)_leftViewControllerFrameForTopViewControllerState:(MERSlidingViewControllerTopViewControllerState)state;
 - (CGRect)_rightViewControllerFrameForTopViewControllerState:(MERSlidingViewControllerTopViewControllerState)state;
+
+- (void)_setupOrCleanupTopViewGestureRecognizers;
 
 + (NSTimeInterval)_defaultTopViewControllerAnchorAnimationDuration;
 + (NSTimeInterval)_defaultTopViewControllerResetAnimationDuration;
@@ -35,9 +38,8 @@
     if (!(self = [super init]))
         return nil;
     
-    _topViewControllerAnchorAnimationDuration = [self.class _defaultTopViewControllerAnchorAnimationDuration];
-    _topViewControllerResetAnimationDuration = [self.class _defaultTopViewControllerResetAnimationDuration];
-    
+    [self setTopViewControllerAnchorAnimationDuration:[self.class _defaultTopViewControllerAnchorAnimationDuration]];
+    [self setTopViewControllerResetAnimationDuration:[self.class _defaultTopViewControllerResetAnimationDuration]];
     [self setPeekAmount:44];
     
     @weakify(self);
@@ -71,13 +73,71 @@
           }
       }];
     
+    [[[[RACObserve(self, panGestureRecognizer)
+        distinctUntilChanged]
+       deliverOn:[RACScheduler mainThreadScheduler]]
+      combinePreviousWithStart:nil reduce:^id(id previous, id current) {
+          return RACTuplePack(previous,current);
+      }] subscribeNext:^(RACTuple *value) {
+          @strongify(self);
+          
+          RACTupleUnpack(UIPanGestureRecognizer *previous, UIPanGestureRecognizer *current) = value;
+          
+          if (previous) {
+              [previous.view removeGestureRecognizer:previous];
+          }
+          
+          if (current) {
+              [current setMinimumNumberOfTouches:1];
+              [current setMaximumNumberOfTouches:1];
+              [current setDelegate:self];
+              
+              __block CGPoint topViewOriginStart = CGPointZero;
+              
+              [[current rac_gestureSignal] subscribeNext:^(UIPanGestureRecognizer *value) {
+                  @strongify(self);
+                  
+                  switch (value.state) {
+                      case UIGestureRecognizerStateBegan:
+                          topViewOriginStart = CGPointMake(CGRectGetMinX(self.topViewController.view.frame), CGRectGetMinY(self.topViewController.view.frame));
+                          break;
+                      case UIGestureRecognizerStateChanged:
+                          [self.topViewController.view setFrame:CGRectMake(topViewOriginStart.x + [value translationInView:self.view].x, topViewOriginStart.y, CGRectGetWidth(self.topViewController.view.frame), CGRectGetHeight(self.topViewController.view.frame))];
+                          break;
+                      case UIGestureRecognizerStateEnded:
+                      case UIGestureRecognizerStateCancelled:
+                          if ([value locationInView:self.view].x <= CGRectGetMidX(self.view.bounds)) {
+                              if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateRight)
+                                  [self resetTopViewControllerAnimated:YES];
+                              else
+                                  [self anchorTopViewControllerToLeftAnimated:YES];
+                          }
+                          else {
+                              if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateRight)
+                                  [self anchorTopViewControllerToRightAnimated:YES];
+                              else
+                                  [self resetTopViewControllerAnimated:YES];
+                          }
+                          
+                          topViewOriginStart = CGPointZero;
+                          break;
+                      default:
+                          break;
+                  }
+              }];
+              
+              [self.view addGestureRecognizer:current];
+          }
+      }];
+    
     return self;
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    MEAssert(self.topViewController,@"%@ cannot be nil!",NSStringFromSelector(@selector(topViewController)));
+    NSAssert(self.topViewController,@"topViewController cannot be nil!");
+    NSAssert(self.leftViewController || self.rightViewController, @"leftViewController or rightViewController must be non-nil!");
     
     [self.view addSubview:self.topViewController.view];
     [self.view addSubview:self.leftViewController.view];
@@ -96,6 +156,7 @@
 }
 #pragma mark UIGestureRecognizerDelegate
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)otherGestureRecognizer {
+    MELogObject(gestureRecognizer);
     return YES;
 }
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
@@ -123,9 +184,6 @@
     [self anchorTopViewControllerToRightAnimated:animated animations:nil completion:completion];
 }
 - (void)anchorTopViewControllerToRightAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
-    if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateRight)
-        return;
-    
     @weakify(self);
     
     [self.view setUserInteractionEnabled:NO];
@@ -144,8 +202,7 @@
         if (finished) {
             [self setTopViewControllerState:MERSlidingViewControllerTopViewControllerStateRight];
         
-            if ((self.anchorGestureOptions & MERSlidingViewControllerAnchorGestureOptionTap) != 0)
-                [self setTapGestureRecognizer:[[UITapGestureRecognizer alloc] init]];
+            [self _setupOrCleanupTopViewGestureRecognizers];
             
             [self.view setUserInteractionEnabled:YES];
             
@@ -175,9 +232,6 @@
     [self anchorTopViewControllerToLeftAnimated:animated animations:nil completion:completion];
 }
 - (void)anchorTopViewControllerToLeftAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
-    if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateLeft)
-        return;
-    
     @weakify(self);
     
     [self.view setUserInteractionEnabled:NO];
@@ -196,8 +250,7 @@
         if (finished) {
             [self setTopViewControllerState:MERSlidingViewControllerTopViewControllerStateLeft];
             
-            if ((self.anchorGestureOptions & MERSlidingViewControllerAnchorGestureOptionTap) != 0)
-                [self setTapGestureRecognizer:[[UITapGestureRecognizer alloc] init]];
+            [self _setupOrCleanupTopViewGestureRecognizers];
             
             [self.view setUserInteractionEnabled:YES];
             
@@ -214,9 +267,6 @@
     [self resetTopViewControllerAnimated:animated animations:nil completion:completion];
 }
 - (void)resetTopViewControllerAnimated:(BOOL)animated animations:(void (^)(void))animations completion:(void (^)(void))completion; {
-    if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateCenter)
-        return;
-    
     @weakify(self);
     
     [self.view setUserInteractionEnabled:NO];
@@ -233,7 +283,8 @@
         
         if (finished) {
             [self setTopViewControllerState:MERSlidingViewControllerTopViewControllerStateCenter];
-            [self setTapGestureRecognizer:nil];
+            
+            [self _setupOrCleanupTopViewGestureRecognizers];
             
             [self.view setUserInteractionEnabled:YES];
             
@@ -275,6 +326,22 @@
         [self.leftViewController didMoveToParentViewController:self];
     }
 }
+- (void)setRightViewController:(UIViewController *)rightViewController {
+    [_rightViewController willMoveToParentViewController:nil];
+    [_rightViewController.view removeFromSuperview];
+    [_rightViewController removeFromParentViewController];
+    
+    _rightViewController = rightViewController;
+    
+    if (self.rightViewController) {
+        [self addChildViewController:self.rightViewController];
+        if (self.isViewLoaded) {
+            [self.view addSubview:self.rightViewController.view];
+            [self.view layoutIfNeeded];
+        }
+        [self.rightViewController didMoveToParentViewController:self];
+    }
+}
 
 - (void)setTopViewControllerAnchorAnimationDuration:(NSTimeInterval)topViewControllerAnchorAnimationDuration {
     _topViewControllerAnchorAnimationDuration = (topViewControllerAnchorAnimationDuration <= 0.0) ? [self.class _defaultTopViewControllerAnchorAnimationDuration] : topViewControllerAnchorAnimationDuration;
@@ -313,6 +380,19 @@
             return CGRectMake(self.peekAmount, 0, CGRectGetWidth(self.view.bounds) - self.peekAmount, CGRectGetHeight(self.view.bounds));
         default:
             return CGRectZero;
+    }
+}
+
+- (void)_setupOrCleanupTopViewGestureRecognizers; {
+    if (self.topViewControllerState == MERSlidingViewControllerTopViewControllerStateCenter) {
+        [self setTapGestureRecognizer:nil];
+        [self setPanGestureRecognizer:nil];
+    }
+    else {
+        if ((self.anchorGestureOptions & MERSlidingViewControllerAnchorGestureOptionTap) != 0)
+            [self setTapGestureRecognizer:[[UITapGestureRecognizer alloc] init]];
+        if ((self.anchorGestureOptions & MERSlidingViewControllerAnchorGestureOptionPan) != 0)
+            [self setPanGestureRecognizer:[[UIPanGestureRecognizer alloc] init]];
     }
 }
 

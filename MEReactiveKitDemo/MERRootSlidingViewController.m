@@ -33,7 +33,7 @@
     if (!(self = [super init]))
         return nil;
     
-    [self setAnchorGestureOptions:MERSlidingViewControllerAnchorGestureOptionTap];
+    [self setAnchorGestureOptions:MERSlidingViewControllerAnchorGestureOptionAll];
     [self setPeekAmount:44];
     [self setTopViewController:[[UINavigationController alloc] initWithRootViewController:[[MERDetailScrollViewController alloc] init]]];
     [self setLeftViewController:[[MERLeftViewController alloc] init]];

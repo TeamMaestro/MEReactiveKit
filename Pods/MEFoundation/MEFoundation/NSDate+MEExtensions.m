@@ -76,9 +76,9 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
     NSParameterAssert(date);
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitWeekOfMonth|NSCalendarUnitWeekday fromDate:date];
+    NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday fromDate:date];
     
-    [comps setWeekday:[calendar maximumRangeOfUnit:NSCalendarUnitWeekday].location];
+    [comps setDay:comps.day - comps.weekday + calendar.firstWeekday];
     [comps setHour:[calendar maximumRangeOfUnit:NSCalendarUnitHour].location];
     [comps setMinute:[calendar maximumRangeOfUnit:NSCalendarUnitMinute].location];
     [comps setSecond:[calendar maximumRangeOfUnit:NSCalendarUnitSecond].location + 1];
@@ -92,9 +92,9 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
     NSParameterAssert(date);
     
     NSCalendar *calendar = [NSCalendar currentCalendar];
-    NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitWeekOfMonth fromDate:date];
+    NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday fromDate:date];
     
-    [comps setWeekday:[calendar maximumRangeOfUnit:NSCalendarUnitWeekday].length];
+    [comps setDay:comps.day - comps.weekday + calendar.firstWeekday + NSMaxRange([calendar maximumRangeOfUnit:NSCalendarUnitWeekday]) - 1];
     [comps setHour:NSMaxRange([calendar maximumRangeOfUnit:NSCalendarUnitHour]) - 1];
     [comps setMinute:NSMaxRange([calendar maximumRangeOfUnit:NSCalendarUnitMinute]) - 1];
     [comps setSecond:NSMaxRange([calendar maximumRangeOfUnit:NSCalendarUnitSecond]) - 1];
@@ -111,7 +111,7 @@ NSTimeInterval const METimeIntervalOneWeek = 604800;
     NSCalendar *calendar = [NSCalendar currentCalendar];
     NSDateComponents *comps = [calendar components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:date];
     
-    [comps setDay:1];
+    [comps setDay:[calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:date].location];
     [comps setHour:[calendar maximumRangeOfUnit:NSCalendarUnitHour].location];
     [comps setMinute:[calendar maximumRangeOfUnit:NSCalendarUnitMinute].location];
     [comps setSecond:[calendar maximumRangeOfUnit:NSCalendarUnitSecond].location + 1];
