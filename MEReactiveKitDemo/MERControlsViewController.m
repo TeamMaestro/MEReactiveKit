@@ -16,6 +16,7 @@
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import <libextobjc/EXTScope.h>
 #import <MEFoundation/MEGeometry.h>
+#import <MEReactiveFoundation/MEReactiveFoundation.h>
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -65,6 +66,8 @@
     [self.datePickerViewButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.datePickerViewButton];
     
+    @weakify(self);
+    
     [[[RACSignal merge:@[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UITextFieldTextDidBeginEditingNotification object:nil],
                          [[NSNotificationCenter defaultCenter] rac_addObserverForName:MERDatePickerViewButtonNotificationDidBecomeFirstResponder object:nil],
                          [[NSNotificationCenter defaultCenter] rac_addObserverForName:MERPickerViewButtonNotificationDidBecomeFirstResponder object:nil]]]
@@ -83,6 +86,38 @@
          UIView *view = note.object;
          
          [view.layer setBorderWidth:0];
+     }];
+    
+    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:MERNextPreviousInputAccessoryViewNotificationDidTapNextItem object:nil]
+      takeUntil:[self rac_willDeallocSignal]]
+     subscribeNext:^(MERNextPreviousInputAccessoryView *view) {
+         @strongify(self);
+         
+         NSArray *responders = @[self.textField,self.pickerViewButton,self.datePickerViewButton];
+         NSInteger index = [responders MER_findIndex:^BOOL(UIResponder *value) {
+             return value.isFirstResponder;
+         }];
+         
+         if ((++index) == responders.count)
+             index = 0;
+         
+         [(UIResponder *)responders[index] becomeFirstResponder];
+    }];
+    
+    [[[[NSNotificationCenter defaultCenter] rac_addObserverForName:MERNextPreviousInputAccessoryViewNotificationDidTapPreviousItem object:nil]
+      takeUntil:[self rac_willDeallocSignal]]
+     subscribeNext:^(MERNextPreviousInputAccessoryView *view) {
+         @strongify(self);
+         
+         NSArray *responders = @[self.textField,self.pickerViewButton,self.datePickerViewButton];
+         NSInteger index = [responders MER_findIndex:^BOOL(UIResponder *value) {
+             return value.isFirstResponder;
+         }];
+         
+         if ((--index) < 0)
+             index = responders.count - 1;
+         
+         [(UIResponder *)responders[index] becomeFirstResponder];
      }];
 }
 - (void)viewDidLayoutSubviews {
