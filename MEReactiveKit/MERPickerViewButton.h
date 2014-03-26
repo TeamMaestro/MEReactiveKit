@@ -13,7 +13,17 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ This notification is posted whenever the receiver becomes first responder.
+ 
+ The receiver is the object of the notification.
+ */
 extern NSString *const MERPickerViewButtonNotificationDidBecomeFirstResponder;
+/**
+ This notification is posted whenever the receiver resigns first responder.
+ 
+ The receiver is the object of the notification.
+ */
 extern NSString *const MERPickerViewButtonNotificationDidResignFirstResponder;
 
 @protocol MERPickerViewButtonDataSource;
