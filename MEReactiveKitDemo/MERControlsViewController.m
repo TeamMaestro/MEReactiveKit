@@ -56,11 +56,13 @@
     
     [self setPickerViewButton:[[MERPickerViewButton alloc] initWithFrame:CGRectZero]];
     [self.pickerViewButton.layer setBorderColor:self.view.tintColor.CGColor];
+    [self.pickerViewButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.pickerViewButton setDataSource:self];
     [self.view addSubview:self.pickerViewButton];
     
     [self setDatePickerViewButton:[[MERDatePickerViewButton alloc] initWithFrame:CGRectZero]];
     [self.datePickerViewButton.layer setBorderColor:self.view.tintColor.CGColor];
+    [self.datePickerViewButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [self.view addSubview:self.datePickerViewButton];
     
     [[[RACSignal merge:@[[[NSNotificationCenter defaultCenter] rac_addObserverForName:UITextFieldTextDidBeginEditingNotification object:nil],

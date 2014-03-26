@@ -17,10 +17,6 @@
 #import <MEReactiveKit/UIScrollView+MERPaginatedScrollingExtensions.h>
 #import <MEReactiveKit/MERPaginatedScrollingView.h>
 
-#import <MEReactiveKit/MERPageControl.h>
-#import <MEReactiveKit/MERSwitch.h>
-#import <MEReactiveKit/MERSlider.h>
-#import <MEReactiveKit/MERButton.h>
 #import <MEReactiveKit/MERPickerViewButton.h>
 #import <MEReactiveKit/MERDatePickerViewButton.h>
 #import <MEReactiveKit/MERTextField.h>

@@ -11,7 +11,7 @@
 //
 //  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-#import <MEReactiveKit/MERButton.h>
+#import <UIKit/UIKit.h>
 
 extern NSString *const MERPickerViewButtonNotificationDidBecomeFirstResponder;
 extern NSString *const MERPickerViewButtonNotificationDidResignFirstResponder;
@@ -23,7 +23,7 @@ extern NSString *const MERPickerViewButtonNotificationDidResignFirstResponder;
  
  Each instance assigns an instance of `MERNextPreviousInputAccessoryView` as its `inputAccessoryView`.
  */
-@interface MERPickerViewButton : MERButton
+@interface MERPickerViewButton : UIButton
 
 /**
  Returns the data source assigned to the receiver.
