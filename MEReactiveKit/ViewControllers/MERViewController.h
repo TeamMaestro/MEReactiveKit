@@ -54,6 +54,8 @@ typedef NS_OPTIONS(NSInteger, MERViewControllerNavigationItemOptions) {
  The method gets called depending on the `navigationItemOptions` assigned to the receiver.
  
  The receiver should perform navigation item related configuration within this method.
+ 
+ @see navigationItemOptions
  */
 - (void)configureNavigationItem;
 
