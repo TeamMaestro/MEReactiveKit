@@ -79,8 +79,8 @@ NSString *const MERNextPreviousInputAccessoryViewNotificationDidTapDoneItem = @"
         }];
     }]];
     
-    [self.toolbar setItems:@[nextItem,
-                             previousItem,
+    [self.toolbar setItems:@[previousItem,
+                             nextItem,
                              [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:NULL],
                              doneItem]];
     
