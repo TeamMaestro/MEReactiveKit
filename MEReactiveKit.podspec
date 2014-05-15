@@ -14,7 +14,7 @@ Pod::Spec.new do |spec|
   spec.dependency "MEReactiveFoundation", "~> 1.0.0"
   spec.dependency "libextobjc/EXTKeyPathCoding", "~> 0.4.0"
   spec.dependency "libextobjc/EXTScope", "~> 0.4.0"
-  spec.dependency "ReactiveCocoa", "~> 2.2.0"
+  spec.dependency "ReactiveCocoa", "~> 2.3.0"
   spec.requires_arc = true
   spec.frameworks = "Foundation", "CoreGraphics", "UIKit", "QuartzCore"
   
