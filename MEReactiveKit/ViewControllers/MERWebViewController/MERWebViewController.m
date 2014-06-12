@@ -175,7 +175,6 @@
     UIActivityIndicatorView *activityIndicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
     
     [activityIndicatorView setHidesWhenStopped:YES];
-    [activityIndicatorView setColor:self.view.tintColor];
     
     UIBarButtonItem *activityItem = [[UIBarButtonItem alloc] initWithCustomView:activityIndicatorView];
     
