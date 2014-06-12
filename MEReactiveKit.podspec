@@ -3,8 +3,8 @@ Pod::Spec.new do |spec|
   spec.version = "1.0.8"
   spec.authors = {"William Towe" => "willbur1984@gmail.com"}
   spec.license = {:type => "MIT", :file => "LICENSE.txt"}
-  spec.homepage = "https://github.com/MaestroElearning/MEReactiveKit"
-  spec.source = {:git => "https://github.com/MaestroElearning/MEReactiveKit.git", :tag => spec.version.to_s}
+  spec.homepage = "https://github.com/TeamMaestro/MEReactiveKit"
+  spec.source = {:git => "https://github.com/TeamMaestro/MEReactiveKit.git", :tag => spec.version.to_s}
   spec.summary = "A collection of classes that extend the UIKit framework, built on top of ReactiveCocoa."
   
   spec.platform = :ios, "7.0"
