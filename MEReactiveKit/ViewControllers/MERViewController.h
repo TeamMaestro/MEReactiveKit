@@ -51,13 +51,22 @@ typedef NS_OPTIONS(NSInteger, MERViewControllerNavigationItemOptions) {
 @property (readonly,assign,nonatomic) MERViewControllerNavigationItemOptions navigationItemOptions;
 
 /**
- The method gets called depending on the `navigationItemOptions` assigned to the receiver.
+ This method gets called depending on the `navigationItemOptions` assigned to the receiver.
  
  The receiver should perform navigation item related configuration within this method.
  
  @see navigationItemOptions
  */
 - (void)configureNavigationItem;
+/**
+ This method gets called depending on the `navigationItemOptions` assigned to the receiver.
+ 
+ The receiver should perform navigation item related configuration within this method.
+ 
+ @param animated Whether the configuration is animated (e.g. called within `viewWillAppear:`)
+ @see navigationItemOptions
+ */
+- (void)configureNavigationItem:(BOOL)animated;
 
 /**
  Returns whether the keyboard is visible.

@@ -30,8 +30,10 @@
     
     [self setNavigationItemOptions:MERViewControllerNavigationItemOptionInit];
     
-    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionInit) != 0)
+    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionInit) != 0) {
         [self configureNavigationItem];
+        [self configureNavigationItem:NO];
+    }
     
     return self;
 }
@@ -39,29 +41,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionViewDidLoad) != 0)
+    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionViewDidLoad) != 0) {
         [self configureNavigationItem];
+        [self configureNavigationItem:NO];
+    }
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
-    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionViewWillAppear) != 0)
+    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionViewWillAppear) != 0) {
         [self configureNavigationItem];
+        [self configureNavigationItem:animated];
+    }
 }
 - (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     [super willAnimateRotationToInterfaceOrientation:toInterfaceOrientation duration:duration];
     
-    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionWillAnimateRotationToInterfaceOrientation) != 0)
+    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionWillAnimateRotationToInterfaceOrientation) != 0) {
         [self configureNavigationItem];
+        [self configureNavigationItem:YES];
+    }
 }
 - (void)didRotateFromInterfaceOrientation:(UIInterfaceOrientation)fromInterfaceOrientation {
     [super didRotateFromInterfaceOrientation:fromInterfaceOrientation];
     
-    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionDidRotateFromInterfaceOrientation) != 0)
+    if ((self.navigationItemOptions & MERViewControllerNavigationItemOptionDidRotateFromInterfaceOrientation) != 0) {
         [self configureNavigationItem];
+        [self configureNavigationItem:NO];
+    }
 }
 #pragma mark *** Public Methods ***
 - (void)configureNavigationItem; {
+    
+}
+- (void)configureNavigationItem:(BOOL)animated; {
     
 }
 #pragma mark Properties
