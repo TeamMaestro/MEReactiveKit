@@ -84,6 +84,7 @@
 		79E1FBD118D5891F00A2414E /* MERWebViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB5218D56E3B00A2414E /* MERWebViewController.h */; };
 		79E1FBD218D5891F00A2414E /* MERActivityOpenInChrome.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3318D56E3B00A2414E /* MERActivityOpenInChrome.h */; };
 		79E1FBD318D5891F00A2414E /* MERActivityOpenInSafari.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */; };
+		96D7675E19BA05BE0069AC9C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D7675D19BA05BE0069AC9C /* WebKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +235,7 @@
 		79E1FBBD18D5823700A2414E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		79E1FBBF18D5830D00A2414E /* MERScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERScrollView.h; sourceTree = "<group>"; };
 		79E1FBC018D5830D00A2414E /* MERScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERScrollView.m; sourceTree = "<group>"; };
+		96D7675D19BA05BE0069AC9C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -258,6 +260,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96D7675E19BA05BE0069AC9C /* WebKit.framework in Frameworks */,
 				7902E9BC18D58ABA005903E2 /* libMEReactiveKit.a in Frameworks */,
 				79E1FBBE18D5823700A2414E /* libPods.a in Frameworks */,
 				79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */,
@@ -366,6 +369,7 @@
 		79E1FAF418D56C1300A2414E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96D7675D19BA05BE0069AC9C /* WebKit.framework */,
 				79E1FBBD18D5823700A2414E /* libPods.a */,
 				79E1FAF518D56C1300A2414E /* Foundation.framework */,
 				79E1FB0318D56C1300A2414E /* XCTest.framework */,
@@ -631,7 +635,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = MER;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = "Maestro, LLC.";
 			};
 			buildConfigurationList = 79E1FAED18D56C1300A2414E /* Build configuration list for PBXProject "MEReactiveKit" */;
@@ -834,7 +838,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -872,7 +875,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -971,7 +973,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -997,7 +998,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

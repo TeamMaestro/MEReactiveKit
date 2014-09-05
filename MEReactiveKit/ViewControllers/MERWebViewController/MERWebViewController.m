@@ -20,8 +20,19 @@
 #import "MERActivityOpenInSafari.h"
 #import "MERActivityOpenInChrome.h"
 
+#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+#import <WebKit/WebKit.h>
+#endif
+
+
+#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+@interface MERWebViewController () <WKNavigationDelegate>
+@property (strong,nonatomic) WKWebView *webView;
+@property (readwrite,nonatomic) RACSignal *progressSignal;
+#else
 @interface MERWebViewController () <UIWebViewDelegate>
 @property (strong,nonatomic) UIWebView *webView;
+#endif
 
 @property (readwrite,assign,nonatomic,getter = isLoading) BOOL loading;
 @property (strong,nonatomic) NSURLRequest *request;
@@ -119,9 +130,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+    [self setWebView:[[WKWebView alloc] initWithFrame:CGRectZero]];
+    [self.webView setNavigationDelegate:self];
+    [self setProgressSignal:RACObserve(self.webView, estimatedProgress)];
+#else
     [self setWebView:[[UIWebView alloc] initWithFrame:CGRectZero]];
     [self.webView setScalesPageToFit:YES];
     [self.webView setDelegate:self];
+#endif
     [self.view addSubview:self.webView];
     
     @weakify(self);
@@ -162,7 +179,11 @@
     [super willMoveToParentViewController:parent];
     
     if (!parent) {
+#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+        [self.webView setNavigationDelegate:nil];
+#else
         [self.webView setDelegate:nil];
+#endif
         [self.webView stopLoading];
     }
 }
@@ -211,6 +232,25 @@
         [self.navigationItem setRightBarButtonItems:@[activityItem]];
     }
 }
+
+#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+#pragma mark WKNavigationDelegate
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation
+{
+    [self setLoading:YES];
+    [self setTitle:NSLocalizedStringFromTableInBundle(@"Loading…", nil, MEReactiveKitResourcesBundle(), @"web view controller loading with ellipsis")];
+}
+- (void)webView:(WKWebView *)webView didFinishNavigation:(WKNavigation *)navigation
+{
+    [self setLoading:NO];
+    [self setTitle:self.webView.title];
+}
+- (void)webView:(WKWebView *)webView didFailProvisionalNavigation:(WKNavigation *)navigation withError:(NSError *)error
+{
+    MELogObject(error);
+    [self setLoading:NO];
+}
+#else
 #pragma mark UIWebViewDelegate
 - (void)webViewDidStartLoad:(UIWebView *)webView {
     [self setLoading:YES];
@@ -218,6 +258,7 @@
 }
 - (void)webViewDidFinishLoad:(UIWebView *)webView {
     [self setLoading:NO];
+    
     [self setTitle:[self.webView stringByEvaluatingJavaScriptFromString:@"document.title"]];
 }
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
@@ -225,6 +266,9 @@
     
     [self setLoading:NO];
 }
+#endif
+
+
 #pragma mark *** Public Methods ***
 - (void)loadURLString:(NSString *)urlString; {
     [self loadURLRequest:(urlString) ? [NSURLRequest requestWithURL:[NSURL URLWithString:urlString]] : nil];
