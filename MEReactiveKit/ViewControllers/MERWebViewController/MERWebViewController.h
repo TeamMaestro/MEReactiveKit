@@ -25,9 +25,9 @@
 
 #if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
 /**
- Returns an estimate of the fraction complete for a document navigation (iOS 8+)
+ Returns signal for an estimate of the fraction complete for a document navigation (iOS 8+)
  */
-@property (readonly,nonatomic) double progress;
+@property (readonly,nonatomic) RACSignal *progressSignal;
 #endif
 
 /**
