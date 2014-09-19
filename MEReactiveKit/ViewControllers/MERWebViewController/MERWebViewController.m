@@ -20,12 +20,12 @@
 #import "MERActivityOpenInSafari.h"
 #import "MERActivityOpenInChrome.h"
 
-#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+#if (( defined(__IPHONE_OS_VERSION_MIN_ALLOWED) && __IPHONE_OS_VERSION_MIN_ALLOWED >= 80000 ))
 #import <WebKit/WebKit.h>
 #endif
 
 
-#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+#if (( defined(__IPHONE_OS_VERSION_MIN_ALLOWED) && __IPHONE_OS_VERSION_MIN_ALLOWED >= 80000 ))
 @interface MERWebViewController () <WKNavigationDelegate>
 @property (strong,nonatomic) WKWebView *webView;
 @property (readwrite,nonatomic) RACSignal *progressSignal;
@@ -130,7 +130,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+#if (( defined(__IPHONE_OS_VERSION_MIN_ALLOWED) && __IPHONE_OS_VERSION_MIN_ALLOWED >= 80000 ))
     [self setWebView:[[WKWebView alloc] initWithFrame:CGRectZero]];
     [self.webView setNavigationDelegate:self];
     [self setProgressSignal:RACObserve(self.webView, estimatedProgress)];
@@ -179,7 +179,7 @@
     [super willMoveToParentViewController:parent];
     
     if (!parent) {
-#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+#if (( defined(__IPHONE_OS_VERSION_MIN_ALLOWED) && __IPHONE_OS_VERSION_MIN_ALLOWED >= 80000 ))
         [self.webView setNavigationDelegate:nil];
 #else
         [self.webView setDelegate:nil];
@@ -233,7 +233,7 @@
     }
 }
 
-#if (( defined(__IPHONE_OS_VERSION_MAX_ALLOWED) && __IPHONE_OS_VERSION_MAX_ALLOWED >= 80000 ))
+#if (( defined(__IPHONE_OS_VERSION_MIN_ALLOWED) && __IPHONE_OS_VERSION_MIN_ALLOWED >= 80000 ))
 #pragma mark WKNavigationDelegate
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation
 {
