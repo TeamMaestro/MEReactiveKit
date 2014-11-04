@@ -118,9 +118,10 @@ NSString *const MERSplitViewControllerNotificationDidDismissMasterViewController
     }
 }
 
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < 80000
+
 - (void)willRotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
     [super willRotateToInterfaceOrientation:toInterfaceOrientation duration:duration];
-    
     if (self.masterViewControllerState == MERSplitViewControllerMasterViewControllerStatePresented &&
         UIInterfaceOrientationIsLandscape(toInterfaceOrientation)) {
         
@@ -128,6 +129,23 @@ NSString *const MERSplitViewControllerNotificationDidDismissMasterViewController
         [self setGestureRecognizer:nil];
     }
 }
+
+#else
+
+- (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
+{
+    [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
+    
+    if (self.masterViewControllerState == MERSplitViewControllerMasterViewControllerStatePresented && UIInterfaceOrientationIsLandscape([[UIDevice currentDevice] orientation])) {
+        [self setMasterViewControllerState:MERSplitViewControllerMasterViewControllerStateDismissed];
+        [self setGestureRecognizer:nil];
+    }
+    
+}
+
+#endif
+
+
 #pragma mark UIGestureRecognizerDelegate
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gestureRecognizer shouldReceiveTouch:(UITouch *)touch {
     return (!CGRectContainsPoint(self.masterViewController.view.bounds, [touch locationInView:self.masterViewController.view]));
