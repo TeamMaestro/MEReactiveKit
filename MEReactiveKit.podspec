@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "MEReactiveKit"
-  spec.version = "1.0.9"
+  spec.version = "1.0.10"
   spec.authors = {"William Towe" => "willbur1984@gmail.com"}
   spec.license = {:type => "MIT", :file => "LICENSE.txt"}
   spec.homepage = "https://github.com/TeamMaestro/MEReactiveKit"
