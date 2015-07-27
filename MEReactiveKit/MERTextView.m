@@ -93,7 +93,6 @@
     [self setPlaceholderLabel:[[UILabel alloc] initWithFrame:CGRectZero]];
     [self.placeholderLabel setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self.placeholderLabel setNumberOfLines:0];
-    [self addSubview:self.placeholderLabel];
     
     @weakify(self);
     
@@ -141,8 +140,17 @@
       }];
     
     RAC(self.placeholderLabel,hidden) = [RACSignal combineLatest:@[RACObserve(self, text),[self rac_textSignal]] reduce:^id(NSString *value1, NSString *value2) {
-        return @(value1.length > 0 || value2.length > 0);
+        NSNumber *hidden = @(value1.length > 0 || value2.length > 0);
+        
+        if ( [hidden boolValue] ) {
+            [self.placeholderLabel removeFromSuperview];
+        } else if (self.placeholderLabel.superview != nil ){
+            [self addSubview:self.placeholderLabel];
+        }
+        
+        return hidden;
     }];
+    
     RAC(self.placeholderLabel,attributedText) = RACObserve(self, attributedPlaceholder);
     
     [[[RACSignal combineLatest:@[[RACObserve(self, placeholder) distinctUntilChanged],
