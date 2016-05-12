@@ -11,8 +11,8 @@ Pod::Spec.new do |spec|
   
   spec.dependency "MEFoundation", "~> 1.1.0"
   spec.dependency "MEKit", "~> 1.3.0"
+  spec.dependency "MEReactiveFoundation", "~> 1.1.0"
 
-  spec.dependency "MEReactiveFoundation", "~> 1.0.0"
   spec.dependency "libextobjc/EXTKeyPathCoding", "~> 0.4.0"
   spec.dependency "libextobjc/EXTScope", "~> 0.4.0"
   spec.dependency "ReactiveCocoa", "~> 2.3.0"
