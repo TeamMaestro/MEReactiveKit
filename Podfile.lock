@@ -24,32 +24,18 @@ PODS:
     - ReactiveCocoa/Core
 
 DEPENDENCIES:
-  - MEFoundation (from `https://github.com/TeamMaestro/MEFoundation.git`)
-  - MEKit (from `https://github.com/TeamMaestro/MEKit.git`)
   - MEReactiveKit (from `./`)
 
 EXTERNAL SOURCES:
-  MEFoundation:
-    :git: https://github.com/TeamMaestro/MEFoundation.git
-  MEKit:
-    :git: https://github.com/TeamMaestro/MEKit.git
   MEReactiveKit:
     :path: "./"
 
-CHECKOUT OPTIONS:
-  MEFoundation:
-    :commit: 4b53e5da7eab157357cec90c6df89c388922a68e
-    :git: https://github.com/TeamMaestro/MEFoundation.git
-  MEKit:
-    :commit: d3f0d065bca27da4361295f30b2b944acf39e3c7
-    :git: https://github.com/TeamMaestro/MEKit.git
-
 SPEC CHECKSUMS:
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
-  MEFoundation: 5f2ba93abbcc05a40a484f760434eb46b521d4ef
-  MEKit: 500d2cba528eeac6672d3bc5cb69fd9c584accb9
+  MEFoundation: 85593a3f9d026849ac9f00e842263afeccc4d00b
+  MEKit: be640e65d137faf7b3aff10d3aa6060f6b6b0a8e
   MEReactiveFoundation: a16e42a9102a22751260206ca46cc2df6349bbf6
-  MEReactiveKit: 56adf357aa4b63dcd8461cc0427f63a2d80cdda3
+  MEReactiveKit: dd76c2b2545dfc5d9072777fa50a29535bf992a8
   ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
 
 COCOAPODS: 0.39.0
