@@ -21,3 +21,6 @@ DerivedData/
 .DS_Store
 
 *.swp
+
+#Cocoapods
+Pods/*
