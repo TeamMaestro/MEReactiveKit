@@ -19,7 +19,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.frameworks = "Foundation", "CoreGraphics", "UIKit", "QuartzCore"
   
-  spec.source_files = "MEReactiveKit", "MEReactiveKit/Common", "MEReactiveKit/ViewControllers", "MEReactiveKit/ViewControllers/MERSlidingViewController", "MEReactiveKit/ViewControllers/MERSplitViewController", "MEReactiveKit/ViewControllers/MERWebViewController", "MEReactiveKit/Private"
-  spec.private_header_files = "MEReactiveKit/Private"
+  spec.source_files = "MEReactiveKit/**/*.{h,m}"
+  spec.private_header_files = "MEReactiveKit/Private/**/*.h"
   spec.resource_bundles = {"MEReactiveKitResources" => ["MEReactiveKitResources/*.plist", "MEReactiveKitResources/*.lproj", "MEReactiveKitResources/Assets/*"]}
 end
