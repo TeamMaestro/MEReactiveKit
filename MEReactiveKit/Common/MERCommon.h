@@ -14,11 +14,6 @@
 #import <Foundation/Foundation.h>
 
 /**
- The name of the reactive kit resources bundle.
- */
-extern NSString *const MEReactiveKitResourcesBundleName;
-
-/**
  Returns the reactive kit resources `NSBundle` instance.
  */
 extern NSBundle *MEReactiveKitResourcesBundle(void);

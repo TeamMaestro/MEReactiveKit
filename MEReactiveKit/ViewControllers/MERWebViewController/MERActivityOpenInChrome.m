@@ -30,7 +30,7 @@ static NSString *const kMERActivityOpenInChromePrefix = @"googlechrome://";
     return NSLocalizedStringFromTableInBundle(@"Open in Chrome", nil, MEReactiveKitResourcesBundle(), @"activity open in chrome title");
 }
 - (UIImage *)activityImage {
-    return [UIImage ME_imageNamed:@"web_view_open_in_chrome.png" inBundleNamed:MEReactiveKitResourcesBundleName];
+	return [UIImage ME_imageNamed:@"web_view_open_in_chrome.png" inBundle:MEReactiveKitResourcesBundle()];
 }
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     for (id activityItem in activityItems) {

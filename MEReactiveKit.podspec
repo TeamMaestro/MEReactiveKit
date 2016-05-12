@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "8.0"
   
   spec.dependency "MEFoundation", "~> 1.1.0"
-  spec.dependency "MEKit", "~> 1.2.0"
+  spec.dependency "MEKit", "~> 1.3.0"
 
   spec.dependency "MEReactiveFoundation", "~> 1.0.0"
   spec.dependency "libextobjc/EXTKeyPathCoding", "~> 0.4.0"
