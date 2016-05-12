@@ -1,11 +1,12 @@
-platform :ios, "7.0"
+platform :ios, "8.0"
 
-pod "MEFoundation", "~> 1.0.0"
-pod "MEKit", "~> 1.0.0"
-pod "MEReactiveFoundation", "~> 1.0.0"
-pod "libextobjc/EXTKeyPathCoding", "~> 0.4.0"
-pod "libextobjc/EXTScope", "~> 0.4.0"
-pod "ReactiveCocoa", "~> 2.2.0"
+use_frameworks!
+
+pod "MEReactiveKit", :path => './'
+
+# FIXME: Remove once latest podspec's are pushed to trunk
+pod "MEFoundation", :git => 'https://github.com/TeamMaestro/MEFoundation.git'
+pod "MEKit", :git => 'https://github.com/TeamMaestro/MEKit.git'
 
 link_with "MEReactiveKitDemo"
 workspace "MEReactiveKitDemo"

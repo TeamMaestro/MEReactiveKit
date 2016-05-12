@@ -13,7 +13,7 @@
 
 #import "MERActivityOpenInSafari.h"
 #import "MERCommon.h"
-#import <MEKit/UIImage+MEExtensions.h>
+@import MEKit;
 
 @interface MERActivityOpenInSafari ()
 @property (copy,nonatomic) NSURL *url;
@@ -28,7 +28,7 @@
     return NSLocalizedStringFromTableInBundle(@"Open in Safari", nil, MEReactiveKitResourcesBundle(), @"activity open in safari title");
 }
 - (UIImage *)activityImage {
-    return [UIImage ME_imageNamed:@"web_view_open_in_safari.png" inBundleNamed:MEReactiveKitResourcesBundleName];
+	return [UIImage ME_imageNamed:@"web_view_open_in_safari.png" inBundle:MEReactiveKitResourcesBundle()];
 }
 - (BOOL)canPerformWithActivityItems:(NSArray *)activityItems {
     for (id activityItem in activityItems) {

@@ -13,10 +13,8 @@
 
 #import "MERCommon.h"
 
-NSString *const MEReactiveKitResourcesBundleName = @"MEReactiveKitResources.bundle";
-
 NSBundle *MEReactiveKitResourcesBundle(void) {
-    return [NSBundle bundleWithURL:[[NSBundle mainBundle] URLForResource:MEReactiveKitResourcesBundleName.stringByDeletingPathExtension withExtension:MEReactiveKitResourcesBundleName.pathExtension]];
+	return [NSBundle bundleForClass:[MERCommon class]];
 }
 
 @implementation MERCommon

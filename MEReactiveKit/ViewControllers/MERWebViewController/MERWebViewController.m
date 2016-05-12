@@ -35,8 +35,8 @@
     
     UIBarButtonItem *reloadItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:nil action:NULL];
     UIBarButtonItem *stopItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemStop target:nil action:NULL];
-    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage ME_imageNamed:@"web_view_back.png" inBundleNamed:MEReactiveKitResourcesBundleName] style:UIBarButtonItemStylePlain target:nil action:NULL];
-    UIBarButtonItem *forwardItem = [[UIBarButtonItem alloc] initWithImage:[UIImage ME_imageNamed:@"web_view_forward.png" inBundleNamed:MEReactiveKitResourcesBundleName] style:UIBarButtonItemStylePlain target:nil action:NULL];
+	UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithImage:[UIImage ME_imageNamed:@"web_view_back.png" inBundle:MEReactiveKitResourcesBundle()] style:UIBarButtonItemStylePlain target:nil action:NULL];
+	UIBarButtonItem *forwardItem = [[UIBarButtonItem alloc] initWithImage:[UIImage ME_imageNamed:@"web_view_forward.png" inBundle:MEReactiveKitResourcesBundle()] style:UIBarButtonItemStylePlain target:nil action:NULL];
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction target:nil action:NULL];
     UIBarButtonItem *flexibleSpaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     

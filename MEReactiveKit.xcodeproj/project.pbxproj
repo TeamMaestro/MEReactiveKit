@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3E2185351C3BB27D281A57 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EFA06E7E768AA98F7A21856 /* Pods.framework */; };
 		7902E9BB18D58AAD005903E2 /* MEReactiveKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */; };
-		7902E9BC18D58ABA005903E2 /* libMEReactiveKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */; };
-		7902E9BD18D58CAC005903E2 /* MEReactiveKit.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3B18D56E3B00A2414E /* MEReactiveKit.h */; };
 		7902E9C018D58CFF005903E2 /* MERDetailScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7902E9BF18D58CFF005903E2 /* MERDetailScrollViewController.m */; };
 		792A476E18DB790E00CE7538 /* web_view_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 792A476A18DB790E00CE7538 /* web_view_back.png */; };
 		792A476F18DB790E00CE7538 /* web_view_back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 792A476B18DB790E00CE7538 /* web_view_back@2x.png */; };
@@ -23,43 +22,14 @@
 		792A477F18DB7C4A00CE7538 /* web_view_open_in_chrome@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 792A477B18DB7C4A00CE7538 /* web_view_open_in_chrome@2x~iphone.png */; };
 		792A478018DB7C4A00CE7538 /* web_view_open_in_chrome~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 792A477C18DB7C4A00CE7538 /* web_view_open_in_chrome~ipad.png */; };
 		792A478118DB7C4A00CE7538 /* web_view_open_in_chrome~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 792A477D18DB7C4A00CE7538 /* web_view_open_in_chrome~iphone.png */; };
-		7994EEEC18D78BAD00CDE54E /* MERPaginatedScrollingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EEE918D78BAD00CDE54E /* MERPaginatedScrollingView.m */; };
-		7994EEED18D78BAD00CDE54E /* UIScrollView+MERPaginatedScrollingExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EEEB18D78BAD00CDE54E /* UIScrollView+MERPaginatedScrollingExtensions.m */; };
-		7994EEEF18D78C2200CDE54E /* UIScrollView+MERPaginatedScrollingExtensions.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EEEA18D78BAD00CDE54E /* UIScrollView+MERPaginatedScrollingExtensions.h */; };
-		7994EEF018D78C2200CDE54E /* MERPaginatedScrolling.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EEE718D78BAD00CDE54E /* MERPaginatedScrolling.h */; };
-		7994EEF118D78C2200CDE54E /* MERPaginatedScrollingView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EEE818D78BAD00CDE54E /* MERPaginatedScrollingView.h */; };
-		7994EEF718D78C6A00CDE54E /* MERPullToRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EEF418D78C6A00CDE54E /* MERPullToRefreshView.m */; };
-		7994EEF818D78C6A00CDE54E /* UIScrollView+MERPullToRefreshExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EEF618D78C6A00CDE54E /* UIScrollView+MERPullToRefreshExtensions.m */; };
-		7994EF0018D78CDC00CDE54E /* MERSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EEFC18D78CDC00CDE54E /* MERSplitViewController.m */; };
-		7994EF0118D78CDC00CDE54E /* MERSplitViewDividerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EEFE18D78CDC00CDE54E /* MERSplitViewDividerView.m */; };
-		7994EF0418D78D0600CDE54E /* MERClockView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF0318D78D0600CDE54E /* MERClockView.m */; };
-		7994EF0918D78D2E00CDE54E /* MERSplitViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EEFB18D78CDC00CDE54E /* MERSplitViewController.h */; };
-		7994EF0A18D78D2E00CDE54E /* MERSplitViewDividerViewClass.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EEFF18D78CDC00CDE54E /* MERSplitViewDividerViewClass.h */; };
-		7994EF0B18D78D2E00CDE54E /* MERSplitViewDividerView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EEFD18D78CDC00CDE54E /* MERSplitViewDividerView.h */; };
-		7994EF0C18D78D3400CDE54E /* MERClockView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EF0218D78D0600CDE54E /* MERClockView.h */; };
-		7994EF1018D791F400CDE54E /* MERSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF0F18D791F400CDE54E /* MERSlidingViewController.m */; };
-		7994EF1118D794C500CDE54E /* MERSlidingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7994EF0E18D791F400CDE54E /* MERSlidingViewController.h */; };
 		7994EF1418D795DB00CDE54E /* MERLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1318D795DB00CDE54E /* MERLeftViewController.m */; };
 		7994EF1718D798DA00CDE54E /* MERDetailWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1618D798DA00CDE54E /* MERDetailWebViewController.m */; };
 		7994EF1A18D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1918D7BAFF00CDE54E /* MERPaginatedScrollingViewController.m */; };
 		7994EF1D18D7BFDC00CDE54E /* MERRootSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1C18D7BFDC00CDE54E /* MERRootSplitViewController.m */; };
 		7994EF2018D7C25900CDE54E /* MERDetailTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */; };
 		7994EF6518D7CFEC00CDE54E /* MERControlsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7994EF6418D7CFEC00CDE54E /* MERControlsViewController.m */; };
-		79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
 		79E1FB2118D56C5C00A2414E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */; };
 		79E1FB2718D56C5D00A2414E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB2518D56C5D00A2414E /* InfoPlist.strings */; };
-		79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB2F18D56CE700A2414E /* MERCommon.m */; };
-		79E1FB5418D56E3B00A2414E /* MERActivityOpenInChrome.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3418D56E3B00A2414E /* MERActivityOpenInChrome.m */; };
-		79E1FB5518D56E3B00A2414E /* MERActivityOpenInSafari.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3618D56E3B00A2414E /* MERActivityOpenInSafari.m */; };
-		79E1FB5718D56E3B00A2414E /* MERDatePickerViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3A18D56E3B00A2414E /* MERDatePickerViewButton.m */; };
-		79E1FB5818D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB3D18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m */; };
-		79E1FB5B18D56E3B00A2414E /* MERPickerViewButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4318D56E3B00A2414E /* MERPickerViewButton.m */; };
-		79E1FB5E18D56E3B00A2414E /* MERTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4918D56E3B00A2414E /* MERTableViewCell.m */; };
-		79E1FB5F18D56E3B00A2414E /* MERTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4B18D56E3B00A2414E /* MERTextField.m */; };
-		79E1FB6018D56E3B00A2414E /* MERTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4D18D56E3B00A2414E /* MERTextView.m */; };
-		79E1FB6118D56E3B00A2414E /* MERView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB4F18D56E3B00A2414E /* MERView.m */; };
-		79E1FB6218D56E3B00A2414E /* MERViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5118D56E3B00A2414E /* MERViewController.m */; };
-		79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB5318D56E3B00A2414E /* MERWebViewController.m */; };
 		79E1FB8018D5700800A2414E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB7E18D5700800A2414E /* Localizable.strings */; };
 		79E1FB8C18D574BE00A2414E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FAF518D56C1300A2414E /* Foundation.framework */; };
 		79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */; };
@@ -69,76 +39,12 @@
 		79E1FB9B18D574BE00A2414E /* MERAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FB9A18D574BE00A2414E /* MERAppDelegate.m */; };
 		79E1FB9D18D574BE00A2414E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E1FB9C18D574BE00A2414E /* Images.xcassets */; };
 		79E1FBBA18D57CD800A2414E /* MERRootSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FBB918D57CD800A2414E /* MERRootSlidingViewController.m */; };
-		79E1FBBE18D5823700A2414E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 79E1FBBD18D5823700A2414E /* libPods.a */; };
-		79E1FBC118D5830D00A2414E /* MERScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E1FBC018D5830D00A2414E /* MERScrollView.m */; };
-		79E1FBC318D5891500A2414E /* MERCommon.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB2E18D56CE700A2414E /* MERCommon.h */; };
-		79E1FBC418D5891500A2414E /* MERTableViewCell.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4818D56E3B00A2414E /* MERTableViewCell.h */; };
-		79E1FBC618D5891500A2414E /* MERDatePickerViewButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3918D56E3B00A2414E /* MERDatePickerViewButton.h */; };
-		79E1FBC818D5891500A2414E /* MERPickerViewButton.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4218D56E3B00A2414E /* MERPickerViewButton.h */; };
-		79E1FBCB18D5891500A2414E /* MERTextField.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4A18D56E3B00A2414E /* MERTextField.h */; };
-		79E1FBCC18D5891500A2414E /* MERView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4E18D56E3B00A2414E /* MERView.h */; };
-		79E1FBCD18D5891500A2414E /* MERNextPreviousInputAccessoryView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3C18D56E3B00A2414E /* MERNextPreviousInputAccessoryView.h */; };
-		79E1FBCE18D5891500A2414E /* MERScrollView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FBBF18D5830D00A2414E /* MERScrollView.h */; };
-		79E1FBCF18D5891500A2414E /* MERTextView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB4C18D56E3B00A2414E /* MERTextView.h */; };
-		79E1FBD018D5891500A2414E /* MERViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB5018D56E3B00A2414E /* MERViewController.h */; };
-		79E1FBD118D5891F00A2414E /* MERWebViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB5218D56E3B00A2414E /* MERWebViewController.h */; };
-		79E1FBD218D5891F00A2414E /* MERActivityOpenInChrome.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3318D56E3B00A2414E /* MERActivityOpenInChrome.h */; };
-		79E1FBD318D5891F00A2414E /* MERActivityOpenInSafari.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 79E1FB3518D56E3B00A2414E /* MERActivityOpenInSafari.h */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		7902E9B918D58AA3005903E2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79E1FAF118D56C1300A2414E;
-			remoteInfo = MEReactiveKit;
-		};
-		79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 79E1FAEA18D56C1300A2414E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 79E1FB1E18D56C5C00A2414E;
-			remoteInfo = MEReactiveKitResources;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		79E1FAF018D56C1300A2414E /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "include/$(PRODUCT_NAME)";
-			dstSubfolderSpec = 16;
-			files = (
-				7902E9BD18D58CAC005903E2 /* MEReactiveKit.h in CopyFiles */,
-				79E1FBC318D5891500A2414E /* MERCommon.h in CopyFiles */,
-				79E1FBC418D5891500A2414E /* MERTableViewCell.h in CopyFiles */,
-				7994EEEF18D78C2200CDE54E /* UIScrollView+MERPaginatedScrollingExtensions.h in CopyFiles */,
-				7994EEF018D78C2200CDE54E /* MERPaginatedScrolling.h in CopyFiles */,
-				7994EEF118D78C2200CDE54E /* MERPaginatedScrollingView.h in CopyFiles */,
-				7994EF1118D794C500CDE54E /* MERSlidingViewController.h in CopyFiles */,
-				7994EF0918D78D2E00CDE54E /* MERSplitViewController.h in CopyFiles */,
-				7994EF0A18D78D2E00CDE54E /* MERSplitViewDividerViewClass.h in CopyFiles */,
-				7994EF0B18D78D2E00CDE54E /* MERSplitViewDividerView.h in CopyFiles */,
-				7994EF0C18D78D3400CDE54E /* MERClockView.h in CopyFiles */,
-				79E1FBC618D5891500A2414E /* MERDatePickerViewButton.h in CopyFiles */,
-				79E1FBC818D5891500A2414E /* MERPickerViewButton.h in CopyFiles */,
-				79E1FBCB18D5891500A2414E /* MERTextField.h in CopyFiles */,
-				79E1FBCC18D5891500A2414E /* MERView.h in CopyFiles */,
-				79E1FBCD18D5891500A2414E /* MERNextPreviousInputAccessoryView.h in CopyFiles */,
-				79E1FBCE18D5891500A2414E /* MERScrollView.h in CopyFiles */,
-				79E1FBCF18D5891500A2414E /* MERTextView.h in CopyFiles */,
-				79E1FBD018D5891500A2414E /* MERViewController.h in CopyFiles */,
-				79E1FBD118D5891F00A2414E /* MERWebViewController.h in CopyFiles */,
-				79E1FBD218D5891F00A2414E /* MERActivityOpenInChrome.h in CopyFiles */,
-				79E1FBD318D5891F00A2414E /* MERActivityOpenInSafari.h in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
-
 /* Begin PBXFileReference section */
-		784C428964CC411FBD3E586E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		43D38CE10DBADC93FF959A03 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4A62915956F0A39A149A3B56 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		5EFA06E7E768AA98F7A21856 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7902E9BE18D58CFF005903E2 /* MERDetailScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERDetailScrollViewController.h; sourceTree = "<group>"; };
 		7902E9BF18D58CFF005903E2 /* MERDetailScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDetailScrollViewController.m; sourceTree = "<group>"; };
 		792A476A18DB790E00CE7538 /* web_view_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = web_view_back.png; sourceTree = "<group>"; };
@@ -184,7 +90,6 @@
 		7994EF1F18D7C25900CDE54E /* MERDetailTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERDetailTextViewController.m; sourceTree = "<group>"; };
 		7994EF6318D7CFEC00CDE54E /* MERControlsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERControlsViewController.h; sourceTree = "<group>"; };
 		7994EF6418D7CFEC00CDE54E /* MERControlsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERControlsViewController.m; sourceTree = "<group>"; };
-		79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMEReactiveKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		79E1FAF518D56C1300A2414E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		79E1FAF918D56C1300A2414E /* MEReactiveKit-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MEReactiveKit-Prefix.pch"; sourceTree = "<group>"; };
 		79E1FB0318D56C1300A2414E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -234,18 +139,9 @@
 		79E1FBBD18D5823700A2414E /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		79E1FBBF18D5830D00A2414E /* MERScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MERScrollView.h; sourceTree = "<group>"; };
 		79E1FBC018D5830D00A2414E /* MERScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MERScrollView.m; sourceTree = "<group>"; };
-		9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		79E1FAEF18D56C1300A2414E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79E1FAF618D56C1300A2414E /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		79E1FB1C18D56C5C00A2414E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -258,11 +154,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7902E9BC18D58ABA005903E2 /* libMEReactiveKit.a in Frameworks */,
-				79E1FBBE18D5823700A2414E /* libPods.a in Frameworks */,
 				79E1FB8E18D574BE00A2414E /* CoreGraphics.framework in Frameworks */,
 				79E1FB8F18D574BE00A2414E /* UIKit.framework in Frameworks */,
 				79E1FB8C18D574BE00A2414E /* Foundation.framework in Frameworks */,
+				4C3E2185351C3BB27D281A57 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,14 +244,13 @@
 				79E1FB9018D574BE00A2414E /* MEReactiveKitDemo */,
 				79E1FAF418D56C1300A2414E /* Frameworks */,
 				79E1FAF318D56C1300A2414E /* Products */,
-				9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */,
+				D39AD32D1F0717C7D7A433E8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		79E1FAF318D56C1300A2414E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */,
 				79E1FB1F18D56C5C00A2414E /* MEReactiveKitResources.bundle */,
 				79E1FB8B18D574BE00A2414E /* MEReactiveKitDemo.app */,
 			);
@@ -372,7 +266,7 @@
 				79E1FB0618D56C1300A2414E /* UIKit.framework */,
 				79E1FB2018D56C5C00A2414E /* CoreFoundation.framework */,
 				79E1FB8D18D574BE00A2414E /* CoreGraphics.framework */,
-				784C428964CC411FBD3E586E /* libPods.a */,
+				5EFA06E7E768AA98F7A21856 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -565,28 +459,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		D39AD32D1F0717C7D7A433E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4A62915956F0A39A149A3B56 /* Pods.debug.xcconfig */,
+				43D38CE10DBADC93FF959A03 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		79E1FAF118D56C1300A2414E /* MEReactiveKit */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 79E1FB1518D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKit" */;
-			buildPhases = (
-				7994EF6218D7CD9F00CDE54E /* genstrings */,
-				79E1FAEE18D56C1300A2414E /* Sources */,
-				79E1FAEF18D56C1300A2414E /* Frameworks */,
-				79E1FAF018D56C1300A2414E /* CopyFiles */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				79E1FB2D18D56C8A00A2414E /* PBXTargetDependency */,
-			);
-			name = MEReactiveKit;
-			productName = MEReactiveKit;
-			productReference = 79E1FAF218D56C1300A2414E /* libMEReactiveKit.a */;
-			productType = "com.apple.product-type.library.static";
-		};
 		79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E1FB2918D56C5D00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitResources" */;
@@ -608,16 +492,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79E1FBB018D574BE00A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKitDemo" */;
 			buildPhases = (
-				D64A6263840D4B818DDC59A9 /* Check Pods Manifest.lock */,
 				79E1FB8718D574BE00A2414E /* Sources */,
 				79E1FB8818D574BE00A2414E /* Frameworks */,
 				79E1FB8918D574BE00A2414E /* Resources */,
-				EE13F0FB00FB45ECB71D7A3C /* Copy Pods Resources */,
+				661DF2E6876A7EC4D58244BF /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7902E9BA18D58AA3005903E2 /* PBXTargetDependency */,
 			);
 			name = MEReactiveKitDemo;
 			productName = MEReactiveKitDemo;
@@ -646,7 +528,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				79E1FAF118D56C1300A2414E /* MEReactiveKit */,
 				79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */,
 				79E1FB8A18D574BE00A2414E /* MEReactiveKitDemo */,
 			);
@@ -688,81 +569,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7994EF6218D7CD9F00CDE54E /* genstrings */ = {
+		661DF2E6876A7EC4D58244BF /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = genstrings;
+			name = "Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "genstrings -s NSLocalizedString -q -o $SRCROOT/MEReactiveKitResources/en.lproj $SRCROOT/$TARGET_NAME/*.m";
-		};
-		D64A6263840D4B818DDC59A9 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		EE13F0FB00FB45ECB71D7A3C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		79E1FAEE18D56C1300A2414E /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				79E1FB5E18D56E3B00A2414E /* MERTableViewCell.m in Sources */,
-				79E1FB6218D56E3B00A2414E /* MERViewController.m in Sources */,
-				7994EF1018D791F400CDE54E /* MERSlidingViewController.m in Sources */,
-				7994EEF818D78C6A00CDE54E /* UIScrollView+MERPullToRefreshExtensions.m in Sources */,
-				7994EEED18D78BAD00CDE54E /* UIScrollView+MERPaginatedScrollingExtensions.m in Sources */,
-				79E1FB5518D56E3B00A2414E /* MERActivityOpenInSafari.m in Sources */,
-				79E1FB5418D56E3B00A2414E /* MERActivityOpenInChrome.m in Sources */,
-				7994EEF718D78C6A00CDE54E /* MERPullToRefreshView.m in Sources */,
-				79E1FB6118D56E3B00A2414E /* MERView.m in Sources */,
-				7994EEEC18D78BAD00CDE54E /* MERPaginatedScrollingView.m in Sources */,
-				79E1FBC118D5830D00A2414E /* MERScrollView.m in Sources */,
-				79E1FB3018D56CE700A2414E /* MERCommon.m in Sources */,
-				79E1FB6018D56E3B00A2414E /* MERTextView.m in Sources */,
-				79E1FB5F18D56E3B00A2414E /* MERTextField.m in Sources */,
-				79E1FB5718D56E3B00A2414E /* MERDatePickerViewButton.m in Sources */,
-				79E1FB6318D56E3B00A2414E /* MERWebViewController.m in Sources */,
-				7994EF0018D78CDC00CDE54E /* MERSplitViewController.m in Sources */,
-				7994EF0418D78D0600CDE54E /* MERClockView.m in Sources */,
-				79E1FB5B18D56E3B00A2414E /* MERPickerViewButton.m in Sources */,
-				79E1FB5818D56E3B00A2414E /* MERNextPreviousInputAccessoryView.m in Sources */,
-				7994EF0118D78CDC00CDE54E /* MERSplitViewDividerView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		79E1FB1B18D56C5C00A2414E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -788,19 +612,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		7902E9BA18D58AA3005903E2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79E1FAF118D56C1300A2414E /* MEReactiveKit */;
-			targetProxy = 7902E9B918D58AA3005903E2 /* PBXContainerItemProxy */;
-		};
-		79E1FB2D18D56C8A00A2414E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 79E1FB1E18D56C5C00A2414E /* MEReactiveKitResources */;
-			targetProxy = 79E1FB2C18D56C8A00A2414E /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		79E1FB2518D56C5D00A2414E /* InfoPlist.strings */ = {
@@ -862,7 +673,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -894,39 +705,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		79E1FB1618D56C1300A2414E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/MEReactiveKit.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
-				OTHER_LDFLAGS = "$(inherited)";
-				PRIVATE_HEADERS_FOLDER_PATH = "${PUBLIC_HEADERS_FOLDER_PATH}/${PROJECT_NAME}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		79E1FB1718D56C1300A2414E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
-			buildSettings = {
-				DSTROOT = /tmp/MEReactiveKit.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MEReactiveKit/MEReactiveKit-Prefix.pch";
-				OTHER_LDFLAGS = "$(inherited)";
-				PRIVATE_HEADERS_FOLDER_PATH = "${PUBLIC_HEADERS_FOLDER_PATH}/${PROJECT_NAME}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = include;
-				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
@@ -969,7 +750,7 @@
 		};
 		79E1FBB118D574BE00A2414E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
+			baseConfigurationReference = 4A62915956F0A39A149A3B56 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -995,7 +776,7 @@
 		};
 		79E1FBB218D574BE00A2414E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9C6F099096FE4AB88C51A4C0 /* Pods.xcconfig */;
+			baseConfigurationReference = 43D38CE10DBADC93FF959A03 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1023,15 +804,6 @@
 			buildConfigurations = (
 				79E1FB1318D56C1300A2414E /* Debug */,
 				79E1FB1418D56C1300A2414E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		79E1FB1518D56C1300A2414E /* Build configuration list for PBXNativeTarget "MEReactiveKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				79E1FB1618D56C1300A2414E /* Debug */,
-				79E1FB1718D56C1300A2414E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
