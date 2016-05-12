@@ -1,33 +1,55 @@
 PODS:
-  - libextobjc/EXTKeyPathCoding (0.4):
+  - libextobjc/EXTKeyPathCoding (0.4.1):
     - libextobjc/RuntimeExtensions
-  - libextobjc/EXTScope (0.4):
+  - libextobjc/EXTScope (0.4.1):
     - libextobjc/RuntimeExtensions
-  - libextobjc/RuntimeExtensions (0.4)
-  - MEFoundation (1.0.6)
-  - MEKit (1.0.3):
-    - MEFoundation (~> 1.0.0)
-  - MEReactiveFoundation (1.0.2)
-  - ReactiveCocoa (2.2.4):
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - MEFoundation (1.1.0)
+  - MEKit (1.2.0):
+    - MEFoundation (~> 1.1.0)
+  - MEReactiveFoundation (1.0.5)
+  - MEReactiveKit (1.1.0):
+    - libextobjc/EXTKeyPathCoding (~> 0.4.0)
+    - libextobjc/EXTScope (~> 0.4.0)
+    - MEFoundation (~> 1.1.0)
+    - MEKit (~> 1.2.0)
+    - MEReactiveFoundation (~> 1.0.0)
+    - ReactiveCocoa (~> 2.3.0)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI (= 2.3.1)
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
     - ReactiveCocoa/Core
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/Core (2.2.4):
-    - ReactiveCocoa/no-arc
-  - ReactiveCocoa/no-arc (2.2.4)
 
 DEPENDENCIES:
-  - libextobjc/EXTKeyPathCoding (~> 0.4.0)
-  - libextobjc/EXTScope (~> 0.4.0)
-  - MEFoundation (~> 1.0.0)
-  - MEKit (~> 1.0.0)
-  - MEReactiveFoundation (~> 1.0.0)
-  - ReactiveCocoa (~> 2.2.0)
+  - MEFoundation (from `https://github.com/TeamMaestro/MEFoundation.git`)
+  - MEKit (from `https://github.com/TeamMaestro/MEKit.git`)
+  - MEReactiveKit (from `./`)
+
+EXTERNAL SOURCES:
+  MEFoundation:
+    :git: https://github.com/TeamMaestro/MEFoundation.git
+  MEKit:
+    :git: https://github.com/TeamMaestro/MEKit.git
+  MEReactiveKit:
+    :path: "./"
+
+CHECKOUT OPTIONS:
+  MEFoundation:
+    :commit: 4b53e5da7eab157357cec90c6df89c388922a68e
+    :git: https://github.com/TeamMaestro/MEFoundation.git
+  MEKit:
+    :commit: ab5ba7f247bc6372e1046868dc953d08627f0587
+    :git: https://github.com/TeamMaestro/MEKit.git
 
 SPEC CHECKSUMS:
-  libextobjc: 2c9fc8226f0f38e562587f65172f93f0c9b4a47a
-  MEFoundation: 85858828f6a1a61b3a019a4bc47575c24c647834
-  MEKit: 500066b5207b44660b93871050a0f372479c19c3
-  MEReactiveFoundation: 8fca6120232080a67f78954482c775220ef2a6a1
-  ReactiveCocoa: 953a45dda30674fe704d1d9c77cc874141742f47
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  MEFoundation: 5f2ba93abbcc05a40a484f760434eb46b521d4ef
+  MEKit: 8a63ccd9464adc89d2afd082e168f1e36bc12f7e
+  MEReactiveFoundation: a16e42a9102a22751260206ca46cc2df6349bbf6
+  MEReactiveKit: 5f19d98987539d7257df93ade6c56242b04015a6
+  ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
 
-COCOAPODS: 0.29.0
+COCOAPODS: 0.39.0

@@ -7,10 +7,11 @@ Pod::Spec.new do |spec|
   spec.source = {:git => "https://github.com/TeamMaestro/MEReactiveKit.git", :tag => spec.version.to_s}
   spec.summary = "A collection of classes that extend the UIKit framework, built on top of ReactiveCocoa."
   
-  spec.platform = :ios, "7.0"
+  spec.platform = :ios, "8.0"
   
-  spec.dependency "MEFoundation", "~> 1.0.0"
-  spec.dependency "MEKit", "~> 1"
+  spec.dependency "MEFoundation", "~> 1.1.0"
+  spec.dependency "MEKit", "~> 1.2.0"
+
   spec.dependency "MEReactiveFoundation", "~> 1.0.0"
   spec.dependency "libextobjc/EXTKeyPathCoding", "~> 0.4.0"
   spec.dependency "libextobjc/EXTScope", "~> 0.4.0"

@@ -13,7 +13,7 @@
 
 #import "MERActivityOpenInSafari.h"
 #import "MERCommon.h"
-#import <MEKit/UIImage+MEExtensions.h>
+@import MEKit;
 
 @interface MERActivityOpenInSafari ()
 @property (copy,nonatomic) NSURL *url;
