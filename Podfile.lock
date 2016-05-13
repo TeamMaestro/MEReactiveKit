@@ -8,7 +8,7 @@ PODS:
   - MEKit (1.3.0):
     - MEFoundation (~> 1.1.0)
   - MEReactiveFoundation (1.1.0)
-  - MEReactiveKit (2.0.0):
+  - MEReactiveKit (2.0.1):
     - libextobjc/EXTKeyPathCoding (~> 0.4.0)
     - libextobjc/EXTScope (~> 0.4.0)
     - MEFoundation (~> 1.1.0)
@@ -35,7 +35,7 @@ SPEC CHECKSUMS:
   MEFoundation: 85593a3f9d026849ac9f00e842263afeccc4d00b
   MEKit: be640e65d137faf7b3aff10d3aa6060f6b6b0a8e
   MEReactiveFoundation: 7d31b53e3d38b101da17457da8e3a04655efe160
-  MEReactiveKit: 28328cc60a9849b8ef88c903377e93f6343264f8
+  MEReactiveKit: 4fae199aaf9359e275fc49ee8e67da0a42f165d1
   ReactiveCocoa: 3fe9b233ca6db810e86681b5749488564c1179a1
 
 COCOAPODS: 0.39.0
